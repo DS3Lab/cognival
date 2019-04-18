@@ -1,6 +1,10 @@
+import matplotlib as mpl
+mpl.use('TkAgg')
+import matplotlib.pyplot as plt
+
+def plotHanlder(history):
 
 
-def plotHanlder():
     print(history.history.keys())
     # "Loss"
     plt.plot(history.history['loss'])

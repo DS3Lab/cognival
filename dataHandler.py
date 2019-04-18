@@ -40,9 +40,12 @@ def dataHandler(cognitiveData, wordEmbDir):
 
 
     # # #TODO: set calculated percentage and not hardcoded number
-    X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.2)
+    #X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.2)
+    X_train = X_scaled
+    y_train = y_scaled
 
-    return X_train, y_train, X_test, y_test
+
+    return X_train, y_train
 
 def datasetJOIN():
 
