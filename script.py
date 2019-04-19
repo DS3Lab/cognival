@@ -1,8 +1,9 @@
 from multiprocessing.pool import ThreadPool
-from animatedLoading import  animatedLoading
+import logging
 from datetime import datetime
 
 #own modules
+from animatedLoading import  animatedLoading
 from dataHandler import  dataHandler
 from modelHandler import modelHandler
 from plotHandler import plotHanlder
@@ -15,28 +16,37 @@ cognitiveData ='../datasets/dundee/dundee_scaled.txt'
 wordEmbDir = "../datasets/glove-6B/glove.6B.50d.copy.txt"
 
 def run():
+
     #X_train, y_train = dataHandler(cognitiveData,wordEmbDir)
     X_train, y_train = eyetrackingHandler(cognitiveData, wordEmbDir)
     history = modelHandler(X_train, y_train)
-    plotHanlder(history)
-    return 0
+
+    return history
 
 
 def main():
 
-    pool = ThreadPool(processes=1)
+    logging.basicConfig(filename='history.log', level=logging.DEBUG,
+                        format='%(asctime)s:%(message)s')
+
+    # pool = ThreadPool(processes=1)
 
     startTime = datetime.now()
-    async_result = pool.apply_async(run)
+    # async_result = pool.apply_async(run)
+    #
+    # while(async_result.ready()==False):
+    #     animatedLoading()
 
-    while(async_result.ready()==False):
-        animatedLoading()
+    history = run()
+    
+    timeTaken = datetime.now()-startTime
+    print(timeTaken)
+    logging.info(timeTaken)
 
-    print(datetime.now()-startTime)
+    # history = async_result.get()
+    plotHanlder(history, startTime)
 
-    return_val =async_result.get()
-
-    #print(return_val)
+    logging.info(history.history['loss'])
 
     pass
 

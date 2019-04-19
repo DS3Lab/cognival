@@ -2,7 +2,7 @@ import matplotlib as mpl
 mpl.use('TkAgg')
 import matplotlib.pyplot as plt
 
-def plotHanlder(history):
+def plotHanlder(history, startTime):
 
 
     print(history.history.keys())
@@ -14,5 +14,6 @@ def plotHanlder(history):
     plt.xlabel('epoch')
     plt.legend(['train', 'validation'], loc='upper left')
     plt.show()
+    plt.savefig(str(startTime)+'.png')
 
     pass
