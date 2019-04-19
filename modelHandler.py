@@ -30,7 +30,7 @@ def modelHandler(X_train, y_train):
 
     #TODO: set epoch from the beginnings not hardcoded
     # fit the model
-    history = model.fit(X_train, y_train, epochs=150, batch_size=50, verbose=1, validation_split=0.2)
+    history = model.fit(X_train, y_train, epochs=400, batch_size=50, verbose=1, validation_split=0.2)
 
     return history
 

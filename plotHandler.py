@@ -13,7 +13,8 @@ def plotHanlder(history, startTime):
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train', 'validation'], loc='upper left')
+    plt.savefig('plots/'+str(startTime) + '.png')
     plt.show()
-    plt.savefig(str(startTime)+'.png')
+
 
     pass

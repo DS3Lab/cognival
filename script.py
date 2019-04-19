@@ -25,6 +25,7 @@ def run():
 
 
 def main():
+    epochs = 400
 
     logging.basicConfig(filename='history.log', level=logging.DEBUG,
                         format='%(asctime)s:%(message)s')
@@ -38,7 +39,7 @@ def main():
     #     animatedLoading()
 
     history = run()
-    
+
     timeTaken = datetime.now()-startTime
     print(timeTaken)
     logging.info(timeTaken)
@@ -46,7 +47,12 @@ def main():
     # history = async_result.get()
     plotHanlder(history, startTime)
 
+    logging.info('EPOCHS')
+    logging.info(epochs)
+    logging.info('LOSS')
     logging.info(history.history['loss'])
+    logging.info('VALIDATION LOSS')
+    logging.info(history.history['val_loss'])
 
     pass
 
