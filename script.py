@@ -5,16 +5,20 @@ from datetime import datetime
 #own modules
 from dataHandler import  dataHandler
 from modelHandler import modelHandler
+from plotHandler import plotHanlder
+from eyetrackingHandler import eyetrackingHandler
 
 #TODO: don't hardcode all inputs, create command line interface
-cognitiveData = "../datasets/eeg/zuco/zuco_scaled.txt"
+#cognitiveData = "../datasets/eeg/zuco/zuco_scaled.txt"
+cognitiveData ='../datasets/dundee/dundee_scaled.txt'
 #TODO: SET to choose for specific dimension
 wordEmbDir = "../datasets/glove-6B/glove.6B.50d.copy.txt"
 
 def run():
-    X_train, y_train = dataHandler(cognitiveData,wordEmbDir)
+    #X_train, y_train = dataHandler(cognitiveData,wordEmbDir)
+    X_train, y_train = eyetrackingHandler(cognitiveData, wordEmbDir)
     history = modelHandler(X_train, y_train)
-
+    plotHanlder(history)
     return 0
 
 

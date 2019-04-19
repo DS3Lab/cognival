@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 
 
-def dataHandler(cognitiveData, wordEmbDir):
+def eyetrackingHandler(cognitiveData, wordEmbDir):
 
     #TODO: Modularize code into segments, read data, join set training/test % and create numpy vectors
     #TODO: dataHandler handles all the handlers for eeg/fmri/eyetracking and wordembeddings
