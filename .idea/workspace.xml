@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e820be93-8558-458e-811e-1421b4102972" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/dataHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/fileHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scriptController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHandler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eyetrackingHandler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileHandler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/history.log" beforeDir="false" afterPath="$PROJECT_DIR$/output/history.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/modelHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plotHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/plotHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/2019-04-19 14:08:54.639093.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/2019-04-19 14:08:54.639093.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/2019-04-19 14:25:37.836155.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/2019-04-19 14:25:37.836155.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/2019-04-19 16:06:48.694157.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/2019-04-19 16:06:48.694157.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-    </list>
+    <list default="true" id="e820be93-8558-458e-811e-1421b4102972" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +13,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/animatedLoading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,6 +73,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,26 +81,10 @@
               <item name="cognitive-embedding-evaluation" type="b2602c69:ProjectViewProjectNode" />
               <item name="cognitive-embedding-evaluation" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cognitive-embedding-evaluation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cognitive-embedding-evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cognitive-embedding-evaluation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cognitive-embedding-evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cognitive-embedding-evaluation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cognitive-embedding-evaluation" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,10 +197,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.script" />
-      <item itemvalue="Python.pool" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.fileHandler" />
+      <item itemvalue="Python.pool" />
+      <item itemvalue="Python.script" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
@@ -250,9 +225,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-180" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15797788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17721519" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,13 +275,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="119" column="4" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py" />
     <entry file="file://$PROJECT_DIR$/output/history.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -321,23 +290,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eyetrackingHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/eyetrackingHandler.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/handlers/fileHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -391,11 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
