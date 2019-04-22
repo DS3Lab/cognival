@@ -1,0 +1,34 @@
+{
+    "PATH": "../datasets/",
+    "cogDataConfig": {
+        "dundee": {
+            "dataset": "dundee/dundee_scaled.txt",
+            "features": [
+                "First_fix_dur",
+                "First_pass_dur",
+                "Mean_fix_dur",
+                "Fix_prob",
+                "Re-read_prob",
+                "Tot_fix_dur",
+                "Tot_regres_from_dur",
+                "Tot_regres_to_dur",
+                "nFix",
+                "nLong_regres_from",
+                "nLong_regres_to",
+                "nRefix",
+                "nRegres_from",
+                "nRegres_to"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove": {
+                    "epoch": 150
+                }
+            }
+        }
+    },
+    "version": 4.0,
+    "wordEmbConfig": {
+        "glove": "glove-6B/glove.6B.50d.copy.txt"
+    }
+}

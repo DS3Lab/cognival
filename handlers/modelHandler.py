@@ -1,7 +1,7 @@
 from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dense
 
-
+#TODO write code for cross validation
 def modelHandler(X_train, y_train):
 
     #TODO: change hardcoding of node numbers
