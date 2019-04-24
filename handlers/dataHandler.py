@@ -29,7 +29,9 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
     X = df_join.drop(features, axis=1)
     X_train = np.array(X, dtype='float')
 
-    # # # #TODO: set calculated percentage and not hardcoded number
+    # # # #TODO: add validations,prediction and training data
     # #X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.2)
+    #X_train,X_test,X_validate, y_train, y_test, y_validate
+
 
     return X_train, y_train
