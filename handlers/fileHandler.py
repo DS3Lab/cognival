@@ -19,4 +19,4 @@ def getConfig(configFile):
 
     return config
 
-print(updateVersion('config/config.json'))
+# print(updateVersion('config/config.json'))

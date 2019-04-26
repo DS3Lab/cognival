@@ -6,16 +6,17 @@ from datetime import datetime
 #own modules
 from handlers.dataHandler import  dataHandler
 from handlers.modelHandler import modelHandler
-from handlers.plotHandler import plotHanlder
+from handlers.plotHandler import plotHandler
 from handlers.fileHandler import *
 
 
 def run(config,wordEmbedding,cognitiveData,feature):
 
     X_train, y_train = dataHandler(config,wordEmbedding,cognitiveData,feature)
-    history = modelHandler(X_train, y_train)
+    history, best_params = modelHandler(config["cogDataConfig"][cognitiveData]["wordEmbSpecifics"][wordEmbedding],
+                                        X_train, y_train)
 
-    return history
+    return history, best_params
 
 
 def main():
@@ -27,14 +28,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("configFile",help="path and name of configuration file",
                         nargs='?', default='config/config.json')
-    #TODO: change dundee default for later use
-    parser.add_argument("-d","--dataset", type=str, choices=["dundee"],
-                        default="dundee", help="dataset to train the model")
-    parser.add_argument("-f","--feature", type=str, default=None,
-                        help="feature of the dataset to train the model")
-    #TODO: change wordEmbedding deafualt for future use
-    parser.add_argument("-w","--wordEmbedding", type="str", choices=["glove"],
-                        default="glove", help="wordEmbedding to train the model")
+    parser.add_argument("-d","--dataset", type=str,default=None,
+                        help="dataset to train the model")
+    parser.add_argument("-f","--feature", type=str,
+                        default=None, help="feature of the dataset to train the model")
+    parser.add_argument("-w","--wordEmbedding", type=str, default=None,
+                        help="wordEmbedding to train the model")
 
     args = parser.parse_args()
 
@@ -69,31 +68,28 @@ def main():
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
 
-    logging.basicConfig(filename=outputDir+config['version']+'.log', level=logging.DEBUG,
+    logging.basicConfig(filename=outputDir+"/"+str(+config['version'])+'.log', level=logging.DEBUG,
                         format='%(asctime)s:%(message)s')
     logging.info("Word Embedding: "+wordEmbedding)
     logging.info("Cognitive Data: " + cognitiveData)
     logging.info("Feature: "+feature)
 
-    # pool = ThreadPool(processes=1)
 
     startTime = datetime.now()
-    # async_result = pool.apply_async(run)
-    #
-    # while(async_result.ready()==False):
-    #     animatedLoading()
 
-    history = run(config,wordEmbedding,cognitiveData,feature)
+    history, best_params = run(config,wordEmbedding,cognitiveData,feature)
 
     timeTaken = datetime.now()-startTime
-    print('\n'+timeTaken)
-    logging.info(timeTaken)
+    print('\n'+str(timeTaken))
+    logging.info(" TIME TAKEN:"+str(timeTaken))
 
-    # history = async_result.get()
-    plotHanlder(history, config['version'],outputDir)
-    #TODO: print configuration of model fit
-    #logging.info('EPOCHS')
-    #logging.info(epochs)
+    plotHandler(history, config['version'],outputDir)
+
+    #TODO: save optimal option to config
+    for key in best_params:
+        logging.info(key)
+        logging.info(best_params[key])
+
     logging.info('LOSS')
     logging.info(history.history['loss'])
     logging.info('VALIDATION LOSS')

@@ -2,7 +2,7 @@ import matplotlib as mpl
 mpl.use('TkAgg')
 import matplotlib.pyplot as plt
 
-def plotHanlder(history, version, outputDir):
+def plotHandler(history, version, outputDir):
 
 
     print(history.history.keys())
@@ -12,7 +12,7 @@ def plotHanlder(history, version, outputDir):
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train', 'validation'], loc='upper left')
-    plt.savefig(outputDir+version+ '.png')
+    plt.savefig(outputDir+"/"+str(version)+ '.png')
     plt.show()
 
 

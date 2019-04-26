@@ -22,12 +22,25 @@
             "type": "single_output",
             "wordEmbSpecifics": {
                 "glove": {
-                    "epoch": 150
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ]
                 }
             }
         }
     },
-    "version": 4.0,
+    "version": 1.0,
     "wordEmbConfig": {
         "glove": "glove-6B/glove.6B.50d.copy.txt"
     }

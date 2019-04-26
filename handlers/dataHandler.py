@@ -16,6 +16,8 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
     # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
     df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
     df_join.dropna(inplace=True)
+    #TODO: NO WORD DROPPING
+    #TODO: dictionary word:vec
     df_join.drop(['word'], axis=1, inplace=True)
 
     if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
