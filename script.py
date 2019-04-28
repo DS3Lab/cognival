@@ -12,11 +12,11 @@ from handlers.fileHandler import *
 
 def run(config,wordEmbedding,cognitiveData,feature):
 
-    X_train, y_train = dataHandler(config,wordEmbedding,cognitiveData,feature)
-    history, best_params = modelHandler(config["cogDataConfig"][cognitiveData]["wordEmbSpecifics"][wordEmbedding],
-                                        X_train, y_train)
+    X_train, y_train, X_test, y_test = dataHandler(config,wordEmbedding,cognitiveData,feature)
+    # history, best_params = modelHandler(config["cogDataConfig"][cognitiveData]["wordEmbSpecifics"][wordEmbedding],
+    #                                     X_train, y_train)
 
-    return history, best_params
+    # return history, best_params
 
 
 def main():
@@ -68,32 +68,32 @@ def main():
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
 
-    logging.basicConfig(filename=outputDir+"/"+str(+config['version'])+'.log', level=logging.DEBUG,
-                        format='%(asctime)s:%(message)s')
-    logging.info("Word Embedding: "+wordEmbedding)
-    logging.info("Cognitive Data: " + cognitiveData)
-    logging.info("Feature: "+feature)
+    # logging.basicConfig(filename=outputDir+"/"+str(+config['version'])+'.log', level=logging.DEBUG,
+    #                     format='%(asctime)s:%(message)s')
+    # logging.info("Word Embedding: "+wordEmbedding)
+    # logging.info("Cognitive Data: " + cognitiveData)
+    # logging.info("Feature: "+feature)
 
 
     startTime = datetime.now()
 
-    history, best_params = run(config,wordEmbedding,cognitiveData,feature)
+    # history, best_params = run(config,wordEmbedding,cognitiveData,feature)
 
     timeTaken = datetime.now()-startTime
     print('\n'+str(timeTaken))
-    logging.info(" TIME TAKEN:"+str(timeTaken))
+    # logging.info(" TIME TAKEN:"+str(timeTaken))
 
-    plotHandler(history, config['version'],outputDir)
+    # plotHandler(history, config['version'],outputDir)
 
     #TODO: save optimal option to config
-    for key in best_params:
-        logging.info(key)
-        logging.info(best_params[key])
-
-    logging.info('LOSS')
-    logging.info(history.history['loss'])
-    logging.info('VALIDATION LOSS')
-    logging.info(history.history['val_loss'])
+    # for key in best_params:
+    #     logging.info(key)
+    #     logging.info(best_params[key])
+    #
+    # logging.info('LOSS')
+    # logging.info(history.history['loss'])
+    # logging.info('VALIDATION LOSS')
+    # logging.info(history.history['val_loss'])
 
     pass
 
