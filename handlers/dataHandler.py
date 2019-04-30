@@ -15,8 +15,10 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
     # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
     df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
     df_join.dropna(inplace=True)
-    #TODO: NO WORD DROPPING
-    #TODO: dictionary word:vec
+
+    words = df_join['word']
+    words = np.array(words, dtype='str').reshape(-1,1)
+
     df_join.drop(['word'], axis=1, inplace=True)
 
     if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
@@ -30,16 +32,20 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
     X = df_join.drop(features, axis=1)
     X = np.array(X, dtype='float')
 
-    return split_folds(X,y, config["folds"], config["seed"] )
+    return split_folds(words ,X,y, config["folds"], config["seed"] )
 
-def split_folds(X,y, folds,seed):
+def split_folds(words, X, y, folds, seed):
     '''
 
+    :param words: np.array with words, same order, corresponding to X and y vectors
     :param X: np.array
     :param y: np.array
     :param folds: number of folds
     :return: X_train = [trainingset1, trainingset2, trainingset3,...]
     '''
+
+    np.random.seed(seed)
+    np.random.shuffle(words)
 
     np.random.seed(seed)
     np.random.shuffle(X)
@@ -54,13 +60,16 @@ def split_folds(X,y, folds,seed):
     X_train = []
     y_train = []
 
-    X_test =[]
-    y_test =[]
+    X_test = []
+    y_test = []
+
+    words_test = []
 
     for train_index, test_index in kf.split(X):
         X_train.append(X[train_index])
         y_train.append(y[train_index])
         X_test.append(X[test_index])
         y_test.append(y[test_index])
+        words_test.append(words[test_index])
 
-    return X_train, y_train, X_test, y_test
+    return words_test, X_train, y_train, X_test, y_test

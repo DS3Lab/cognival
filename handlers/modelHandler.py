@@ -36,22 +36,31 @@ def modelCV(model_constr,config, X_train,y_train):
                       batch_size=config["batch_size"], epochs=config["epochs"])
 
     grid = GridSearchCV(estimator=model,param_grid=param_grid,scoring='neg_mean_squared_error')
-    grid_result = grid.fit(X_train,y_train, verbose=1, validation_split=0.2)#Validation_split
+    grid_result = grid.fit(X_train,y_train, verbose=1, validation_split=config["validation_split"])
 
     return grid, grid_result
 
-# def modelPredict(grid,X_test, y_test):
-#     y_pred = grid.predict(X_test)
-#     error = y_test - y_pred
-#     mse = np.mean(np.square(error))
-#     return mse
+def modelPredict(grid,words, X_test, y_test):
+    y_pred = grid.predict(X_test)
+    y_pred = y_pred.reshape(-1,1)
+    error = y_test - y_pred
+    word_error = np.hstack([words,error])
+    mse = np.mean(np.square(error))
+    return mse, word_error
 
-def modelHandler(config, X_train, y_train):
-    #TODO: run 5 fold
-    #TODO: return list of 5 items and average on the results [[],[],[],[],[],[]]
-    #TODO: save all data into log file 5 fold results
-    #TODO: use average final for plot
-    grid, grid_result = modelCV(create_model,config,X_train,y_train)
-    print([grid_result.best_score_, grid_result.best_params_])
+def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
+    grids =[]
+    grids_result = []
+    mserrors = []
+    word_error = np.array(['word','error'],dtype='str')
+    for i in range(len(X_train)):
+        grid, grid_result = modelCV(create_model,config,X_train[i],y_train[i])
+        grids.append(grid)
+        grids_result.append(grid_result)
+        mse, w_e = modelPredict(grid,words_test[i],X_test[i],y_test[i])
+        mserrors.append(mse)
+        word_error = np.vstack([word_error,w_e])
 
-    return grid_result.best_estimator_.model.history, grid_result.best_params_
+    print(type(grids_result[0].best_estimator_.model.history.history))
+
+    return word_error, grids_result, mserrors

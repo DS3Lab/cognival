@@ -1,6 +1,7 @@
 import os
 import logging
 import argparse
+import numpy as np
 from datetime import datetime
 
 #own modules
@@ -12,11 +13,11 @@ from handlers.fileHandler import *
 
 def run(config,wordEmbedding,cognitiveData,feature):
 
-    X_train, y_train, X_test, y_test = dataHandler(config,wordEmbedding,cognitiveData,feature)
-    # history, best_params = modelHandler(config["cogDataConfig"][cognitiveData]["wordEmbSpecifics"][wordEmbedding],
-    #                                     X_train, y_train)
+    words_test, X_train, y_train, X_test, y_test = dataHandler(config,wordEmbedding,cognitiveData,feature)
+    word_error, grids_result, mserrors = modelHandler(config["cogDataConfig"][cognitiveData]["wordEmbSpecifics"][wordEmbedding],
+                                         words_test, X_train, y_train, X_test, y_test)
 
-    # return history, best_params
+    return word_error, grids_result, mserrors
 
 
 def main():
@@ -68,33 +69,43 @@ def main():
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
 
-    # logging.basicConfig(filename=outputDir+"/"+str(+config['version'])+'.log', level=logging.DEBUG,
-    #                     format='%(asctime)s:%(message)s')
-    # logging.info("Word Embedding: "+wordEmbedding)
-    # logging.info("Cognitive Data: " + cognitiveData)
-    # logging.info("Feature: "+feature)
+    logging.basicConfig(filename=outputDir+"/"+str(+config['version'])+'.log', level=logging.DEBUG,
+                        format='%(asctime)s:%(message)s')
+    logging.info("Word Embedding: "+wordEmbedding)
+    logging.info("Cognitive Data: " + cognitiveData)
+    logging.info("Feature: "+feature)
 
 
     startTime = datetime.now()
 
-    # history, best_params = run(config,wordEmbedding,cognitiveData,feature)
+    word_error, grids_result, mserrors = run(config, wordEmbedding, cognitiveData, feature)
+
+    np.savetxt(outputDir+"/"+str(+config['version'])+'.txt', word_error)
 
     timeTaken = datetime.now()-startTime
     print('\n'+str(timeTaken))
-    # logging.info(" TIME TAKEN:"+str(timeTaken))
+    logging.info(" TIME TAKEN:"+str(timeTaken))
 
+    #TODO: create numpy array from history loss and val_loss, store all 5 into list. and this one inside dictionary history
+    # pass this to plotHandler to plot average of results, calculate mean before, and finally change title of plot to cogdata,feature,wordemb
+    # return grid_result.best_estimator_.model.history
     # plotHandler(history, config['version'],outputDir)
 
-    #TODO: save optimal option to config
-    # for key in best_params:
-    #     logging.info(key)
-    #     logging.info(best_params[key])
-    #
-    # logging.info('LOSS')
-    # logging.info(history.history['loss'])
-    # logging.info('VALIDATION LOSS')
-    # logging.info(history.history['val_loss'])
+    for i in range(len(grids_result)):
+        logging.info("\n",i," FOLD: ")
+        for key in grids_result[i].best_params_:
+            logging.info(key.upper())
+            logging.info(grids_result[i].best_params_[key])
+        logging.info('MSE PREDICTION:')
+        logging.info(mserrors[i])
+        logging.info('LOSS: ')
+        logging.info(grids_result[i].best_estimator_.model.history.history['loss'])
+        logging.info('VALIDATION LOSS: ')
+        logging.info(grids_result[i].best_estimator_.model.history.history['val_loss'])
 
+    logging.info('AVERAGE MSE from all folds')
+    mse = np.array(mserrors,dtype='float').mean()
+    logging.info(mse)
     pass
 
 
