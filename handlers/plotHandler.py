@@ -2,18 +2,14 @@ import matplotlib as mpl
 mpl.use('TkAgg')
 import matplotlib.pyplot as plt
 
-def plotHandler(history, version, outputDir):
+def plotHandler(title, history, version, outputDir):
 
-
-    print(history.history.keys())
-    plt.plot(history.history['loss'])
-    plt.plot(history.history['val_loss'])
-    plt.title('model loss')
+    plt.plot(history['loss'])
+    plt.plot(history['val_loss'])
+    plt.title(title)
     plt.ylabel('loss')
     plt.xlabel('epoch')
     plt.legend(['train', 'validation'], loc='upper left')
     plt.savefig(outputDir+"/"+str(version)+ '.png')
-    plt.show()
-
-
+    #plt.show()
     pass

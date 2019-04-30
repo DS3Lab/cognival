@@ -1,6 +1,14 @@
 #Virtual Environment
-venv/
-fvenv/
+venv
+fvenv
 
 #Pycharm IDE configurations
-.idea/
+.idea
+
+#Compiled files
+**/handlers/_pychache_
+/handler/.DS_Store
+.DS_Store
+
+#Results
+output

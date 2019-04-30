@@ -31,7 +31,7 @@ def create_model(layers, activation, input_dim):
 def modelCV(model_constr,config, X_train,y_train):
 
     model = KerasRegressor(build_fn=model_constr, verbose=0)
-    #TODO: change config['cv'][""layers] and add optimal option and save optimal option to config.json
+
     param_grid = dict(layers=config["layers"], activation=config["activations"],input_dim=[X_train.shape[1]],
                       batch_size=config["batch_size"], epochs=config["epochs"])
 
@@ -60,7 +60,5 @@ def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
         mse, w_e = modelPredict(grid,words_test[i],X_test[i],y_test[i])
         mserrors.append(mse)
         word_error = np.vstack([word_error,w_e])
-
-    print(type(grids_result[0].best_estimator_.model.history.history))
 
     return word_error, grids_result, mserrors

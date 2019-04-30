@@ -26,14 +26,26 @@
                         "relu"
                     ],
                     "batch_size": [
-                        128
+                        128,
+                        256
                     ],
                     "epochs": [
+                        30,
+                        50,
                         100
                     ],
                     "layers": [
                         [
                             26
+                        ],
+                        [
+                            34,
+                            18
+                        ],
+                        [
+                            38,
+                            26,
+                            14
                         ]
                     ],
                     "validation_split": 0.2
@@ -43,7 +55,7 @@
     },
     "folds": 5,
     "seed": 123,
-    "version": 1.0,
+    "version": 4.0,
     "wordEmbConfig": {
         "glove": "glove-6B/glove.6B.50d.copy.txt"
     }

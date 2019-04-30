@@ -65,6 +65,7 @@ def main():
     #   Create logging information and run main program
     ##############################################################################
 
+    #TODO: pass this to configuration file
     outputDir = 'output'
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
@@ -80,19 +81,14 @@ def main():
 
     word_error, grids_result, mserrors = run(config, wordEmbedding, cognitiveData, feature)
 
-    np.savetxt(outputDir+"/"+str(+config['version'])+'.txt', word_error)
+    np.savetxt(outputDir+"/"+str(+config['version'])+'.txt', word_error, delimiter=" ", fmt="%s")
 
-    timeTaken = datetime.now()-startTime
-    print('\n'+str(timeTaken))
-    logging.info(" TIME TAKEN:"+str(timeTaken))
-
-    #TODO: create numpy array from history loss and val_loss, store all 5 into list. and this one inside dictionary history
-    # pass this to plotHandler to plot average of results, calculate mean before, and finally change title of plot to cogdata,feature,wordemb
-    # return grid_result.best_estimator_.model.history
-    # plotHandler(history, config['version'],outputDir)
+    history = {'loss':[],'val_loss':[]}
+    loss_list =[]
+    val_loss_list =[]
 
     for i in range(len(grids_result)):
-        logging.info("\n",i," FOLD: ")
+        logging.info(" FOLD: "+str(i))
         for key in grids_result[i].best_params_:
             logging.info(key.upper())
             logging.info(grids_result[i].best_params_[key])
@@ -102,10 +98,23 @@ def main():
         logging.info(grids_result[i].best_estimator_.model.history.history['loss'])
         logging.info('VALIDATION LOSS: ')
         logging.info(grids_result[i].best_estimator_.model.history.history['val_loss'])
+        loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['loss'],dtype='float'))
+        val_loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['val_loss'], dtype='float'))
 
     logging.info('AVERAGE MSE from all folds')
-    mse = np.array(mserrors,dtype='float').mean()
+    mse = np.array(mserrors, dtype='float').mean()
     logging.info(mse)
+
+    history['loss'] = np.mean([loss_list[i] for i in range (len(loss_list))],axis=0)
+    history['val_loss'] = np.mean([val_loss_list[i] for i in range(len(val_loss_list))], axis=0)
+
+    title = wordEmbedding+' '+cognitiveData+' '+feature
+    plotHandler(title,history,config['version'],outputDir)
+
+    timeTaken = datetime.now() - startTime
+    print('\n' + str(timeTaken))
+    logging.info(" TIME TAKEN:" + str(timeTaken))
+
     pass
 
 
