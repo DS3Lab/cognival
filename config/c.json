@@ -1,6 +1,5 @@
 {
     "PATH": "../datasets/",
-    "outputDir": "output/config",
     "cogDataConfig": {
         "dundee": {
             "dataset": "dundee/dundee_scaled.txt",
@@ -27,41 +26,6 @@
                         "relu"
                     ],
                     "batch_size": [
-                        128,256
-                    ],
-                    "epochs": [
-                        30,50
-                    ],
-                    "layers": [
-                        [
-                            50
-                        ],
-                        [67,34]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-200": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "epochs": [
-                        30
-                    ],
-                    "layers": [
-                        [
-                            50
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-300": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
                         128
                     ],
                     "epochs": [
@@ -79,26 +43,14 @@
                         "relu"
                     ],
                     "batch_size": [
-                        128,
-                        256
+                        128
                     ],
                     "epochs": [
-                        30,
-                        50,
                         100
                     ],
                     "layers": [
                         [
                             26
-                        ],
-                        [
-                            34,
-                            18
-                        ],
-                        [
-                            38,
-                            26,
-                            14
                         ]
                     ],
                     "validation_split": 0.2
@@ -107,12 +59,13 @@
         }
     },
     "folds": 5,
+    "outputDir": "output/c2",
     "seed": 123,
-    "version": 0.0,
+    "version": 2.0,
     "wordEmbConfig": {
-        "glove-50": "glove-6B/glove.6B.50d.txt",
         "glove-100": "glove-6B/glove.6B.100d.txt",
         "glove-200": "glove-6B/glove.6B.200d.txt",
-        "glove-300": "glove-6B/glove.6B.300d.txt"
+        "glove-300": "glove-6B/glove.6B.300d.txt",
+        "glove-50": "glove-6B/glove.6B.50d.txt"
     }
 }

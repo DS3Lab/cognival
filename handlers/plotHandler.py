@@ -11,5 +11,6 @@ def plotHandler(title, history, version, outputDir):
     plt.xlabel('epoch')
     plt.legend(['train', 'validation'], loc='upper left')
     plt.savefig(outputDir+"/"+str(version)+ '.png')
+    plt.clf()
     #plt.show()
     pass
