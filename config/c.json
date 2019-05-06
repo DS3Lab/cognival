@@ -59,9 +59,9 @@
         }
     },
     "folds": 5,
-    "outputDir": "output/c2",
+    "outputDir": "output",
     "seed": 123,
-    "version": 2.0,
+    "version": 11.0,
     "wordEmbConfig": {
         "glove-100": "glove-6B/glove.6B.100d.txt",
         "glove-200": "glove-6B/glove.6B.200d.txt",
