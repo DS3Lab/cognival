@@ -68,7 +68,6 @@ def run(config, wordEmbedding, cognitiveData, feature):
 
     timeTaken = datetime.now() - startTime
     logging["timeTaken"] = str(timeTaken)
-    print(timeTaken)
 
     return logging, word_error, history
 
@@ -117,6 +116,8 @@ def main():
             if feature == "x":
                 exit(0)
 
+    startTime = datetime.now()
+
     logging, word_error, history = run(config, wordEmbedding, cognitiveData, feature)
 
     ##############################################################################
@@ -124,6 +125,9 @@ def main():
     ##############################################################################
 
     writeResults(config,logging,word_error,history)
+
+    timeTaken = datetime.now() - startTime
+    print(timeTaken)
 
     pass
 
