@@ -6,9 +6,10 @@ fvenv
 .idea
 
 #Compiled files
-**/handlers/_pychache_
+**/handlers/__pychache__
 /handler/.DS_Store
 .DS_Store
+__pycache__
 
 #Results
 output
