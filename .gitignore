@@ -8,6 +8,7 @@ fvenv
 #Compiled files
 **/handlers/__pychache__
 /handler/.DS_Store
+/sideCode/__pycache__
 .DS_Store
 __pycache__
 
