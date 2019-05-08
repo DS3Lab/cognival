@@ -1,13 +1,9 @@
-import os
-import logging
 import argparse
-import numpy as np
 from datetime import datetime
 
 #own modules
 from handlers.dataHandler import  dataHandler
 from handlers.modelHandler import modelHandler
-from handlers.plotHandler import plotHandler
 from handlers.fileHandler import *
 
 
@@ -20,44 +16,17 @@ def handler(config, wordEmbedding, cognitiveData, feature):
     return word_error, grids_result, mserrors
 
 
-def run(configFile, wordEmbedding, cognitiveData, feature):
-
-    config = updateVersion(configFile)
+def run(config, wordEmbedding, cognitiveData, feature):
 
     ##############################################################################
-    #   Check for correct data inputs
+    #   Create logging information
     ##############################################################################
 
-    while(wordEmbedding not in config['wordEmbConfig'] ):
-        wordEmbedding = input("ERROR Please enter correct wordEmbedding:\n")
-        if wordEmbedding=="x":
-            exit(0)
+    logging = {"folds":[]}
 
-    while (cognitiveData not in config['cogDataConfig']):
-        cognitiveData = input("ERROR Please enter correct cognitive dataset:\n")
-        if cognitiveData == "x":
-            exit(0)
-
-    if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
-        while feature not in config['cogDataConfig'][cognitiveData]['features']:
-            feature = input("ERROR Please enter correct feature for specified cognitive dataset:\n")
-            if feature == "x":
-                exit(0)
-
-    ##############################################################################
-    #   Create logging information and run main program
-    ##############################################################################
-
-    #TODO: pass this to configuration file
-    outputDir = config['outputDir']
-    if not os.path.exists(outputDir):
-        os.mkdir(outputDir)
-
-    logging.basicConfig(filename=outputDir+"/"+str(+config['version'])+'.log', level=logging.DEBUG,
-                        format='%(asctime)s:%(message)s')
-    logging.info("Word Embedding: "+wordEmbedding)
-    logging.info("Cognitive Data: " + cognitiveData)
-    logging.info("Feature: "+feature)
+    logging["wordEmbedding"] = wordEmbedding
+    logging["cognitiveData"] = cognitiveData
+    logging["feature"] = feature
 
     ##############################################################################
     #   Run model
@@ -66,8 +35,6 @@ def run(configFile, wordEmbedding, cognitiveData, feature):
     startTime = datetime.now()
 
     word_error, grids_result, mserrors = handler(config, wordEmbedding, cognitiveData, feature)
-
-    np.savetxt(outputDir+"/"+str(+config['version'])+'.txt', word_error, delimiter=" ", fmt="%s")
 
     history = {'loss':[],'val_loss':[]}
     loss_list =[]
@@ -78,22 +45,19 @@ def run(configFile, wordEmbedding, cognitiveData, feature):
     ##############################################################################
 
     for i in range(len(grids_result)):
-        logging.info(" FOLD: "+str(i))
+        fold = {}
+        logging['folds'].append(fold)
         for key in grids_result[i].best_params_:
-            logging.info(key.upper())
-            logging.info(grids_result[i].best_params_[key])
-        logging.info('MSE PREDICTION:')
-        logging.info(mserrors[i])
-        logging.info('LOSS: ')
-        logging.info(grids_result[i].best_estimator_.model.history.history['loss'])
-        logging.info('VALIDATION LOSS: ')
-        logging.info(grids_result[i].best_estimator_.model.history.history['val_loss'])
+            logging['folds'][i][key.upper()] = grids_result[i].best_params_[key]
+        logging['folds'][i]['MSE_PREDICTION:'] = mserrors[i]
+        logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
+        logging['folds'][i]['VALIDATION_LOSS: '] = grids_result[i].best_estimator_.model.history.history['val_loss']
         loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['loss'],dtype='float'))
         val_loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['val_loss'], dtype='float'))
 
-    logging.info('AVERAGE MSE from all folds')
     mse = np.array(mserrors, dtype='float').mean()
-    logging.info(mse)
+    logging['AVERAGE_MSE'] = mse
+
 
     ##############################################################################
     #   Prepare results for plot
@@ -102,26 +66,10 @@ def run(configFile, wordEmbedding, cognitiveData, feature):
     history['loss'] = np.mean([loss_list[i] for i in range (len(loss_list))],axis=0)
     history['val_loss'] = np.mean([val_loss_list[i] for i in range(len(val_loss_list))], axis=0)
 
-    title = wordEmbedding+' '+cognitiveData+' '+feature
-    plotHandler(title,history,config['version'],outputDir)
-
     timeTaken = datetime.now() - startTime
-    print('\n' + str(timeTaken))
-    logging.info(" TIME TAKEN:" + str(timeTaken))
-    logging.shutdown()
+    logging["timeTaken"] = str(timeTaken)
 
-    ##############################################################################
-    #   Parallelized version
-    ##############################################################################
-
-    # result ={}
-    # result["title"] = title
-    # result["history"] = history
-    # result["version"] = config["version"]
-    # result["outputDir"] = outputDir
-
-    # return result
-    return timeTaken
+    return logging, word_error, history
 
 def main():
 
@@ -146,14 +94,40 @@ def main():
     feature = args.feature
     wordEmbedding = args.wordEmbedding
 
-    run(configFile, wordEmbedding, cognitiveData, feature)
+    config = updateVersion(configFile)
 
     ##############################################################################
-    #   Parallelized version
+    #   Check for correct data inputs
     ##############################################################################
 
-    # result = run(configFile, wordEmbedding, cognitiveData, feature)
-    # plotHandler(result['title'], result['history'], result['version'], result['outputDir'])
+    while (wordEmbedding not in config['wordEmbConfig']):
+        wordEmbedding = input("ERROR Please enter correct wordEmbedding:\n")
+        if wordEmbedding == "x":
+            exit(0)
+
+    while (cognitiveData not in config['cogDataConfig']):
+        cognitiveData = input("ERROR Please enter correct cognitive dataset:\n")
+        if cognitiveData == "x":
+            exit(0)
+
+    if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
+        while feature not in config['cogDataConfig'][cognitiveData]['features']:
+            feature = input("ERROR Please enter correct feature for specified cognitive dataset:\n")
+            if feature == "x":
+                exit(0)
+
+    startTime = datetime.now()
+
+    logging, word_error, history = run(config, wordEmbedding, cognitiveData, feature)
+
+    ##############################################################################
+    #   Saving results
+    ##############################################################################
+
+    writeResults(config,logging,word_error,history)
+
+    timeTaken = datetime.now() - startTime
+    print(timeTaken)
 
     pass
 

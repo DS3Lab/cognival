@@ -1,4 +1,7 @@
 import json
+import os
+import numpy as np
+from handlers.plotHandler import plotHandler
 
 def updateVersion(configFile):
 
@@ -19,4 +22,19 @@ def getConfig(configFile):
 
     return config
 
-# print(updateVersion('config/config.json'))
+def writeResults(config, logging, word_error, history):
+
+    if not os.path.exists(config['outputDir']):
+        os.mkdir(config['outputDir'])
+
+    outputDir = config['outputDir']+"/"+str(config['version'])
+    if not os.path.exists(outputDir):
+        os.mkdir(outputDir)
+
+    with open(outputDir+"/"+str(config['version'])+'.json','w') as fileWriter:
+        json.dump(logging,fileWriter,indent=4, sort_keys=True)
+
+    np.savetxt(outputDir + "/" + str(+config['version']) + '.txt', word_error, delimiter=" ", fmt="%s")
+
+    title = logging["wordEmbedding"]+' '+logging["cognitiveData"]+' '+logging["feature"]
+    plotHandler(title,history,config['version'],outputDir)

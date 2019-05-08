@@ -1,26 +1,28 @@
 import json
 import os
+import sys
 from multiprocessing import Pool, Lock
 from datetime import  datetime
 import script
-from handlers.plotHandler import plotHandler
+from handlers.fileHandler import getConfig
+from handlers.fileHandler import *
 from sideCode.animatedLoading import animatedLoading
 
+#TODO: clear all WARNINGS!
 
 
 def main(controllerConfig):
 
-    #TODO: SOLVE PROBLEM WITH LOGGING
-
-    #TODO: logging, writing to file and ploting not safe inside controller nor parallelize
-    #TODO: logging, writing to file and plotting outside of main
-
-    # lock = Lock()
+    #TODO: change this and lock print
+    f = open(os.devnull, 'w')
+    sys.stdout = f
 
     startTime = datetime.now()
 
     with open(controllerConfig, 'r') as fileReader:
         data = json.load(fileReader)
+
+    config = getConfig(data["configFile"])
 
     options = []
     #GENERATE all possible case scenarios:
@@ -33,35 +35,57 @@ def main(controllerConfig):
                 option["wordEmbedding"]=wordEmbedding
                 options.append(option)
 
-    for option in options:
-        script.run(data["configFile"],option['wordEmbedding'],option['cognitiveData'],option['feature'])
+    loggings = []
+    word_errors = []
+    histories = []
+
+    ##############################################################################
+    #   Serialized version
+    ##############################################################################
+
+    # for option in options:
+    #     logging, word_error, history = script.run(config,option['wordEmbedding'],option['cognitiveData'],option['feature'])
+    #     loggings.append(logging)
+    #     word_errors.append(word_error)
+    #     histories.append(history)
+
 
     ##############################################################################
     #   Parallelized version
     ##############################################################################
 
-    # pool = Pool(processes=os.cpu_count())
-    # async_results = [pool.apply_async(script.run,args=(data["configFile"],
-    #                                        options[i]["wordEmbedding"],
-    #                                        options[i]["cognitiveData"],
-    #                                        options[i]["feature"])) for i in range(len(options))]
-    # pool.close()
-    # pool.join()
+    pool = Pool(processes=os.cpu_count())
+    async_results = [pool.apply_async(script.run,args=(config,
+                                           options[i]["wordEmbedding"],
+                                           options[i]["cognitiveData"],
+                                           options[i]["feature"])) for i in range(len(options))]
+    pool.close()
+    pool.join()
 
-
+    #TODO: lock print to only this and final time output
     # while(async_results[len(async_results)-1].ready()!=True):
-    #     lock.acquire()
+    #     # lock.acquire()
     #     animatedLoading()
-    #     lock.release()
+    #     # lock.release()
 
-    # results = [p.get() for p in async_results]
 
-    # for result in results:
-    #     plotHandler(result['title'], result['history'], result['version'], result['outputDir'])
+    for p in async_results:
+        logging, word_error, history = p.get()
+        loggings.append(logging)
+        word_errors.append(word_error)
+        histories.append(history)
+
+
+    ##############################################################################
+    #   Store results
+    ##############################################################################
+
+    for i in range(0,len(loggings)):
+        writeResults(updateVersion(data["configFile"]),loggings[i],word_errors[i],histories[i])
+
 
     timeTaken = datetime.now() - startTime
     print('\n' + str(timeTaken))
-    # print(results)
 
     pass
 
