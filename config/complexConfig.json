@@ -1,6 +1,6 @@
 {
     "PATH": "../datasets/",
-    "outputDir": "output/config",
+    "outputDir": "gaze/",
     "cogDataConfig": {
         "dundee": {
             "dataset": "dundee/dundee_scaled.txt",

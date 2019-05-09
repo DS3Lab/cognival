@@ -59,9 +59,9 @@
         }
     },
     "folds": 5,
-    "outputDir": "test4",
+    "outputDir": "test2",
     "seed": 123,
-    "version": 56.0,
+    "version": 1.0,
     "wordEmbConfig": {
         "glove-100": "embeddings/glove-6B/glove.6B.100d.txt",
         "glove-200": "embeddings/glove-6B/glove.6B.200d.txt",

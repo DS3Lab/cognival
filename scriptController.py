@@ -1,7 +1,7 @@
 import json
 import os
 import sys
-from multiprocessing import Pool, Lock
+from multiprocessing import Pool
 from datetime import  datetime
 import script
 from handlers.fileHandler import getConfig
@@ -12,10 +12,6 @@ from sideCode.animatedLoading import animatedLoading
 
 
 def main(controllerConfig):
-
-    #TODO: change this and lock print
-    f = open(os.devnull, 'w')
-    sys.stdout = f
 
     startTime = datetime.now()
 
@@ -44,6 +40,8 @@ def main(controllerConfig):
     ##############################################################################
 
     # for option in options:
+    #     print("OPTION\n")
+    #     print(option)
     #     logging, word_error, history = script.run(config,option['wordEmbedding'],option['cognitiveData'],option['feature'])
     #     loggings.append(logging)
     #     word_errors.append(word_error)
@@ -60,14 +58,12 @@ def main(controllerConfig):
                                            options[i]["cognitiveData"],
                                            options[i]["feature"])) for i in range(len(options))]
     pool.close()
+
+    while (False in [async_results[i].ready() == True for i in range(len(async_results))]):
+        completed = [async_results[i].ready() == True for i in range(len(async_results))].count(True)
+        animatedLoading(completed, len(async_results))
+
     pool.join()
-
-    #TODO: lock print to only this and final time output
-    # while(async_results[len(async_results)-1].ready()!=True):
-    #     # lock.acquire()
-    #     animatedLoading()
-    #     # lock.release()
-
 
     for p in async_results:
         logging, word_error, history = p.get()

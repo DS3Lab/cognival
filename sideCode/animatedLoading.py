@@ -2,10 +2,11 @@ import sys
 import time
 
 #animation to know when script is running
-def animatedLoading():
+def animatedLoading(completed, total):
 	chars = "/-\|"
 	for char in chars:
 		sys.stdout.write('\r'+'loading...'+char)
+		sys.stdout.write('\tcompleted: '+str(completed)+"/"+str(total))
 		time.sleep(.1)
 		sys.stdout.flush()
 

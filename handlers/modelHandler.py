@@ -1,6 +1,7 @@
 from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dense, Activation
 from keras.activations import relu, linear
+import keras.backend
 from keras.wrappers.scikit_learn import KerasRegressor
 from sklearn.model_selection import GridSearchCV
 import numpy as np
@@ -36,7 +37,7 @@ def modelCV(model_constr,config, X_train,y_train):
                       batch_size=config["batch_size"], epochs=config["epochs"])
 
     grid = GridSearchCV(estimator=model,param_grid=param_grid,scoring='neg_mean_squared_error')
-    grid_result = grid.fit(X_train,y_train, verbose=1, validation_split=config["validation_split"])
+    grid_result = grid.fit(X_train,y_train, verbose=0, validation_split=config["validation_split"])
 
     return grid, grid_result
 
@@ -60,5 +61,5 @@ def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
         mse, w_e = modelPredict(grid,words_test[i],X_test[i],y_test[i])
         mserrors.append(mse)
         word_error = np.vstack([word_error,w_e])
-
     return word_error, grids_result, mserrors
+

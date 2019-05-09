@@ -79,7 +79,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("configFile", help="path and name of configuration file",
-                        nargs='?', default='config/c.json')
+                        nargs='?', default='config/simpleConfig.json')
     parser.add_argument("-c", "--cognitiveData", type=str, default=None,
                         help="cognitiveData to train the model")
     parser.add_argument("-f", "--feature", type=str,
