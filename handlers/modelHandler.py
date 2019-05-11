@@ -23,7 +23,7 @@ def create_model(layers, activation, input_dim):
     #TODO: check last layer for multidimensional output
     model.add(Dense(1, activation='linear'))
 
-    model.summary()
+    #model.summary()
     model.compile(loss='mse',optimizer='adam')
 
     return model
@@ -36,7 +36,7 @@ def modelCV(model_constr,config, X_train,y_train):
     param_grid = dict(layers=config["layers"], activation=config["activations"],input_dim=[X_train.shape[1]],
                       batch_size=config["batch_size"], epochs=config["epochs"])
 
-    grid = GridSearchCV(estimator=model,param_grid=param_grid,scoring='neg_mean_squared_error')
+    grid = GridSearchCV(estimator=model,param_grid=param_grid,scoring='neg_mean_squared_error', cv=config['cv_split'])
     grid_result = grid.fit(X_train,y_train, verbose=0, validation_split=config["validation_split"])
 
     return grid, grid_result

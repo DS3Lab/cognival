@@ -38,3 +38,19 @@ def writeResults(config, logging, word_error, history):
 
     title = logging["wordEmbedding"]+' '+logging["cognitiveData"]+' '+logging["feature"]
     plotHandler(title,history,config['version'],outputDir)
+
+    pass
+
+def writeOptions(config, options):
+
+    outputDir = config['outputDir']
+
+    if not os.path.exists(outputDir):
+        os.mkdir(outputDir)
+
+
+    with open(outputDir+"/options"+'.txt','w') as fileWriter:
+        for item in options:
+            fileWriter.write("%s\r\n" %item)
+
+    pass

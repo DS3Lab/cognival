@@ -1,5 +1,5 @@
 {
-    "configFile": "config/c.json",
+    "configFile": "config/simpleConfig.json",
     "cognitiveData": {
       "dundee": {
         "features": ["First_fix_dur",

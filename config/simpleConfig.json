@@ -1,5 +1,5 @@
 {
-    "PATH": "../datasets/",
+    "PATH": "~/Dropbox/university/ETH/4fs/projektArbeit/datasets/",
     "cogDataConfig": {
         "dundee": {
             "dataset": "cognitive-data/gaze/dundee/dundee_scaled.txt",
@@ -36,7 +36,8 @@
                             50
                         ]
                     ],
-                    "validation_split": 0.2
+                    "validation_split": 0.2,
+                    "cv_split": 3
                 },
                 "glove-50": {
                     "activations": [
@@ -53,19 +54,23 @@
                             26
                         ]
                     ],
-                    "validation_split": 0.2
+                    "validation_split": 0.2,
+                    "cv_split": 3
                 }
             }
         }
     },
     "folds": 5,
-    "outputDir": "test2",
+    "outputDir": "gaze",
     "seed": 123,
-    "version": 1.0,
+    "version": 0.0,
     "wordEmbConfig": {
         "glove-100": "embeddings/glove-6B/glove.6B.100d.txt",
         "glove-200": "embeddings/glove-6B/glove.6B.200d.txt",
         "glove-300": "embeddings/glove-6B/glove.6B.300d.txt",
-        "glove-50": "embeddings/glove-6B/glove.6B.50d.txt"
+        "glove-50": "embeddings/glove-6B/glove.6B.50d.txt",
+        "word2vec": "embeddings/word2vec/",
+        "wordnet2vec": "embeddings/wordnet2vec/wnet2vec_brain.txt",
+        "fasttext": "embeddings/fasttext/"
     }
 }
