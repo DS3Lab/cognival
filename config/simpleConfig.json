@@ -34,7 +34,7 @@
                     "layers": [
                         [
                             50
-                        ]
+                        ],[30]
                     ],
                     "validation_split": 0.2,
                     "cv_split": 3
@@ -56,9 +56,1080 @@
                     ],
                     "validation_split": 0.2,
                     "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
                 }
+
+            }
+        },
+        "zuco": {
+            "dataset": "cognitive-data/gaze/zuco/zuco_scaled.txt",
+            "features": [
+                 "nFixations",
+                  "FFD",
+                   "GD",
+                    "GPT",
+                     "TRT"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[30]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                }
+
+            }
+        },
+        "ucl": {
+            "dataset": "cognitive-data/gaze/ucl/ucl_scaled.txt",
+            "features": [
+                "RTfirstfix",
+                 "RTfirstpass",
+                  "RTgopast",
+                   "RTrightbound"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[30]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                }
+
+            }
+        },
+        "provo": {
+            "dataset": "cognitive-data/gaze/provo/provo_scaled.txt",
+            "features": [
+                "IA_FIRST_FIXATION_DURATION",
+                "IA_FIRST_RUN_DWELL_TIME",
+                 "IA_FIRST_RUN_FIXATION_COUNT",
+                 "IA_DWELL_TIME",
+                 "IA_FIXATION_COUNT",
+                 "IA_SKIP",
+                 "IA_REGRESSION_IN_COUNT",
+                 "IA_REGRESSION_OUT_COUNT",
+                 "IA_REGRESSION_OUT_FULL_COUNT",
+                  "IA_REGRESSION_PATH_DURATION"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[30]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                }
+
+            }
+        },
+        "geco": {
+            "dataset": "cognitive-data/gaze/geco/geco_scaled.txt",
+            "features": [
+                "WORD_FIXATION_COUNT",
+                "WORD_GAZE_DURATION",
+                "WORD_FIRST_FIXATION_DURATION",
+                 "WORD_LAST_FIXATION_DURATION",
+                 "WORD_GO_PAST_TIME",
+                 "WORD_TOTAL_READING_TIME",
+                  "WORD_SKIP"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[30]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                }
+
+            }
+        },
+        "cfilt-sarcasm": {
+            "dataset": "cognitive-data/gaze/cfilt/cfilt-sarcasm_scaled.txt",
+            "features": [
+                "Fixation_Duration"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[30]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                }
+
+            }
+        },
+        "cfilt-scanpath": {
+            "dataset": "cognitive-data/gaze/cfilt/cfilt-scanpath_scaled.txt",
+            "features": [
+                "Fixation_Duration"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[30]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                }
+
+            }
+        },
+        "all": {
+            "dataset": "cognitive-data/gaze/all/all_scaled.txt",
+            "features": [
+                "ffd",
+                "fpd",
+                "tfd",
+                "nfix",
+                "mfd",
+                "gpt"
+            ],
+            "type": "single_output",
+            "wordEmbSpecifics": {
+                "glove-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[30]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],[50]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "glove-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-crawl": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],[150]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                },
+                "wordnet2vec": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],[200]
+                    ],
+                    "validation_split": 0.2,
+                    "cv_split": 3
+                }
+
             }
         }
+
     },
     "folds": 5,
     "outputDir": "gaze",
@@ -71,6 +1142,9 @@
         "glove-50": "embeddings/glove-6B/glove.6B.50d.txt",
         "word2vec": "embeddings/word2vec/",
         "wordnet2vec": "embeddings/wordnet2vec/wnet2vec_brain.txt",
-        "fasttext": "embeddings/fasttext/"
+        "fasttext-crawl": "embeddings/fasttext/crawl-300d-2M.vec",
+	"fasttext-wiki-news":"embeddings/fasttext/wiki-news-300d-1M.vec",
+	"elmo":"embeddings/elmo",
+	"bert":"embeddings/bert"
     }
 }

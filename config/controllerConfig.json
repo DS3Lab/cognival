@@ -19,5 +19,5 @@
               ]
       }
     },
-  "wordEmbeddings": ["glove-50","glove-100"]
+  "wordEmbeddings": ["glove-50","glove-100","glove-200","glove-300","wordnet2vec","fasttext-crawl","fasttext-wiki-news"]
 }
