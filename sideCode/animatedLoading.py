@@ -6,7 +6,7 @@ def animatedLoading(completed, total):
 	chars = "/-\|"
 	for char in chars:
 		sys.stdout.write('\r'+'loading...'+char)
-		sys.stdout.write('\tcompleted: '+str(completed)+"/"+str(total))
+		sys.stdout.write('\t'+str(completed)+"/"+str(total))
 		time.sleep(.1)
 		sys.stdout.flush()
 

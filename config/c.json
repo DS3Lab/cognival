@@ -1,0 +1,20 @@
+{
+    "configFile": "config/setupConfig.json",
+    "cognitiveData": {
+      "provo": {
+        "features": [
+                "IA_FIRST_FIXATION_DURATION",
+                "IA_FIRST_RUN_DWELL_TIME",
+                 "IA_FIRST_RUN_FIXATION_COUNT",
+                 "IA_DWELL_TIME",
+                 "IA_FIXATION_COUNT",
+                 "IA_SKIP",
+                 "IA_REGRESSION_IN_COUNT",
+                 "IA_REGRESSION_OUT_COUNT",
+                 "IA_REGRESSION_OUT_FULL_COUNT",
+                  "IA_REGRESSION_PATH_DURATION"
+            ]
+      }
+    },
+  "wordEmbeddings": ["wordnet2vec"]
+}

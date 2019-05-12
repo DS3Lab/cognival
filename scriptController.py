@@ -89,8 +89,8 @@ def main(controllerConfig):
 
 
 if __name__=="__main__":
-    main("config/controllerConfig.json")
-
+    #main("config/controllerConfig.json")
+    main("config/c.json")
 
 
 

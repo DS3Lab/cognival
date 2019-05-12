@@ -48,9 +48,11 @@ def writeOptions(config, options):
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
 
+    all_runs = {}
+    for i, item in enumerate(options):
+        all_runs[i]=item
 
-    with open(outputDir+"/options"+'.txt','w') as fileWriter:
-        for item in options:
-            fileWriter.write("%s\r\n" %item)
+    with open(outputDir+"/options"+'.json','w') as fileWriter:
+        json.dump(all_runs,fileWriter, indent=4,sort_keys=True)
 
     pass
