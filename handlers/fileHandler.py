@@ -50,7 +50,7 @@ def writeOptions(config, options,loggings):
 
     all_runs = {}
     for i, item in enumerate(options):
-        item["AVERAGE_MSE"] = loggings["AVERAGE_MSE"]
+        item["AVERAGE_MSE"] = loggings[i]["AVERAGE_MSE"]
         all_runs[i]=item
 
     with open(outputDir+"/options"+'.json','w') as fileWriter:
