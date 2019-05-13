@@ -79,7 +79,7 @@ def main(controllerConfig):
     for i in range(0,len(loggings)):
         writeResults(updateVersion(data["configFile"]),loggings[i],word_errors[i],histories[i])
 
-    writeOptions(config,options)
+    writeOptions(config,options,loggings)
 
     timeTaken = datetime.now() - startTime
     print('\n' + str(timeTaken))
