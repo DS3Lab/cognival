@@ -5,12 +5,18 @@ from sklearn.model_selection import KFold
 
 
 def dataHandler(config, wordEmbedding, cognitiveData, feature):
-    #TODO: write code for Multidimensional
 
     # READ Datasets into dataframes
     df_cD = pd.read_csv(config['PATH'] + config['cogDataConfig'][cognitiveData]['dataset'], sep=" ")
     df_wE = pd.read_csv(config['PATH'] + config['wordEmbConfig'][wordEmbedding], sep=" ",
                         encoding="utf-8", quoting=csv.QUOTE_NONE)
+
+    # In case it's a single output cogData we just need the single feature
+    if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
+        df_cD = df_cD[['word',feature]]
+    df_cD.dropna(inplace=True)
+
+    #TODO: solve MemoryError
 
     # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
     df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
@@ -24,13 +30,16 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
     if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
         y = df_join[feature]
         y = np.array(y, dtype='float').reshape(-1, 1)
-    else:
-        print("NON EXISTENT CODE, please return later")
-        exit(0)
 
-    features = config['cogDataConfig'][cognitiveData]['features']
-    X = df_join.drop(features, axis=1)
-    X = np.array(X, dtype='float')
+        X = df_join.drop(feature, axis=1)
+        X = np.array(X, dtype='float')
+    else:
+        features = config['cogDataConfig'][cognitiveData]['features']
+        y = df_join[features]
+        y = np.array(y, dtype='float')
+
+        X = df_join.drop(features, axis=1)
+        X = np.array(X, dtype='float')
 
     return split_folds(words ,X,y, config["folds"], config["seed"] )
 
