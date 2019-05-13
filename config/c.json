@@ -16,5 +16,5 @@
             ]
       }
     },
-  "wordEmbeddings": ["wordnet2vec"]
+  "wordEmbeddings": ["word2vec","fasttext-crawl","elmo","bert-base"]
 }
