@@ -49,7 +49,7 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
         else:
             if i == chunk_number - 1:
                 end = end + rest
-            update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape(1))
+            update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape[1])
 
     # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
     #df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
