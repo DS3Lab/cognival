@@ -10,6 +10,16 @@ def createTable(CONFIG):
     print(header)
     index1 = []
     index2 = []
+    for cD in config["cogDataConfig"]:
+    	for feature in config["cogDataConfig"][cD]["features"]:
+    		index1.append(cD)
+    		index2.append(feature)
+    index = [index1,index2]	
+    
+    setup = {header[j]:[np.NaN for i in range(len(index2)) ] for j in range(len(header))} 
+    df = pd.DataFrame(setup,index)
+    print(df)	
+    
     pass
 
 def fillTable(PATH, table):
