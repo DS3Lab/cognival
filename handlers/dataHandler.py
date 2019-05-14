@@ -55,7 +55,6 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
     #df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
 
     df_join.dropna(inplace=True)
-    print(df_join)
 
     words = df_join['word']
     words = np.array(words, dtype='str').reshape(-1,1)
