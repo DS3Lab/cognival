@@ -13,6 +13,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -118,6 +181,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -135,24 +216,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -177,71 +240,7 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         },
         "cfilt-sarcasm": {
@@ -251,6 +250,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -356,6 +418,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -373,24 +453,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -415,71 +477,7 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         },
         "cfilt-scanpath": {
@@ -489,6 +487,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -594,6 +655,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -611,24 +690,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -653,71 +714,7 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         },
         "dundee": {
@@ -740,6 +737,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -845,6 +905,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -862,24 +940,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -904,71 +964,7 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         },
         "geco": {
@@ -984,6 +980,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -1089,6 +1148,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -1106,24 +1183,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -1148,71 +1207,7 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         },
         "provo": {
@@ -1231,6 +1226,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -1336,6 +1394,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -1353,24 +1429,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -1395,71 +1453,7 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         },
         "ucl": {
@@ -1472,6 +1466,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -1577,6 +1634,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -1594,24 +1669,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -1636,71 +1693,7 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         },
         "zuco": {
@@ -1714,6 +1707,69 @@
             ],
             "type": "single_output",
             "wordEmbSpecifics": {
+                "bert-base": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "bert-large": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "elmo": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-crawl": {
                     "activations": [
                         "relu"
@@ -1819,6 +1875,24 @@
                     ],
                     "validation_split": 0.2
                 },
+                "glove-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -1836,24 +1910,6 @@
                         ],
                         [
                             150
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "glove-50": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            26
                         ]
                     ],
                     "validation_split": 0.2
@@ -1878,76 +1934,12 @@
                         ]
                     ],
                     "validation_split": 0.2
-                },
-                "elmo": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-base": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            400
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
-                },
-                "bert-large": {
-                    "activations": [
-                        "relu"
-                    ],
-                    "batch_size": [
-                        128
-                    ],
-                    "cv_split": 3,
-                    "epochs": [
-                        100
-                    ],
-                    "layers": [
-                        [
-                            600
-                        ],
-                        [
-                            200
-                        ]
-                    ],
-                    "validation_split": 0.2
                 }
-
             }
         }
     },
     "folds": 5,
-    "outputDir": "test_final",
+    "outputDir": "gaze",
     "seed": 123,
     "version": 0.0,
     "wordEmbConfig": {
