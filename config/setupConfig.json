@@ -1939,7 +1939,7 @@
         }
     },
     "folds": 5,
-    "outputDir": "gaze",
+    "outputDir": "all",
     "seed": 123,
     "version": 0.0,
     "wordEmbConfig": {
