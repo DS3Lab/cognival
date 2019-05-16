@@ -3,14 +3,9 @@
     "cognitiveData": {
       "all": {
         "features": [
-                 "ffd",
-                "fpd",
-                "tfd",
-                "nfix",
-                "mfd",
-                "gpt"
+                 "ffd"
             ]
       }
     },
-  "wordEmbeddings": ["bert-base"]
+  "wordEmbeddings": ["word2vec"]
 }

@@ -1941,7 +1941,7 @@
     "folds": 5,
     "outputDir": "all",
     "seed": 123,
-    "version": 0.0,
+    "version": 12.0,
     "wordEmbConfig": {
         "bert-base": "embeddings/bert/bert_base_all.txt",
         "bert-large": "embeddings/bert/bert_large_all.txt",

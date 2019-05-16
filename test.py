@@ -42,21 +42,36 @@ def dataHandler(wEmb, cogData, feature, dim,config):
     print(df_cD.shape)
 
     # # Create chunks of df to perform 'MemorySafe'-join
-    chunk_number = 10
-    df_join = df_cD
-    rows = df_wE.shape[0]
-    chunk_size = rows // chunk_number
-    rest = rows % chunk_number
-    for i in range(0, chunk_number):
-        begin = chunk_size * i
-        end = chunk_size * (i + 1)
-        if i == 0:
-            df_join = pd.merge(df_join, df_wE.iloc[begin:end, :], how='left', on=['word'])
-        else:
-            if i == chunk_number - 1:
-                end = end + rest
-            update(df_join, df_wE.iloc[begin:end, :], on_column=['word'],columns_to_omit=2)
+    # chunk_number = 10
+    # df_join = df_cD
+    # rows = df_wE.shape[0]
+    # chunk_size = rows // chunk_number
+    # rest = rows % chunk_number
+    # for i in range(0, chunk_number):
+    #     begin = chunk_size * i
+    #     end = chunk_size * (i + 1)
+    #     if i == 0:
+    #         df_join = pd.merge(df_join, df_wE.iloc[begin:end, :], how='left', on=['word'])
+    #     else:
+    #         if i == chunk_number - 1:
+    #             end = end + rest
+    #         update(df_join, df_wE.iloc[begin:end, :], on_column=['word'],columns_to_omit=2)
 
+    # #Join from chunked FILE
+    df_join = df_cD
+    chunk_number = 4
+    file = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/glove-6B/test"
+    end = ".csv"
+    for i in range(0,chunk_number):
+        df = pd.read_csv(file + str(i) + end, sep=" ",
+                        encoding="utf-8", quoting=csv.QUOTE_NONE)
+        print(df.shape)
+        df.drop(df.columns[0],axis=1,inplace=True)
+        if i == 0:
+
+            df_join = pd.merge(df_join, df, how='left', on=['word'])
+        else:
+            update(df_join, df, on_column=['word'],columns_to_omit=2)
         
      
     # # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
@@ -88,17 +103,18 @@ def dataHandler(wEmb, cogData, feature, dim,config):
     # print(words)
     # print(y)
     # print(X)
+    print(df_join)
     print(df_join.shape)
     print('SUCCESS')
 
     return 0
 
 def main():
-    emb = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/fasttext/crawl-300d-2M.vec"
+    #emb = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/fasttext/crawl-300d-2M.vec"
     #emb = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/word2vec/word2vec.txt"
     #emb = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/fasttext/wiki-news-300d-1M.vec"
     #emb = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/wordnet2vec/wnet2vec_brain.txt"
-    #emb = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/glove-6B/glove.6B.50d.txt"
+    emb = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/embeddings/glove-6B/glove.6B.50d.txt"
     all_data = "/home/delatvan/Dropbox/university/ETH/4fs/projektArbeit/datasets/cognitive-data/gaze/all/all_scaled.txt"
     config =["ffd","fpd","tfd", "nfix","mfd","gpt"]
     dataHandler(emb,all_data,"ffd",dim='single', config=config)
