@@ -36,23 +36,23 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
     df_cD.dropna(inplace=True)
 
     # # Create chunks of df to perform 'MemorySafe'-join
-    chunk_number = 10
-    df_join = df_cD
-    rows = df_wE.shape[0]
-    chunk_size = rows // chunk_number
-    rest = rows % chunk_number
-    for i in range(0, chunk_number):
-        begin = chunk_size * i
-        end = chunk_size * (i + 1)
-        if i == 0:
-            df_join = pd.merge(df_join, df_wE.iloc[begin:end, :], how='left', on=['word'])
-        else:
-            if i == chunk_number - 1:
-                end = end + rest
-            update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape[1])
+    # chunk_number = 4
+    # df_join = df_cD
+    # rows = df_wE.shape[0]
+    # chunk_size = rows // chunk_number
+    # rest = rows % chunk_number
+    # for i in range(0, chunk_number):
+    #     begin = chunk_size * i
+    #     end = chunk_size * (i + 1)
+    #     if i == 0:
+    #         df_join = pd.merge(df_join, df_wE.iloc[begin:end, :], how='left', on=['word'])
+    #     else:
+    #         if i == chunk_number - 1:
+    #             end = end + rest
+    #         update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape[1])
 
     # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
-    #df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
+    df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
 
     df_join.dropna(inplace=True)
 

@@ -1,5 +1,5 @@
 {
-    "PATH": "~/Dropbox/university/ETH/4fs/projektArbeit/datasets/",
+    "PATH": "/mnt/ds3lab-scratch/antonide/datasets/",
     "cogDataConfig": {
         "all": {
             "dataset": "cognitive-data/gaze/all/all_scaled.txt",
@@ -1939,7 +1939,7 @@
         }
     },
     "folds": 5,
-    "outputDir": "all",
+    "outputDir": "dundee",
     "seed": 123,
     "version": 0.0,
     "wordEmbConfig": {
