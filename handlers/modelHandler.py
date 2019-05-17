@@ -6,7 +6,7 @@ from keras.wrappers.scikit_learn import KerasRegressor
 from sklearn.model_selection import GridSearchCV
 import numpy as np
 
-def create_model(layers, activation, input_dim):
+def create_model(layers, activation, input_dim, output_dim):
     '''
 
     :param layers: [hiddenlayer1_nodes,hiddenlayer2_nodes,...]
@@ -21,7 +21,7 @@ def create_model(layers, activation, input_dim):
         else:
             model.add(Dense(nodes, activation=activation))
     #TODO: check last layer for multidimensional output
-    model.add(Dense(1, activation='linear'))
+    model.add(Dense(output_dim, activation='linear'))
 
     #model.summary()
     model.compile(loss='mse',optimizer='adam')
@@ -34,7 +34,7 @@ def modelCV(model_constr,config, X_train,y_train):
     model = KerasRegressor(build_fn=model_constr, verbose=0)
 
     param_grid = dict(layers=config["layers"], activation=config["activations"],input_dim=[X_train.shape[1]],
-                      batch_size=config["batch_size"], epochs=config["epochs"])
+                      output_dim=[y_train.shape[1]] ,batch_size=config["batch_size"], epochs=config["epochs"])
 
     grid = GridSearchCV(estimator=model,param_grid=param_grid,scoring='neg_mean_squared_error', cv=config['cv_split'])
     grid_result = grid.fit(X_train,y_train, verbose=0, validation_split=config["validation_split"])
