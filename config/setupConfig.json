@@ -1989,7 +1989,7 @@
             "path": "embeddings/word2vec/word2vec.txt",
             "chunked": 1,
             "chunk_number": 4,
-            "chunked_file": "embeddings/word3vec/word2vec",
+            "chunked_file": "embeddings/word2vec/word2vec",
             "ending": ".txt"
         },
         "wordnet2vec":{
