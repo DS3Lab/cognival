@@ -1995,6 +1995,6 @@
         "wordnet2vec":{
             "path": "embeddings/wordnet2vec/wnet2vec_brain.txt",
             "chunked": 0
-        },
+        }
     }
 }

@@ -16,7 +16,6 @@ def updateVersion(configFile):
     return config
 
 def getConfig(configFile):
-    print(configFile)
     with open(configFile, 'r') as fileReader:
         config = json.load(fileReader)
 

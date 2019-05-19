@@ -15,11 +15,9 @@ def main(controllerConfig):
 
     startTime = datetime.now()
 
-    print(controllerConfig)
     with open(controllerConfig, 'r') as fileReader:
         data = json.load(fileReader)
 
-    print(data)
     config = getConfig(data["configFile"])
 
     options = []
@@ -88,7 +86,6 @@ def main(controllerConfig):
     print('\n' + str(timeTaken))
 
     pass
-
 
 
 if __name__=="__main__":
