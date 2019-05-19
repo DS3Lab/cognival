@@ -52,7 +52,8 @@ def main(controllerConfig):
     #   Parallelized version
     ##############################################################################
 
-    pool = Pool(processes=os.cpu_count())
+    #os.cpu_count()
+    pool = Pool(processes=10)
     async_results = [pool.apply_async(script.run,args=(config,
                                            options[i]["wordEmbedding"],
                                            options[i]["cognitiveData"],
