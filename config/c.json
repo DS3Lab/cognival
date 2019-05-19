@@ -3,7 +3,12 @@
     "cognitiveData": {
       "all": {
         "features": [
-                 "ffd"
+                 "ffd",
+                "fpd",
+                "tfd",
+                "nfix",
+                "mfd",
+                "gpt"
             ]
       }
     },
