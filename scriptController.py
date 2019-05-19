@@ -77,7 +77,8 @@ def main(controllerConfig):
     ##############################################################################
 
     for i in range(0,len(loggings)):
-        writeResults(updateVersion(data["configFile"]),loggings[i],word_errors[i],histories[i])
+        writeResults(getConfig(data["configFile"]),loggings[i],word_errors[i],histories[i])
+        updateVersion(data["configFile"])
 
     writeOptions(config,options,loggings)
 

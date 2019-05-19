@@ -27,17 +27,19 @@ def writeResults(config, logging, word_error, history):
     if not os.path.exists(config['outputDir']):
         os.mkdir(config['outputDir'])
 
-    outputDir = config['outputDir']+"/"+str(config['version'])
+    title = logging["cognitiveData"] + '_' + logging["feature"] + '_' + logging["wordEmbedding"]
+
+    outputDir = config['outputDir']+"/"+title
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
 
-    with open(outputDir+"/"+str(config['version'])+'.json','w') as fileWriter:
+    with open(outputDir+"/"+title+'.json','w') as fileWriter:
         json.dump(logging,fileWriter,indent=4, sort_keys=True)
 
-    np.savetxt(outputDir + "/" + str(+config['version']) + '.txt', word_error, delimiter=" ", fmt="%s")
+    np.savetxt(outputDir + "/" + title + '.txt', word_error, delimiter=" ", fmt="%s")
 
-    title = logging["wordEmbedding"]+' '+logging["cognitiveData"]+' '+logging["feature"]
-    plotHandler(title,history,config['version'],outputDir)
+
+    plotHandler(title,history,outputDir)
 
     pass
 
