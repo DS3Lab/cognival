@@ -1943,16 +1943,58 @@
     "seed": 123,
     "version": 0.0,
     "wordEmbConfig": {
-        "bert-base": "embeddings/bert/bert_base_all.txt",
-        "bert-large": "embeddings/bert/bert_large_all.txt",
-        "elmo": "embeddings/elmo/elmo_contextInsensitive_all.txt",
-        "fasttext-crawl": "embeddings/fasttext/crawl-300d-2M.vec",
-        "fasttext-wiki-news": "embeddings/fasttext/wiki-news-300d-1M.vec",
-        "glove-100": "embeddings/glove-6B/glove.6B.100d.txt",
-        "glove-200": "embeddings/glove-6B/glove.6B.200d.txt",
-        "glove-300": "embeddings/glove-6B/glove.6B.300d.txt",
-        "glove-50": "embeddings/glove-6B/glove.6B.50d.txt",
-        "word2vec": "embeddings/word2vec/word2vec.txt",
-        "wordnet2vec": "embeddings/wordnet2vec/wnet2vec_brain.txt"
+        "bert-base": {
+            "path": "embeddings/bert/bert_base_all.txt",
+            "chunked": 0
+        },
+        "bert-large": {
+            "path": "embeddings/bert/bert_large_all.txt",
+            "chunked": 0
+        },
+        "elmo": {
+            "path": "embeddings/elmo/elmo_contextInsensitive_all.txt",
+            "chunked": 0
+        },
+        "fasttext-crawl": {
+            "path": "embeddings/fasttext/crawl-300d-2M.vec",
+            "chunked": 1,
+            "chunk_number": 4,
+            "chunked_file": "embeddings/fasttext/crawl",
+            "ending": ".txt"
+        },
+        "fasttext-wiki-news": {
+            "path": "embeddings/fasttext/wiki-news-300d-1M.vec",
+            "chunked": 1,
+            "chunk_number": 4,
+            "chunked_file": "embeddings/fasttext/wiki-news",
+            "ending": ".txt"
+        },
+        "glove-100":{
+            "path": "embeddings/glove-6B/glove.6B.100d.txt",
+            "chunked": 0
+        },
+        "glove-200":{
+            "path": "embeddings/glove-6B/glove.6B.200d.txt",
+            "chunked": 0
+        },
+        "glove-300":{
+            "path": "embeddings/glove-6B/glove.6B.300d.txt",
+            "chunked": 0
+        },
+        "glove-50":{
+            "path": "embeddings/glove-6B/glove.6B.50d.txt",
+            "chunked": 0
+        },
+        "word2vec": {
+            "path": "embeddings/word2vec/word2vec.txt",
+            "chunked": 1,
+            "chunk_number": 4,
+            "chunked_file": "embeddings/word3vec/word2vec",
+            "ending": ".txt"
+        },
+        "wordnet2vec":{
+            "path": "embeddings/wordnet2vec/wnet2vec_brain.txt",
+            "chunked": 0
+        },
     }
 }
