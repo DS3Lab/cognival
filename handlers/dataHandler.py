@@ -52,7 +52,7 @@ def multiJoin(config, df_cD, wordEmbedding):
         if i == 0:
             df_join = pd.merge(df_join, df, how='left', on=['word'])
         else:
-            update(df_join, df, on_column=['word'], columns_to_omit=2)
+            update(df_join, df, on_column=['word'], columns_to_omit=2, whole_row=True)
 
     return df_join
 
