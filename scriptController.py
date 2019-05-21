@@ -1,5 +1,6 @@
 import json
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='3'  #disable tensorflow debugging
 import sys
 from multiprocessing import Pool
 from datetime import  datetime
@@ -41,7 +42,7 @@ def main(controllerConfig):
     word_errors = []
     histories = []
 
-    print("\n SUCCESSFUL OPTIONS GENERATION")
+    print("\nSUCCESSFUL OPTIONS GENERATION")
 
     ##############################################################################
     #   JOINED DATAFRAMES GENERATION
