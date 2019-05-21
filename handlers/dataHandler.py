@@ -38,6 +38,24 @@ def update(df1, df2, on_column, columns_to_omit, whole_row):
 
     return df1
 
+def dfMultiJoin(chunk_number, df_cD, df_wE):
+
+    # Join from chunked Dataframe
+    # Create chunks of df to perform 'MemorySafe'-join
+    df_join = df_cD
+    rows = df_wE.shape[0]
+    chunk_size = rows // chunk_number
+    rest = rows % chunk_number
+    for i in range(0, chunk_number):
+        begin = chunk_size * i
+        end = chunk_size * (i + 1)
+        if i == 0:
+            df_join = pd.merge(df_join, df_wE.iloc[begin:end, :], how='left', on=['word'])
+        else:
+            if i == chunk_number - 1:
+                end = end + rest
+            update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape[1],whole_row=True)
+
 def multiJoin(config, df_cD, wordEmbedding):
 
     # Join from chunked FILE
@@ -75,22 +93,6 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
                             encoding="utf-8", quoting=csv.QUOTE_NONE)
         # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
         df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
-
-    # # Create chunks of df to perform 'MemorySafe'-join
-    # chunk_number = 100
-    # df_join = df_cD
-    # rows = df_wE.shape[0]
-    # chunk_size = rows // chunk_number
-    # rest = rows % chunk_number
-    # for i in range(0, chunk_number):
-    #     begin = chunk_size * i
-    #     end = chunk_size * (i + 1)
-    #     if i == 0:
-    #         df_join = pd.merge(df_join, df_wE.iloc[begin:end, :], how='left', on=['word'])
-    #     else:
-    #         if i == chunk_number - 1:
-    #             end = end + rest
-    #         update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape[1],whole_row=True)
 
     df_join.dropna(inplace=True)
 
