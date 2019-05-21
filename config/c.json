@@ -83,4 +83,5 @@
       }
     },
   "wordEmbeddings": ["word2vec","fasttext-crawl","fasttext-wiki-news"]
+
 }

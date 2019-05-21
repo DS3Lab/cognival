@@ -67,6 +67,7 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
         df_cD = df_cD[['word',feature]]
     df_cD.dropna(inplace=True)
 
+
     if (config['wordEmbConfig'][wordEmbedding]["chunked"]):
         df_join = multiJoin(config,df_cD,wordEmbedding)
     else:
