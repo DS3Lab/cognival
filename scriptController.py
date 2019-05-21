@@ -20,6 +20,12 @@ def main(controllerConfig):
 
     config = getConfig(data["configFile"])
 
+    ##############################################################################
+    #   OPTION GENERATION
+    ##############################################################################
+
+    print("\nGENERATING OPTIONS...")
+
     options = []
     #GENERATE all possible case scenarios:
     for cognitiveData in data["cognitiveData"]:
@@ -35,22 +41,20 @@ def main(controllerConfig):
     word_errors = []
     histories = []
 
+    print("\n SUCCESSFUL OPTIONS GENERATION")
+
     ##############################################################################
-    #   Serialized version
+    #   JOINED DATAFRAMES GENERATION
     ##############################################################################
 
-    # for option in options:
-    #     print("OPTION\n")
-    #     print(option)
-    #     logging, word_error, history = script.run(config,option['wordEmbedding'],option['cognitiveData'],option['feature'])
-    #     loggings.append(logging)
-    #     word_errors.append(word_error)
-    #     histories.append(history)
+
 
 
     ##############################################################################
     #   Parallelized version
     ##############################################################################
+
+    print("\nMODELS CREATION, FITTING, PREDICTION...\n ")
 
     #os.cpu_count()
     pool = Pool(processes=10)
@@ -72,10 +76,13 @@ def main(controllerConfig):
         word_errors.append(word_error)
         histories.append(history)
 
+    print("\nSUCCESSFUL MODELS")
 
     ##############################################################################
     #   Store results
     ##############################################################################
+
+    print("\nSTORING RESULTS...")
 
     for i in range(0,len(loggings)):
         writeResults(getConfig(data["configFile"]),loggings[i],word_errors[i],histories[i])
@@ -83,8 +90,12 @@ def main(controllerConfig):
 
     writeOptions(config,options,loggings)
 
+    print("\nSUCCESSFUL STORING")
+
     timeTaken = datetime.now() - startTime
     print('\n' + str(timeTaken))
+
+    print("\nSUCCESSFUL RUN")
 
     pass
 
