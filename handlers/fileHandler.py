@@ -26,7 +26,7 @@ def writeResults(config, logging, word_error, history):
     if not os.path.exists(config['outputDir']):
         os.mkdir(config['outputDir'])
 
-    title = logging["cognitiveData"] + '_' + logging["feature"] + '_' + logging["wordEmbedding"]+'_'+config["version"]
+    title = logging["cognitiveData"] + '_' + logging["feature"] + '_' + logging["wordEmbedding"]+'_'+str(config["version"])
 
     outputDir = config['outputDir']+"/"+title
     if not os.path.exists(outputDir):
