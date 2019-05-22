@@ -1,23 +1,6 @@
 {
     "configFile": "config/setupConfig.json",
     "cognitiveData": {
-       "dundee": {
-        "features": ["First_fix_dur",
-                "First_pass_dur",
-                "Mean_fix_dur",
-                "Fix_prob",
-                "Re-read_prob",
-                "Tot_fix_dur",
-                "Tot_regres_from_dur",
-                "Tot_regres_to_dur",
-                "nFix",
-                "nLong_regres_from",
-                "nLong_regres_to",
-                "nRefix",
-                "nRegres_from",
-                "nRegres_to"
-              ]
-      },
       "zuco": {
         "features": [
                  "nFixations",
@@ -70,18 +53,8 @@
         "features": [
                 "Fixation_Duration"
             ]
-      },
-      "all": {
-        "features": [
-                "ffd",
-                "fpd",
-                "tfd",
-                "nfix",
-                "mfd",
-                "gpt"
-            ]
       }
     },
-  "wordEmbeddings": ["word2vec","fasttext-crawl","fasttext-wiki-news"]
+  "wordEmbeddings": ["elmo","glove-50","glove-100","bert-base","bert-large","glove-200","glove-300","wordnet2vec"]
 
 }
