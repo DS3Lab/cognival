@@ -85,11 +85,16 @@ def main(controllerConfig):
 
     print("\nSTORING RESULTS...")
 
+    all_runs = {}
+
     for i in range(0,len(loggings)):
-        writeResults(getConfig(data["configFile"]),loggings[i],word_errors[i],histories[i])
+        config = getConfig(data["configFile"])
+        writeResults(config, loggings[i], word_errors[i], histories[i])
+        options[i]["AVERAGE_MSE"] = loggings[i]["AVERAGE_MSE"]
+        all_runs[config["version"]] = options[i]
         updateVersion(data["configFile"])
 
-    writeOptions(config,options,loggings)
+    writeOptions(config,all_runs)
 
     print("\nSUCCESSFUL STORING")
 

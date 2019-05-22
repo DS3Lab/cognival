@@ -10,51 +10,8 @@
                      "TRT"
             ]
 
-      },
-      "ucl": {
-        "features": [
-                "RTfirstfix",
-                 "RTfirstpass",
-                  "RTgopast",
-                   "RTrightbound"
-            ]
-      },
-      "provo": {
-        "features": [
-                "IA_FIRST_FIXATION_DURATION",
-                "IA_FIRST_RUN_DWELL_TIME",
-                 "IA_FIRST_RUN_FIXATION_COUNT",
-                 "IA_DWELL_TIME",
-                 "IA_FIXATION_COUNT",
-                 "IA_SKIP",
-                 "IA_REGRESSION_IN_COUNT",
-                 "IA_REGRESSION_OUT_COUNT",
-                 "IA_REGRESSION_OUT_FULL_COUNT",
-                  "IA_REGRESSION_PATH_DURATION"
-            ]
-      },
-      "geco": {
-         "features": [
-                "WORD_FIXATION_COUNT",
-                "WORD_GAZE_DURATION",
-                "WORD_FIRST_FIXATION_DURATION",
-                 "WORD_LAST_FIXATION_DURATION",
-                 "WORD_GO_PAST_TIME",
-                 "WORD_TOTAL_READING_TIME",
-                  "WORD_SKIP"
-            ]
-      },
-      "cfilt-sarcasm": {
-        "features": [
-                "Fixation_Duration"
-            ]
-      },
-      "cfilt-scanpath": {
-        "features": [
-                "Fixation_Duration"
-            ]
       }
     },
-  "wordEmbeddings": ["elmo","glove-50","glove-100","bert-base","bert-large","glove-200","glove-300","wordnet2vec"]
+  "wordEmbeddings": ["elmo"]
 
 }

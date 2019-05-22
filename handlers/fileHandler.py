@@ -26,7 +26,7 @@ def writeResults(config, logging, word_error, history):
     if not os.path.exists(config['outputDir']):
         os.mkdir(config['outputDir'])
 
-    title = logging["cognitiveData"] + '_' + logging["feature"] + '_' + logging["wordEmbedding"]
+    title = logging["cognitiveData"] + '_' + logging["feature"] + '_' + logging["wordEmbedding"]+'_'+config["version"]
 
     outputDir = config['outputDir']+"/"+title
     if not os.path.exists(outputDir):
@@ -37,22 +37,16 @@ def writeResults(config, logging, word_error, history):
 
     np.savetxt(outputDir + "/" + title + '.txt', word_error, delimiter=" ", fmt="%s")
 
-
     plotHandler(title,history,outputDir)
 
     pass
 
-def writeOptions(config, options,loggings):
+def writeOptions(config, all_runs):
 
     outputDir = config['outputDir']
 
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
-
-    all_runs = {}
-    for i, item in enumerate(options):
-        item["AVERAGE_MSE"] = loggings[i]["AVERAGE_MSE"]
-        all_runs[i]=item
 
     with open(outputDir+"/options"+'.json','w') as fileWriter:
         json.dump(all_runs,fileWriter, indent=4,sort_keys=True)
