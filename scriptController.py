@@ -98,10 +98,12 @@ def main(controllerConfig):
 
     print("\nSUCCESSFUL STORING")
 
+    print("\nSUCCESSFUL RUN")
+    
     timeTaken = datetime.now() - startTime
     print('\n' + str(timeTaken))
 
-    print("\nSUCCESSFUL RUN")
+
 
     pass
 
