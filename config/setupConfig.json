@@ -1939,7 +1939,7 @@
         }
     },
     "folds": 5,
-    "outputDir": "provo",
+    "outputDir": "geco-cfilt",
     "seed": 123,
     "version": 152.0,
     "wordEmbConfig": {
