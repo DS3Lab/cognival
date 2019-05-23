@@ -1,15 +1,13 @@
 {
     "configFile": "config/setupConfig.json",
     "cognitiveData": {
-      "zuco": {
+     "ucl": {
         "features": [
-                 "nFixations",
-                  "FFD",
-                   "GD",
-                    "GPT",
-                     "TRT"
+                "RTfirstfix",
+                 "RTfirstpass",
+                  "RTgopast",
+                   "RTrightbound"
             ]
-
       }
     },
   "wordEmbeddings": ["elmo","glove-50","glove-100","bert-base","bert-large","glove-200","glove-300","wordnet2vec"]

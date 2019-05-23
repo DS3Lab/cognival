@@ -1,16 +1,6 @@
 {
     "configFile": "config/setupConfig.json",
     "cognitiveData": {
-      "zuco": {
-        "features": [
-                 "nFixations",
-                  "FFD",
-                   "GD",
-                    "GPT",
-                     "TRT"
-            ]
-
-      },
       "ucl": {
         "features": [
                 "RTfirstfix",

@@ -1939,7 +1939,7 @@
         }
     },
     "folds": 5,
-    "outputDir": "test2",
+    "outputDir": "ucl",
     "seed": 123,
     "version": 40.0,
     "wordEmbConfig": {
