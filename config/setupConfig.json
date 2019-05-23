@@ -1941,7 +1941,7 @@
     "folds": 5,
     "outputDir": "ucl",
     "seed": 123,
-    "version": 40.0,
+    "version": 72.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
