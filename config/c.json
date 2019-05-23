@@ -1,28 +1,33 @@
 {
     "configFile": "config/setupConfig.json",
     "cognitiveData": {
-      "geco": {
-         "features": [
-                "WORD_FIXATION_COUNT",
-                "WORD_GAZE_DURATION",
-                "WORD_FIRST_FIXATION_DURATION",
-                 "WORD_LAST_FIXATION_DURATION",
-                 "WORD_GO_PAST_TIME",
-                 "WORD_TOTAL_READING_TIME",
-                  "WORD_SKIP"
-            ]
+      "dundee": {
+        "features": ["First_fix_dur",
+                "First_pass_dur",
+                "Mean_fix_dur",
+                "Fix_prob",
+                "Re-read_prob",
+                "Tot_fix_dur",
+                "Tot_regres_from_dur",
+                "Tot_regres_to_dur",
+                "nFix",
+                "nLong_regres_from",
+                "nLong_regres_to",
+                "nRefix",
+                "nRegres_from",
+                "nRegres_to"
+              ]
       },
-      "cfilt-sarcasm": {
+      "zuco": {
         "features": [
-                "Fixation_Duration"
+                 "nFixations",
+                  "FFD",
+                   "GD",
+                    "GPT",
+                     "TRT"
             ]
-      },
-      "cfilt-scanpath": {
-        "features": [
-                "Fixation_Duration"
-            ]
+
       }
     },
-  "wordEmbeddings": ["elmo","glove-50","glove-100","bert-base","bert-large","glove-200","glove-300","wordnet2vec"]
-
+  "wordEmbeddings": ["random-embeddings-100","random-embeddings-1024","random-embeddings-200","random-embeddings-300","random-embeddings-50","random-embeddings-768","random-embeddings-850"]
 }
