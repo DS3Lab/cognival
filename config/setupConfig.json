@@ -1941,7 +1941,7 @@
     "folds": 5,
     "outputDir": "geco-cfilt",
     "seed": 123,
-    "version": 152.0,
+    "version": 224.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
