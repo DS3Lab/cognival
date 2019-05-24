@@ -1,0 +1,800 @@
+{
+    "224.0": {
+        "AVERAGE_MSE": 0.020679339543005038,
+        "cognitiveData": "dundee",
+        "feature": "First_fix_dur",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "225.0": {
+        "AVERAGE_MSE": 0.018124417215574,
+        "cognitiveData": "dundee",
+        "feature": "First_fix_dur",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "226.0": {
+        "AVERAGE_MSE": 0.035855294106384515,
+        "cognitiveData": "dundee",
+        "feature": "First_fix_dur",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "227.0": {
+        "AVERAGE_MSE": 0.027844620252578924,
+        "cognitiveData": "dundee",
+        "feature": "First_fix_dur",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "228.0": {
+        "AVERAGE_MSE": 0.017167434237834452,
+        "cognitiveData": "dundee",
+        "feature": "First_fix_dur",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "229.0": {
+        "AVERAGE_MSE": 0.018730871181764204,
+        "cognitiveData": "dundee",
+        "feature": "First_fix_dur",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "230.0": {
+        "AVERAGE_MSE": 0.019127670336070195,
+        "cognitiveData": "dundee",
+        "feature": "First_fix_dur",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "231.0": {
+        "AVERAGE_MSE": 0.0046558105041141174,
+        "cognitiveData": "dundee",
+        "feature": "First_pass_dur",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "232.0": {
+        "AVERAGE_MSE": 0.004707967601654792,
+        "cognitiveData": "dundee",
+        "feature": "First_pass_dur",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "233.0": {
+        "AVERAGE_MSE": 0.010582452832741025,
+        "cognitiveData": "dundee",
+        "feature": "First_pass_dur",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "234.0": {
+        "AVERAGE_MSE": 0.008873131563523439,
+        "cognitiveData": "dundee",
+        "feature": "First_pass_dur",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "235.0": {
+        "AVERAGE_MSE": 0.0039045585212241192,
+        "cognitiveData": "dundee",
+        "feature": "First_pass_dur",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "236.0": {
+        "AVERAGE_MSE": 0.005036999227335427,
+        "cognitiveData": "dundee",
+        "feature": "First_pass_dur",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "237.0": {
+        "AVERAGE_MSE": 0.00502795591626461,
+        "cognitiveData": "dundee",
+        "feature": "First_pass_dur",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "238.0": {
+        "AVERAGE_MSE": 0.020298905987386446,
+        "cognitiveData": "dundee",
+        "feature": "Mean_fix_dur",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "239.0": {
+        "AVERAGE_MSE": 0.017608992926558056,
+        "cognitiveData": "dundee",
+        "feature": "Mean_fix_dur",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "240.0": {
+        "AVERAGE_MSE": 0.034519443032501526,
+        "cognitiveData": "dundee",
+        "feature": "Mean_fix_dur",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "241.0": {
+        "AVERAGE_MSE": 0.024976161725198752,
+        "cognitiveData": "dundee",
+        "feature": "Mean_fix_dur",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "242.0": {
+        "AVERAGE_MSE": 0.016333693298131866,
+        "cognitiveData": "dundee",
+        "feature": "Mean_fix_dur",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "243.0": {
+        "AVERAGE_MSE": 0.018037823931734052,
+        "cognitiveData": "dundee",
+        "feature": "Mean_fix_dur",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "244.0": {
+        "AVERAGE_MSE": 0.018387015075841624,
+        "cognitiveData": "dundee",
+        "feature": "Mean_fix_dur",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "245.0": {
+        "AVERAGE_MSE": 0.03945918761703888,
+        "cognitiveData": "dundee",
+        "feature": "Fix_prob",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "246.0": {
+        "AVERAGE_MSE": 0.03350009891142101,
+        "cognitiveData": "dundee",
+        "feature": "Fix_prob",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "247.0": {
+        "AVERAGE_MSE": 0.06515337851905487,
+        "cognitiveData": "dundee",
+        "feature": "Fix_prob",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "248.0": {
+        "AVERAGE_MSE": 0.04987714217333718,
+        "cognitiveData": "dundee",
+        "feature": "Fix_prob",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "249.0": {
+        "AVERAGE_MSE": 0.03177351961965291,
+        "cognitiveData": "dundee",
+        "feature": "Fix_prob",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "250.0": {
+        "AVERAGE_MSE": 0.03340338366598588,
+        "cognitiveData": "dundee",
+        "feature": "Fix_prob",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "251.0": {
+        "AVERAGE_MSE": 0.03585248071992328,
+        "cognitiveData": "dundee",
+        "feature": "Fix_prob",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "252.0": {
+        "AVERAGE_MSE": 0.04728368325622665,
+        "cognitiveData": "dundee",
+        "feature": "Re-read_prob",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "253.0": {
+        "AVERAGE_MSE": 0.046665265716006994,
+        "cognitiveData": "dundee",
+        "feature": "Re-read_prob",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "254.0": {
+        "AVERAGE_MSE": 0.08403024928491336,
+        "cognitiveData": "dundee",
+        "feature": "Re-read_prob",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "255.0": {
+        "AVERAGE_MSE": 0.06218879242888899,
+        "cognitiveData": "dundee",
+        "feature": "Re-read_prob",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "256.0": {
+        "AVERAGE_MSE": 0.04555060183118701,
+        "cognitiveData": "dundee",
+        "feature": "Re-read_prob",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "257.0": {
+        "AVERAGE_MSE": 0.046640673016330084,
+        "cognitiveData": "dundee",
+        "feature": "Re-read_prob",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "258.0": {
+        "AVERAGE_MSE": 0.04699689649852853,
+        "cognitiveData": "dundee",
+        "feature": "Re-read_prob",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "259.0": {
+        "AVERAGE_MSE": 0.009712842549114937,
+        "cognitiveData": "dundee",
+        "feature": "Tot_fix_dur",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "260.0": {
+        "AVERAGE_MSE": 0.009152079337785817,
+        "cognitiveData": "dundee",
+        "feature": "Tot_fix_dur",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "261.0": {
+        "AVERAGE_MSE": 0.020125846333730484,
+        "cognitiveData": "dundee",
+        "feature": "Tot_fix_dur",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "262.0": {
+        "AVERAGE_MSE": 0.01570665454417838,
+        "cognitiveData": "dundee",
+        "feature": "Tot_fix_dur",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "263.0": {
+        "AVERAGE_MSE": 0.00818878387522509,
+        "cognitiveData": "dundee",
+        "feature": "Tot_fix_dur",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "264.0": {
+        "AVERAGE_MSE": 0.00943970370253996,
+        "cognitiveData": "dundee",
+        "feature": "Tot_fix_dur",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "265.0": {
+        "AVERAGE_MSE": 0.009368931922572687,
+        "cognitiveData": "dundee",
+        "feature": "Tot_fix_dur",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "266.0": {
+        "AVERAGE_MSE": 0.006799558341474621,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_from_dur",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "267.0": {
+        "AVERAGE_MSE": 0.0072447846855107564,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_from_dur",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "268.0": {
+        "AVERAGE_MSE": 0.015740808803468065,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_from_dur",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "269.0": {
+        "AVERAGE_MSE": 0.011721365355311516,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_from_dur",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "270.0": {
+        "AVERAGE_MSE": 0.006158809853029315,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_from_dur",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "271.0": {
+        "AVERAGE_MSE": 0.007635426060768435,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_from_dur",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "272.0": {
+        "AVERAGE_MSE": 0.007451478484714849,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_from_dur",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "273.0": {
+        "AVERAGE_MSE": 0.009480046270398921,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_to_dur",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "274.0": {
+        "AVERAGE_MSE": 0.009321339100884134,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_to_dur",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "275.0": {
+        "AVERAGE_MSE": 0.019268885203296914,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_to_dur",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "276.0": {
+        "AVERAGE_MSE": 0.015373427215233503,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_to_dur",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "277.0": {
+        "AVERAGE_MSE": 0.008484941075913157,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_to_dur",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "278.0": {
+        "AVERAGE_MSE": 0.010237009673913344,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_to_dur",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "279.0": {
+        "AVERAGE_MSE": 0.009920915787629988,
+        "cognitiveData": "dundee",
+        "feature": "Tot_regres_to_dur",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "280.0": {
+        "AVERAGE_MSE": 0.01100766418392907,
+        "cognitiveData": "dundee",
+        "feature": "nFix",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "281.0": {
+        "AVERAGE_MSE": 0.010695531469074728,
+        "cognitiveData": "dundee",
+        "feature": "nFix",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "282.0": {
+        "AVERAGE_MSE": 0.025465297494714413,
+        "cognitiveData": "dundee",
+        "feature": "nFix",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "283.0": {
+        "AVERAGE_MSE": 0.01672881682322769,
+        "cognitiveData": "dundee",
+        "feature": "nFix",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "284.0": {
+        "AVERAGE_MSE": 0.0097951369221265,
+        "cognitiveData": "dundee",
+        "feature": "nFix",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "285.0": {
+        "AVERAGE_MSE": 0.011221858975250824,
+        "cognitiveData": "dundee",
+        "feature": "nFix",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "286.0": {
+        "AVERAGE_MSE": 0.011410408843475153,
+        "cognitiveData": "dundee",
+        "feature": "nFix",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "287.0": {
+        "AVERAGE_MSE": 0.009847461294955218,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_from",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "288.0": {
+        "AVERAGE_MSE": 0.009965894163623524,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_from",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "289.0": {
+        "AVERAGE_MSE": 0.020948820440039213,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_from",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "290.0": {
+        "AVERAGE_MSE": 0.015024630781823919,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_from",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "291.0": {
+        "AVERAGE_MSE": 0.008982368615266235,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_from",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "292.0": {
+        "AVERAGE_MSE": 0.010206844775808443,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_from",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "293.0": {
+        "AVERAGE_MSE": 0.010196022055064518,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_from",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "294.0": {
+        "AVERAGE_MSE": 0.00640499568461757,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_to",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "295.0": {
+        "AVERAGE_MSE": 0.006076002930502837,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_to",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "296.0": {
+        "AVERAGE_MSE": 0.014235809356992752,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_to",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "297.0": {
+        "AVERAGE_MSE": 0.01027711976566918,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_to",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "298.0": {
+        "AVERAGE_MSE": 0.005213426350737275,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_to",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "299.0": {
+        "AVERAGE_MSE": 0.006674090991635807,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_to",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "300.0": {
+        "AVERAGE_MSE": 0.006674683136941431,
+        "cognitiveData": "dundee",
+        "feature": "nLong_regres_to",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "301.0": {
+        "AVERAGE_MSE": 0.007490581876201036,
+        "cognitiveData": "dundee",
+        "feature": "nRefix",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "302.0": {
+        "AVERAGE_MSE": 0.008142331169073893,
+        "cognitiveData": "dundee",
+        "feature": "nRefix",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "303.0": {
+        "AVERAGE_MSE": 0.017903064513150747,
+        "cognitiveData": "dundee",
+        "feature": "nRefix",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "304.0": {
+        "AVERAGE_MSE": 0.01234783385878698,
+        "cognitiveData": "dundee",
+        "feature": "nRefix",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "305.0": {
+        "AVERAGE_MSE": 0.007005894796949669,
+        "cognitiveData": "dundee",
+        "feature": "nRefix",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "306.0": {
+        "AVERAGE_MSE": 0.008466362168842178,
+        "cognitiveData": "dundee",
+        "feature": "nRefix",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "307.0": {
+        "AVERAGE_MSE": 0.008297387476622292,
+        "cognitiveData": "dundee",
+        "feature": "nRefix",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "308.0": {
+        "AVERAGE_MSE": 0.009548418540754876,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_from",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "309.0": {
+        "AVERAGE_MSE": 0.009757023512165584,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_from",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "310.0": {
+        "AVERAGE_MSE": 0.022500566078371444,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_from",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "311.0": {
+        "AVERAGE_MSE": 0.01557392902731219,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_from",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "312.0": {
+        "AVERAGE_MSE": 0.008799063690827417,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_from",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "313.0": {
+        "AVERAGE_MSE": 0.010783653459946677,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_from",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "314.0": {
+        "AVERAGE_MSE": 0.010151671337360113,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_from",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "315.0": {
+        "AVERAGE_MSE": 0.009992667961125407,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_to",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "316.0": {
+        "AVERAGE_MSE": 0.009791349495006433,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_to",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "317.0": {
+        "AVERAGE_MSE": 0.020434280472584505,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_to",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "318.0": {
+        "AVERAGE_MSE": 0.01572349862725699,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_to",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "319.0": {
+        "AVERAGE_MSE": 0.008737764715481896,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_to",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "320.0": {
+        "AVERAGE_MSE": 0.01082953230187277,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_to",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "321.0": {
+        "AVERAGE_MSE": 0.01047481284759268,
+        "cognitiveData": "dundee",
+        "feature": "nRegres_to",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "322.0": {
+        "AVERAGE_MSE": 0.013261338888138564,
+        "cognitiveData": "zuco",
+        "feature": "nFixations",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "323.0": {
+        "AVERAGE_MSE": 0.011723533938170844,
+        "cognitiveData": "zuco",
+        "feature": "nFixations",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "324.0": {
+        "AVERAGE_MSE": 0.033539385323989854,
+        "cognitiveData": "zuco",
+        "feature": "nFixations",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "325.0": {
+        "AVERAGE_MSE": 0.023563245630866515,
+        "cognitiveData": "zuco",
+        "feature": "nFixations",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "326.0": {
+        "AVERAGE_MSE": 0.0099522115679638,
+        "cognitiveData": "zuco",
+        "feature": "nFixations",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "327.0": {
+        "AVERAGE_MSE": 0.013174359032865918,
+        "cognitiveData": "zuco",
+        "feature": "nFixations",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "328.0": {
+        "AVERAGE_MSE": 0.013575386618597394,
+        "cognitiveData": "zuco",
+        "feature": "nFixations",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "329.0": {
+        "AVERAGE_MSE": 0.019187275185668796,
+        "cognitiveData": "zuco",
+        "feature": "FFD",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "330.0": {
+        "AVERAGE_MSE": 0.0154430088365634,
+        "cognitiveData": "zuco",
+        "feature": "FFD",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "331.0": {
+        "AVERAGE_MSE": 0.042100956740106533,
+        "cognitiveData": "zuco",
+        "feature": "FFD",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "332.0": {
+        "AVERAGE_MSE": 0.02846881057157389,
+        "cognitiveData": "zuco",
+        "feature": "FFD",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "333.0": {
+        "AVERAGE_MSE": 0.01342665350787121,
+        "cognitiveData": "zuco",
+        "feature": "FFD",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "334.0": {
+        "AVERAGE_MSE": 0.017421874776758217,
+        "cognitiveData": "zuco",
+        "feature": "FFD",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "335.0": {
+        "AVERAGE_MSE": 0.018133468091958548,
+        "cognitiveData": "zuco",
+        "feature": "FFD",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "336.0": {
+        "AVERAGE_MSE": 0.011225962367739184,
+        "cognitiveData": "zuco",
+        "feature": "GD",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "337.0": {
+        "AVERAGE_MSE": 0.01020200598173854,
+        "cognitiveData": "zuco",
+        "feature": "GD",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "338.0": {
+        "AVERAGE_MSE": 0.032169632337684544,
+        "cognitiveData": "zuco",
+        "feature": "GD",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "339.0": {
+        "AVERAGE_MSE": 0.020597297239402908,
+        "cognitiveData": "zuco",
+        "feature": "GD",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "340.0": {
+        "AVERAGE_MSE": 0.008198518618425818,
+        "cognitiveData": "zuco",
+        "feature": "GD",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "341.0": {
+        "AVERAGE_MSE": 0.011548551709102552,
+        "cognitiveData": "zuco",
+        "feature": "GD",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "342.0": {
+        "AVERAGE_MSE": 0.011498055534080814,
+        "cognitiveData": "zuco",
+        "feature": "GD",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "343.0": {
+        "AVERAGE_MSE": 0.015932492519785332,
+        "cognitiveData": "zuco",
+        "feature": "GPT",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "344.0": {
+        "AVERAGE_MSE": 0.013404166317279306,
+        "cognitiveData": "zuco",
+        "feature": "GPT",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "345.0": {
+        "AVERAGE_MSE": 0.03639190618251967,
+        "cognitiveData": "zuco",
+        "feature": "GPT",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "346.0": {
+        "AVERAGE_MSE": 0.024843958839479045,
+        "cognitiveData": "zuco",
+        "feature": "GPT",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "347.0": {
+        "AVERAGE_MSE": 0.011739433532942569,
+        "cognitiveData": "zuco",
+        "feature": "GPT",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "348.0": {
+        "AVERAGE_MSE": 0.014559840335825561,
+        "cognitiveData": "zuco",
+        "feature": "GPT",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "349.0": {
+        "AVERAGE_MSE": 0.01669246853309831,
+        "cognitiveData": "zuco",
+        "feature": "GPT",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "350.0": {
+        "AVERAGE_MSE": 0.01439543889990251,
+        "cognitiveData": "zuco",
+        "feature": "TRT",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "351.0": {
+        "AVERAGE_MSE": 0.012671945659387004,
+        "cognitiveData": "zuco",
+        "feature": "TRT",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "352.0": {
+        "AVERAGE_MSE": 0.03719543831394534,
+        "cognitiveData": "zuco",
+        "feature": "TRT",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "353.0": {
+        "AVERAGE_MSE": 0.02435012750099357,
+        "cognitiveData": "zuco",
+        "feature": "TRT",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "354.0": {
+        "AVERAGE_MSE": 0.011086721157703094,
+        "cognitiveData": "zuco",
+        "feature": "TRT",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "355.0": {
+        "AVERAGE_MSE": 0.01400061721528296,
+        "cognitiveData": "zuco",
+        "feature": "TRT",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "356.0": {
+        "AVERAGE_MSE": 0.014907298712666606,
+        "cognitiveData": "zuco",
+        "feature": "TRT",
+        "wordEmbedding": "random-embeddings-850"
+    }
+}

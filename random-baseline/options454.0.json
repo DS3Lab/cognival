@@ -1,0 +1,590 @@
+{
+    "357.0": {
+        "AVERAGE_MSE": 0.07825738160429767,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstfix",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "358.0": {
+        "AVERAGE_MSE": 0.10888365045047774,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstfix",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "359.0": {
+        "AVERAGE_MSE": 0.10415836125369171,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstfix",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "360.0": {
+        "AVERAGE_MSE": 0.12641514468353593,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstfix",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "361.0": {
+        "AVERAGE_MSE": 0.04183087040948335,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstfix",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "362.0": {
+        "AVERAGE_MSE": 0.1307731143708783,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstfix",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "363.0": {
+        "AVERAGE_MSE": 0.11337179868752476,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstfix",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "364.0": {
+        "AVERAGE_MSE": 0.08748300578643156,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstpass",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "365.0": {
+        "AVERAGE_MSE": 0.12131968685324941,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstpass",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "366.0": {
+        "AVERAGE_MSE": 0.1035086669000184,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstpass",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "367.0": {
+        "AVERAGE_MSE": 0.12009192981159618,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstpass",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "368.0": {
+        "AVERAGE_MSE": 0.04114880355311608,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstpass",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "369.0": {
+        "AVERAGE_MSE": 0.11134481058076044,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstpass",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "370.0": {
+        "AVERAGE_MSE": 0.131733933641728,
+        "cognitiveData": "ucl",
+        "feature": "RTfirstpass",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "371.0": {
+        "AVERAGE_MSE": 0.07666246513118666,
+        "cognitiveData": "ucl",
+        "feature": "RTgopast",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "372.0": {
+        "AVERAGE_MSE": 0.08536123370219911,
+        "cognitiveData": "ucl",
+        "feature": "RTgopast",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "373.0": {
+        "AVERAGE_MSE": 0.1158688142631203,
+        "cognitiveData": "ucl",
+        "feature": "RTgopast",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "374.0": {
+        "AVERAGE_MSE": 0.1439969173358487,
+        "cognitiveData": "ucl",
+        "feature": "RTgopast",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "375.0": {
+        "AVERAGE_MSE": 0.04870077365115133,
+        "cognitiveData": "ucl",
+        "feature": "RTgopast",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "376.0": {
+        "AVERAGE_MSE": 0.1184984681167676,
+        "cognitiveData": "ucl",
+        "feature": "RTgopast",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "377.0": {
+        "AVERAGE_MSE": 0.1284797537734202,
+        "cognitiveData": "ucl",
+        "feature": "RTgopast",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "378.0": {
+        "AVERAGE_MSE": 0.0788325626538268,
+        "cognitiveData": "ucl",
+        "feature": "RTrightbound",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "379.0": {
+        "AVERAGE_MSE": 0.07573072422675262,
+        "cognitiveData": "ucl",
+        "feature": "RTrightbound",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "380.0": {
+        "AVERAGE_MSE": 0.10216219575497199,
+        "cognitiveData": "ucl",
+        "feature": "RTrightbound",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "381.0": {
+        "AVERAGE_MSE": 0.11341318371882933,
+        "cognitiveData": "ucl",
+        "feature": "RTrightbound",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "382.0": {
+        "AVERAGE_MSE": 0.03813419935117741,
+        "cognitiveData": "ucl",
+        "feature": "RTrightbound",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "383.0": {
+        "AVERAGE_MSE": 0.12746062432576058,
+        "cognitiveData": "ucl",
+        "feature": "RTrightbound",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "384.0": {
+        "AVERAGE_MSE": 0.10961047500542931,
+        "cognitiveData": "ucl",
+        "feature": "RTrightbound",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "385.0": {
+        "AVERAGE_MSE": 0.08105391584712471,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_FIXATION_DURATION",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "386.0": {
+        "AVERAGE_MSE": 0.12261073816761466,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_FIXATION_DURATION",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "387.0": {
+        "AVERAGE_MSE": 0.10835281523510024,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_FIXATION_DURATION",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "388.0": {
+        "AVERAGE_MSE": 0.13548949096204857,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_FIXATION_DURATION",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "389.0": {
+        "AVERAGE_MSE": 0.036123331496627414,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_FIXATION_DURATION",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "390.0": {
+        "AVERAGE_MSE": 0.10041865015750269,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_FIXATION_DURATION",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "391.0": {
+        "AVERAGE_MSE": 0.11491171910362089,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_FIXATION_DURATION",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "392.0": {
+        "AVERAGE_MSE": 0.05937072534787939,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "393.0": {
+        "AVERAGE_MSE": 0.0629457752787419,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "394.0": {
+        "AVERAGE_MSE": 0.08718514086465563,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "395.0": {
+        "AVERAGE_MSE": 0.09958255472630775,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "396.0": {
+        "AVERAGE_MSE": 0.0198204687816442,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "397.0": {
+        "AVERAGE_MSE": 0.06135870366464632,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "398.0": {
+        "AVERAGE_MSE": 0.07460472311800408,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "399.0": {
+        "AVERAGE_MSE": 0.06656174243765992,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "400.0": {
+        "AVERAGE_MSE": 0.057071050954383105,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "401.0": {
+        "AVERAGE_MSE": 0.0911476252819035,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "402.0": {
+        "AVERAGE_MSE": 0.11156933401324805,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "403.0": {
+        "AVERAGE_MSE": 0.0236606565259631,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "404.0": {
+        "AVERAGE_MSE": 0.07831838196841603,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "405.0": {
+        "AVERAGE_MSE": 0.0986063716035282,
+        "cognitiveData": "provo",
+        "feature": "IA_FIRST_RUN_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "406.0": {
+        "AVERAGE_MSE": 0.056736670459544225,
+        "cognitiveData": "provo",
+        "feature": "IA_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "407.0": {
+        "AVERAGE_MSE": 0.06156817378376633,
+        "cognitiveData": "provo",
+        "feature": "IA_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "408.0": {
+        "AVERAGE_MSE": 0.09264997271974748,
+        "cognitiveData": "provo",
+        "feature": "IA_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "409.0": {
+        "AVERAGE_MSE": 0.10208413778325076,
+        "cognitiveData": "provo",
+        "feature": "IA_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "410.0": {
+        "AVERAGE_MSE": 0.02621544225260089,
+        "cognitiveData": "provo",
+        "feature": "IA_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "411.0": {
+        "AVERAGE_MSE": 0.06259236272461895,
+        "cognitiveData": "provo",
+        "feature": "IA_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "412.0": {
+        "AVERAGE_MSE": 0.07611152734756307,
+        "cognitiveData": "provo",
+        "feature": "IA_DWELL_TIME",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "413.0": {
+        "AVERAGE_MSE": 0.06164805366992356,
+        "cognitiveData": "provo",
+        "feature": "IA_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "414.0": {
+        "AVERAGE_MSE": 0.06894892219979044,
+        "cognitiveData": "provo",
+        "feature": "IA_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "415.0": {
+        "AVERAGE_MSE": 0.09999486593474369,
+        "cognitiveData": "provo",
+        "feature": "IA_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "416.0": {
+        "AVERAGE_MSE": 0.11875902278954711,
+        "cognitiveData": "provo",
+        "feature": "IA_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "417.0": {
+        "AVERAGE_MSE": 0.029854118222591618,
+        "cognitiveData": "provo",
+        "feature": "IA_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "418.0": {
+        "AVERAGE_MSE": 0.08565148172768229,
+        "cognitiveData": "provo",
+        "feature": "IA_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "419.0": {
+        "AVERAGE_MSE": 0.11218241889657868,
+        "cognitiveData": "provo",
+        "feature": "IA_FIXATION_COUNT",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "420.0": {
+        "AVERAGE_MSE": 0.1111015955267483,
+        "cognitiveData": "provo",
+        "feature": "IA_SKIP",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "421.0": {
+        "AVERAGE_MSE": 0.08562455325363219,
+        "cognitiveData": "provo",
+        "feature": "IA_SKIP",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "422.0": {
+        "AVERAGE_MSE": 0.14314360932444634,
+        "cognitiveData": "provo",
+        "feature": "IA_SKIP",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "423.0": {
+        "AVERAGE_MSE": 0.1457462205632095,
+        "cognitiveData": "provo",
+        "feature": "IA_SKIP",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "424.0": {
+        "AVERAGE_MSE": 0.06928741649932547,
+        "cognitiveData": "provo",
+        "feature": "IA_SKIP",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "425.0": {
+        "AVERAGE_MSE": 0.10119833065023594,
+        "cognitiveData": "provo",
+        "feature": "IA_SKIP",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "426.0": {
+        "AVERAGE_MSE": 0.10916699836402362,
+        "cognitiveData": "provo",
+        "feature": "IA_SKIP",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "427.0": {
+        "AVERAGE_MSE": 0.06890351607578932,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_IN_COUNT",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "428.0": {
+        "AVERAGE_MSE": 0.05840843238858241,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_IN_COUNT",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "429.0": {
+        "AVERAGE_MSE": 0.09678641995010835,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_IN_COUNT",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "430.0": {
+        "AVERAGE_MSE": 0.12212179019094312,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_IN_COUNT",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "431.0": {
+        "AVERAGE_MSE": 0.04197718562035907,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_IN_COUNT",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "432.0": {
+        "AVERAGE_MSE": 0.10129350161967832,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_IN_COUNT",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "433.0": {
+        "AVERAGE_MSE": 0.08822084046589095,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_IN_COUNT",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "434.0": {
+        "AVERAGE_MSE": 0.06634410453376244,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_COUNT",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "435.0": {
+        "AVERAGE_MSE": 0.061318866994242216,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_COUNT",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "436.0": {
+        "AVERAGE_MSE": 0.10044231998385725,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_COUNT",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "437.0": {
+        "AVERAGE_MSE": 0.1154029367781236,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_COUNT",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "438.0": {
+        "AVERAGE_MSE": 0.03294424107743134,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_COUNT",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "439.0": {
+        "AVERAGE_MSE": 0.0801216553690562,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_COUNT",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "440.0": {
+        "AVERAGE_MSE": 0.06978560514187256,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_COUNT",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "441.0": {
+        "AVERAGE_MSE": 0.06587057346290782,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_FULL_COUNT",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "442.0": {
+        "AVERAGE_MSE": 0.07971499253911178,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_FULL_COUNT",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "443.0": {
+        "AVERAGE_MSE": 0.09048802797573861,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_FULL_COUNT",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "444.0": {
+        "AVERAGE_MSE": 0.11617289308167048,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_FULL_COUNT",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "445.0": {
+        "AVERAGE_MSE": 0.03235114069021972,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_FULL_COUNT",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "446.0": {
+        "AVERAGE_MSE": 0.08124042447748994,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_FULL_COUNT",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "447.0": {
+        "AVERAGE_MSE": 0.07449188661456789,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_OUT_FULL_COUNT",
+        "wordEmbedding": "random-embeddings-850"
+    },
+    "448.0": {
+        "AVERAGE_MSE": 0.06705341034156809,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_PATH_DURATION",
+        "wordEmbedding": "random-embeddings-100"
+    },
+    "449.0": {
+        "AVERAGE_MSE": 0.07185596976005285,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_PATH_DURATION",
+        "wordEmbedding": "random-embeddings-1024"
+    },
+    "450.0": {
+        "AVERAGE_MSE": 0.08778355925589222,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_PATH_DURATION",
+        "wordEmbedding": "random-embeddings-200"
+    },
+    "451.0": {
+        "AVERAGE_MSE": 0.10904991368531958,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_PATH_DURATION",
+        "wordEmbedding": "random-embeddings-300"
+    },
+    "452.0": {
+        "AVERAGE_MSE": 0.027758098317441627,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_PATH_DURATION",
+        "wordEmbedding": "random-embeddings-50"
+    },
+    "453.0": {
+        "AVERAGE_MSE": 0.07542037998017552,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_PATH_DURATION",
+        "wordEmbedding": "random-embeddings-768"
+    },
+    "454.0": {
+        "AVERAGE_MSE": 0.08089164217914266,
+        "cognitiveData": "provo",
+        "feature": "IA_REGRESSION_PATH_DURATION",
+        "wordEmbedding": "random-embeddings-850"
+    }
+}
