@@ -48,7 +48,7 @@ def writeOptions(config, all_runs):
     if not os.path.exists(outputDir):
         os.mkdir(outputDir)
 
-    with open(outputDir+"/options"+'.json','w') as fileWriter:
+    with open(outputDir+"/options"+str(config["version"])+'.json','w') as fileWriter:
         json.dump(all_runs,fileWriter, indent=4,sort_keys=True)
 
     pass
