@@ -33,19 +33,24 @@ def modelCV(model_constr,config, X_train,y_train):
 
     model = KerasRegressor(build_fn=model_constr, verbose=0)
 
-    param_grid = dict(layers=config["layers"], activation=config["activations"],input_dim=[X_train.shape[1]],
-                      output_dim=[y_train.shape[1]] ,batch_size=config["batch_size"], epochs=config["epochs"])
+    param_grid = dict(layers=config["layers"], activation=config["activations"], input_dim=[X_train.shape[1]],
+                      output_dim=[y_train.shape[1]], batch_size=config["batch_size"], epochs=config["epochs"])
 
     grid = GridSearchCV(estimator=model,param_grid=param_grid,scoring='neg_mean_squared_error', cv=config['cv_split'])
     grid_result = grid.fit(X_train,y_train, verbose=0, validation_split=config["validation_split"])
 
     return grid, grid_result
 
-def modelPredict(grid,words, X_test, y_test):
+def modelPredict(grid, words, X_test, y_test):
     y_pred = grid.predict(X_test)
-    y_pred = y_pred.reshape(-1,1)
+    if y_pred.shape[1] ==1:
+        print("univariate model ")
+        y_pred = y_pred.reshape(-1,1)
     error = y_test - y_pred
+    print("error")
+    print(error)
     word_error = np.hstack([words,error])
+    print(word_error)
     mse = np.mean(np.square(error))
     return mse, word_error
 
