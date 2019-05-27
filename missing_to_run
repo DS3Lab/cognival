@@ -1,0 +1,37 @@
+{
+    "configFile": "config/setupConfig.json",
+    "cognitiveData": {
+      "geco": {
+         "features": [
+                "WORD_FIXATION_COUNT",
+                "WORD_GAZE_DURATION",
+                "WORD_FIRST_FIXATION_DURATION",
+                 "WORD_LAST_FIXATION_DURATION",
+                 "WORD_GO_PAST_TIME",
+                 "WORD_TOTAL_READING_TIME",
+                  "WORD_SKIP"
+            ]
+      },
+      "cfilt-sarcasm": {
+        "features": [
+                "Fixation_Duration"
+            ]
+      },
+      "cfilt-scanpath": {
+        "features": [
+                "Fixation_Duration"
+            ]
+      },
+      "all": {
+        "features": [
+                "ffd",
+                "fpd",
+                "tfd",
+                "nfix",
+                "mfd",
+                "gpt"
+            ]
+      }
+    },
+  "wordEmbeddings": ["random-embeddings-100","random-embeddings-1024","random-embeddings-200","random-embeddings-300","random-embeddings-50","random-embeddings-768","random-embeddings-850"]
+}

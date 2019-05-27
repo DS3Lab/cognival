@@ -3,8 +3,23 @@ import numpy as np
 import csv
 from sklearn.model_selection import KFold
 
+def chunker(path, wordEmbedding,name):
+    chunk_number = 4
+    df_wE = pd.read_csv(path+wordEmbedding, sep=" ",
+                        encoding="utf-8", quoting=csv.QUOTE_NONE)
+    rows = df_wE.shape[0]
+    chunk_size = rows // chunk_number
+    rest = rows % chunk_number
+    for i in range(0, chunk_number):
+        begin = chunk_size * i
+        end = chunk_size * (i + 1)
+        if i == chunk_number - 1:
+            end = end + rest
+        df = df_wE.iloc[begin:end,:]
+        df.to_csv(path+name+str(i)+'.txt',sep=" ", encoding="utf-8")
 
-def update(df1, df2, on_column, columns_to_omit):
+
+def update(df1, df2, on_column, columns_to_omit, whole_row):
     # Both dataframes have to have same column names
     header = list(df1)
     header = header[columns_to_omit:]
@@ -13,30 +28,20 @@ def update(df1, df2, on_column, columns_to_omit):
     to_update = df1.merge(df2, on=on_column, how='left').iloc[:, start:].dropna()
     to_update.columns = header
 
-    # UPDATE just on NaN values
-    # for elem in header:
-    # 	df1.loc[df1[elem].isnull(),elem] = to_update[elem]
-    # 	print(df1)
+    if(whole_row):
+        # UPDATE whole row when NaN appears
+        df1.loc[df1[header[0]].isnull(), header] = to_update
+    else:
+        # UPDATE just on NaN values
+        for elem in header:
+            df1.loc[df1[elem].isnull(),elem] = to_update[elem]
 
-    # UPDATE whole row when NaN appears
-    df1.loc[df1[header[0]].isnull(), header] = to_update
     return df1
 
+def dfMultiJoin(chunk_number, df_cD, df_wE):
 
-def dataHandler(config, wordEmbedding, cognitiveData, feature):
-
-    # READ Datasets into dataframes
-    df_cD = pd.read_csv(config['PATH'] + config['cogDataConfig'][cognitiveData]['dataset'], sep=" ")
-    df_wE = pd.read_csv(config['PATH'] + config['wordEmbConfig'][wordEmbedding], sep=" ",
-                        encoding="utf-8", quoting=csv.QUOTE_NONE)
-
-    # In case it's a single output cogData we just need the single feature
-    if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
-        df_cD = df_cD[['word',feature]]
-    df_cD.dropna(inplace=True)
-
-    # # Create chunks of df to perform 'MemorySafe'-join
-    chunk_number = 10
+    # Join from chunked Dataframe
+    # Create chunks of df to perform 'MemorySafe'-join
     df_join = df_cD
     rows = df_wE.shape[0]
     chunk_size = rows // chunk_number
@@ -49,10 +54,45 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
         else:
             if i == chunk_number - 1:
                 end = end + rest
-            update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape[1])
+            update(df_join, df_wE.iloc[begin:end, :], on_column=['word'], columns_to_omit=df_cD.shape[1],whole_row=True)
 
-    # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
-    #df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
+def multiJoin(config, df_cD, wordEmbedding):
+
+    # Join from chunked FILE
+    df_join = df_cD
+    chunk_number = config['wordEmbConfig'][wordEmbedding]["chunk_number"]
+    file = config['PATH'] + config['wordEmbConfig'][wordEmbedding]["chunked_file"]
+    ending = config['wordEmbConfig'][wordEmbedding]["ending"]
+    for i in range(0, chunk_number):
+        df = pd.read_csv(file + str(i) + ending, sep=" ",
+                         encoding="utf-8", quoting=csv.QUOTE_NONE)
+        df.drop(df.columns[0], axis=1, inplace=True)
+        if i == 0:
+            df_join = pd.merge(df_join, df, how='left', on=['word'])
+        else:
+            update(df_join, df, on_column=['word'], columns_to_omit=2, whole_row=True)
+
+    return df_join
+
+
+def dataHandler(config, wordEmbedding, cognitiveData, feature):
+
+    # READ Datasets into dataframes
+    df_cD = pd.read_csv(config['PATH'] + config['cogDataConfig'][cognitiveData]['dataset'], sep=" ")
+
+    # In case it's a single output cogData we just need the single feature
+    if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
+        df_cD = df_cD[['word',feature]]
+    df_cD.dropna(inplace=True)
+
+
+    if (config['wordEmbConfig'][wordEmbedding]["chunked"]):
+        df_join = multiJoin(config,df_cD,wordEmbedding)
+    else:
+        df_wE = pd.read_csv(config['PATH'] + config['wordEmbConfig'][wordEmbedding]["path"], sep=" ",
+                            encoding="utf-8", quoting=csv.QUOTE_NONE)
+        # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
+        df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
 
     df_join.dropna(inplace=True)
 
@@ -116,3 +156,13 @@ def split_folds(words, X, y, folds, seed):
         words_test.append(words[test_index])
 
     return words_test, X_train, y_train, X_test, y_test
+
+
+def main():
+    pass
+
+if __name__=="__main__":
+    main()
+
+
+
