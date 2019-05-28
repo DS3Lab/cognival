@@ -58,8 +58,8 @@ def main(controllerConfig):
 
     print("\nMODELS CREATION, FITTING, PREDICTION...\n ")
 
-    proc = os.cpu_count()
-    # proc = 20
+    # proc = os.cpu_count()
+    proc = 20
     pool = Pool(processes=proc)
     async_results = [pool.apply_async(script.run,args=(config,
                                            options[i]["wordEmbedding"],
