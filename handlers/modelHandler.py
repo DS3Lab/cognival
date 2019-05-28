@@ -44,16 +44,23 @@ def modelCV(model_constr,config, X_train,y_train):
     return grid, grid_result
 
 def modelPredict(grid, words, X_test, y_test):
+    #TODO: check predict and results
     y_pred = grid.predict(X_test)
+    print("y_shape :"+str(y_pred.shape))
     if y_pred.shape[1] ==1:
         print("univariate model ")
         y_pred = y_pred.reshape(-1,1)
+        print("y_shape :" + str(y_pred.shape))
     error = y_test - y_pred
     print("error")
     print(error)
     word_error = np.hstack([words,error])
     print(word_error)
-    mse = np.mean(np.square(error))
+    print("word error shape "+str(word_error.shape))
+    if word_error.shape[1] ==1:
+        mse = np.mean(np.square(error))
+    else:
+        mse = np.mean(error,axis=0)
     return mse, word_error
 
 def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
@@ -68,5 +75,6 @@ def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
         mse, w_e = modelPredict(grid,words_test[i],X_test[i],y_test[i])
         mserrors.append(mse)
         word_error = np.vstack([word_error,w_e])
+    #TODO: CHECK OUTPUT and results
     return word_error, grids_result, mserrors
 
