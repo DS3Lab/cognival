@@ -23,6 +23,7 @@ def create_model(layers, activation, input_dim, output_dim):
         else:
             model.add(Dense(nodes, activation=activation))
     #TODO: check last layer for multidimensional output
+    print("output dime = "+str(output_dim))
     model.add(Dense(output_dim, activation='linear'))
 
     #model.summary()
@@ -46,8 +47,10 @@ def modelCV(model_constr,config, X_train,y_train):
 def modelPredict(grid, words, X_test, y_test):
     #TODO: check predict and results
     y_pred = grid.predict(X_test)
+    print("modelPredict")
+    print("y_test shape:"+str(y_test.shape))
     print("y_shape :"+str(y_pred.shape))
-    if y_pred.shape[1] ==1:
+    if y_test.shape[1] ==1:
         print("univariate model ")
         y_pred = y_pred.reshape(-1,1)
         print("y_shape :" + str(y_pred.shape))
