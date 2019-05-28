@@ -3429,7 +3429,7 @@
     "folds": 5,
     "outputDir": "fasttext-subword",
     "seed": 123,
-    "version": 656.0,
+    "version": 752.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
