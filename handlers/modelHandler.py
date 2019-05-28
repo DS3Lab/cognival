@@ -1,3 +1,5 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='3'  #disable tensorflow debugging
 from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dense, Activation
 from keras.activations import relu, linear
@@ -33,20 +35,32 @@ def modelCV(model_constr,config, X_train,y_train):
 
     model = KerasRegressor(build_fn=model_constr, verbose=0)
 
-    param_grid = dict(layers=config["layers"], activation=config["activations"],input_dim=[X_train.shape[1]],
-                      output_dim=[y_train.shape[1]] ,batch_size=config["batch_size"], epochs=config["epochs"])
+    param_grid = dict(layers=config["layers"], activation=config["activations"], input_dim=[X_train.shape[1]],
+                      output_dim=[y_train.shape[1]], batch_size=config["batch_size"], epochs=config["epochs"])
 
     grid = GridSearchCV(estimator=model,param_grid=param_grid,scoring='neg_mean_squared_error', cv=config['cv_split'])
     grid_result = grid.fit(X_train,y_train, verbose=0, validation_split=config["validation_split"])
 
     return grid, grid_result
 
-def modelPredict(grid,words, X_test, y_test):
+def modelPredict(grid, words, X_test, y_test):
+    #TODO: check predict and results
     y_pred = grid.predict(X_test)
-    y_pred = y_pred.reshape(-1,1)
+    print("y_shape :"+str(y_pred.shape))
+    if y_pred.shape[1] ==1:
+        print("univariate model ")
+        y_pred = y_pred.reshape(-1,1)
+        print("y_shape :" + str(y_pred.shape))
     error = y_test - y_pred
+    print("error")
+    print(error)
     word_error = np.hstack([words,error])
-    mse = np.mean(np.square(error))
+    print(word_error)
+    print("word error shape "+str(word_error.shape))
+    if word_error.shape[1] ==1:
+        mse = np.mean(np.square(error))
+    else:
+        mse = np.mean(error,axis=0)
     return mse, word_error
 
 def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
@@ -61,5 +75,6 @@ def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
         mse, w_e = modelPredict(grid,words_test[i],X_test[i],y_test[i])
         mserrors.append(mse)
         word_error = np.vstack([word_error,w_e])
+    #TODO: CHECK OUTPUT and results
     return word_error, grids_result, mserrors
 

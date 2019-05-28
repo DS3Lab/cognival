@@ -1,5 +1,6 @@
 import json
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='3'  #disable tensorflow debugging
 import sys
 from multiprocessing import Pool
 from datetime import  datetime
@@ -20,6 +21,12 @@ def main(controllerConfig):
 
     config = getConfig(data["configFile"])
 
+    ##############################################################################
+    #   OPTION GENERATION
+    ##############################################################################
+
+    print("\nGENERATING OPTIONS...")
+
     options = []
     #GENERATE all possible case scenarios:
     for cognitiveData in data["cognitiveData"]:
@@ -35,24 +42,24 @@ def main(controllerConfig):
     word_errors = []
     histories = []
 
+    print("\nSUCCESSFUL OPTIONS GENERATION")
+
     ##############################################################################
-    #   Serialized version
+    #   JOINED DATAFRAMES GENERATION
     ##############################################################################
 
-    # for option in options:
-    #     print("OPTION\n")
-    #     print(option)
-    #     logging, word_error, history = script.run(config,option['wordEmbedding'],option['cognitiveData'],option['feature'])
-    #     loggings.append(logging)
-    #     word_errors.append(word_error)
-    #     histories.append(history)
+
 
 
     ##############################################################################
     #   Parallelized version
     ##############################################################################
 
-    pool = Pool(processes=os.cpu_count())
+    print("\nMODELS CREATION, FITTING, PREDICTION...\n ")
+
+    proc = os.cpu_count()
+    # proc = 20
+    pool = Pool(processes=proc)
     async_results = [pool.apply_async(script.run,args=(config,
                                            options[i]["wordEmbedding"],
                                            options[i]["cognitiveData"],
@@ -71,21 +78,35 @@ def main(controllerConfig):
         word_errors.append(word_error)
         histories.append(history)
 
+    print("\nSUCCESSFUL MODELS")
 
     ##############################################################################
     #   Store results
     ##############################################################################
 
-    for i in range(0,len(loggings)):
-        writeResults(updateVersion(data["configFile"]),loggings[i],word_errors[i],histories[i])
+    print("\nSTORING RESULTS...")
 
-    writeOptions(config,options,loggings)
+    all_runs = {}
+
+    for i in range(0,len(loggings)):
+        config = getConfig(data["configFile"])
+        writeResults(config, loggings[i], word_errors[i], histories[i])
+        options[i]["AVERAGE_MSE"] = loggings[i]["AVERAGE_MSE"]
+        all_runs[config["version"]] = options[i]
+        updateVersion(data["configFile"])
+
+    writeOptions(config,all_runs)
+
+    print("\nSUCCESSFUL STORING")
+
+    print("\nSUCCESSFUL RUN")
 
     timeTaken = datetime.now() - startTime
     print('\n' + str(timeTaken))
 
-    pass
 
+
+    pass
 
 
 if __name__=="__main__":

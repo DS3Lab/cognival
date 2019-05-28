@@ -49,20 +49,38 @@ def run(config, wordEmbedding, cognitiveData, feature):
         logging['folds'].append(fold)
         for key in grids_result[i].best_params_:
             logging['folds'][i][key.upper()] = grids_result[i].best_params_[key]
-        logging['folds'][i]['MSE_PREDICTION:'] = mserrors[i]
-        logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
-        logging['folds'][i]['VALIDATION_LOSS: '] = grids_result[i].best_estimator_.model.history.history['val_loss']
+
+        if config['cogDataConfig'][cognitiveData]['type'] == "multiple_output":
+            logging['folds'][i]['MSE_PREDICTION:'] = list(mserrors[i])
+            logging['folds'][i]['MSE_PREDICTION_AV_ALL_DIM:'] = np.mean(mserrors[i])
+            #TODO CHECK IF THIS WORKS
+            logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
+            logging['folds'][i]['VALIDATION_LOSS: '] = grids_result[i].best_estimator_.model.history.history['val_loss']
+        else:
+            logging['folds'][i]['MSE_PREDICTION:'] = mserrors[i]
+            logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
+            logging['folds'][i]['VALIDATION_LOSS: '] = grids_result[i].best_estimator_.model.history.history['val_loss']
+
+        #TODO: CHECK WHAT HAPPENS HERE
         loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['loss'],dtype='float'))
         val_loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['val_loss'], dtype='float'))
 
-    mse = np.array(mserrors, dtype='float').mean()
-    logging['AVERAGE_MSE'] = mse
+    if config['cogDataConfig'][cognitiveData]['type'] == "multiple_output":
+        mserrors = np.array(mserrors, dtype='float')
+        mse = np.mean(mserrors, axis=0)
+        logging['AVERAGE_MSE'] = list(mse)
+        logging['AVERAGE_MSE_AV_ALL_DIM']= np.mean(mse)
+    else:
+        mse = np.array(mserrors, dtype='float').mean()
+        logging['AVERAGE_MSE'] = mse
 
 
     ##############################################################################
     #   Prepare results for plot
     ##############################################################################
 
+    #TODO: CHECK PLOTS
+    #TODO: CHECK AVERAGE HERE
     history['loss'] = np.mean([loss_list[i] for i in range (len(loss_list))],axis=0)
     history['val_loss'] = np.mean([val_loss_list[i] for i in range(len(val_loss_list))], axis=0)
 

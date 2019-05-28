@@ -1,11 +1,88 @@
 {
     "configFile": "config/setupConfig.json",
     "cognitiveData": {
+      "dundee": {
+        "features": ["First_fix_dur",
+                "First_pass_dur",
+                "Mean_fix_dur",
+                "Fix_prob",
+                "Re-read_prob",
+                "Tot_fix_dur",
+                "Tot_regres_from_dur",
+                "Tot_regres_to_dur",
+                "nFix",
+                "nLong_regres_from",
+                "nLong_regres_to",
+                "nRefix",
+                "nRegres_from",
+                "nRegres_to"
+              ]
+      },
+      "zuco": {
+        "features": [
+                 "nFixations",
+                  "FFD",
+                   "GD",
+                    "GPT",
+                     "TRT"
+            ]
+
+      },
+      "ucl": {
+        "features": [
+                "RTfirstfix",
+                 "RTfirstpass",
+                  "RTgopast",
+                   "RTrightbound"
+            ]
+      },
+      "provo": {
+        "features": [
+                "IA_FIRST_FIXATION_DURATION",
+                "IA_FIRST_RUN_DWELL_TIME",
+                 "IA_FIRST_RUN_FIXATION_COUNT",
+                 "IA_DWELL_TIME",
+                 "IA_FIXATION_COUNT",
+                 "IA_SKIP",
+                 "IA_REGRESSION_IN_COUNT",
+                 "IA_REGRESSION_OUT_COUNT",
+                 "IA_REGRESSION_OUT_FULL_COUNT",
+                  "IA_REGRESSION_PATH_DURATION"
+            ]
+      },
+      "geco": {
+         "features": [
+                "WORD_FIXATION_COUNT",
+                "WORD_GAZE_DURATION",
+                "WORD_FIRST_FIXATION_DURATION",
+                 "WORD_LAST_FIXATION_DURATION",
+                 "WORD_GO_PAST_TIME",
+                 "WORD_TOTAL_READING_TIME",
+                  "WORD_SKIP"
+            ]
+      },
+      "cfilt-sarcasm": {
+        "features": [
+                "Fixation_Duration"
+            ]
+      },
+      "cfilt-scanpath": {
+        "features": [
+                "Fixation_Duration"
+            ]
+      },
       "all": {
         "features": [
-                 "ffd"
+                "ffd",
+                "fpd",
+                "tfd",
+                "nfix",
+                "mfd",
+                "gpt"
             ]
       }
     },
-  "wordEmbeddings": ["word2vec"]
+  "wordEmbeddings": ["bert-base","bert-large"]
 }
+
+

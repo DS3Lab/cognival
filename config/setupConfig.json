@@ -1,5 +1,5 @@
 {
-    "PATH": "~/Dropbox/university/ETH/4fs/projektArbeit/datasets/",
+    "PATH": "/mnt/ds3lab-scratch/antonide/datasets/",
     "cogDataConfig": {
         "all": {
             "dataset": "cognitive-data/gaze/all/all_scaled.txt",
@@ -195,6 +195,150 @@
                     "layers": [
                         [
                             26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
                         ]
                     ],
                     "validation_split": 0.2
@@ -436,6 +580,150 @@
                     ],
                     "validation_split": 0.2
                 },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -669,6 +957,150 @@
                     "layers": [
                         [
                             26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
                         ]
                     ],
                     "validation_split": 0.2
@@ -923,6 +1355,150 @@
                     ],
                     "validation_split": 0.2
                 },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -1162,6 +1738,150 @@
                     "layers": [
                         [
                             26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
                         ]
                     ],
                     "validation_split": 0.2
@@ -1412,6 +2132,150 @@
                     ],
                     "validation_split": 0.2
                 },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -1648,6 +2512,150 @@
                     "layers": [
                         [
                             26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
                         ]
                     ],
                     "validation_split": 0.2
@@ -1893,6 +2901,150 @@
                     ],
                     "validation_split": 0.2
                 },
+                "random-embeddings-100": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        30
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            30
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-1024": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            600
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-200": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            100
+                        ],
+                        [
+                            50
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-300": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-50": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            26
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-768": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "random-embeddings-850": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            400
+                        ],
+                        [
+                            200
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "word2vec": {
                     "activations": [
                         "relu"
@@ -1939,20 +3091,90 @@
         }
     },
     "folds": 5,
-    "outputDir": "all",
+    "outputDir": "random-baseline",
     "seed": 123,
-    "version": 12.0,
+    "version": 560.0,
     "wordEmbConfig": {
-        "bert-base": "embeddings/bert/bert_base_all.txt",
-        "bert-large": "embeddings/bert/bert_large_all.txt",
-        "elmo": "embeddings/elmo/elmo_contextInsensitive_all.txt",
-        "fasttext-crawl": "embeddings/fasttext/crawl-300d-2M.vec",
-        "fasttext-wiki-news": "embeddings/fasttext/wiki-news-300d-1M.vec",
-        "glove-100": "embeddings/glove-6B/glove.6B.100d.txt",
-        "glove-200": "embeddings/glove-6B/glove.6B.200d.txt",
-        "glove-300": "embeddings/glove-6B/glove.6B.300d.txt",
-        "glove-50": "embeddings/glove-6B/glove.6B.50d.txt",
-        "word2vec": "embeddings/word2vec/word2vec.txt",
-        "wordnet2vec": "embeddings/wordnet2vec/wnet2vec_brain.txt"
+        "bert-base": {
+            "chunked": 0,
+            "path": "embeddings/bert/bert_base_all.txt"
+        },
+        "bert-large": {
+            "chunked": 0,
+            "path": "embeddings/bert/bert_large_all.txt"
+        },
+        "elmo": {
+            "chunked": 0,
+            "path": "embeddings/elmo/elmo_contextInsensitive_all.txt"
+        },
+        "fasttext-crawl": {
+            "chunk_number": 4,
+            "chunked": 1,
+            "chunked_file": "embeddings/fasttext/crawl",
+            "ending": ".txt",
+            "path": "embeddings/fasttext/crawl-300d-2M.vec"
+        },
+        "fasttext-wiki-news": {
+            "chunk_number": 4,
+            "chunked": 1,
+            "chunked_file": "embeddings/fasttext/wiki-news",
+            "ending": ".txt",
+            "path": "embeddings/fasttext/wiki-news-300d-1M.vec"
+        },
+        "glove-100": {
+            "chunked": 0,
+            "path": "embeddings/glove-6B/glove.6B.100d.txt"
+        },
+        "glove-200": {
+            "chunked": 0,
+            "path": "embeddings/glove-6B/glove.6B.200d.txt"
+        },
+        "glove-300": {
+            "chunked": 0,
+            "path": "embeddings/glove-6B/glove.6B.300d.txt"
+        },
+        "glove-50": {
+            "chunked": 0,
+            "path": "embeddings/glove-6B/glove.6B.50d.txt"
+        },
+        "random-embeddings-100": {
+            "chunked": 0,
+            "path": "embeddings/random-baseline/random-embeddings-100.txt"
+        },
+        "random-embeddings-1024": {
+            "chunked": 0,
+            "path": "embeddings/random-baseline/random-embeddings-1024.txt"
+        },
+        "random-embeddings-200": {
+            "chunked": 0,
+            "path": "embeddings/random-baseline/random-embeddings-200.txt"
+        },
+        "random-embeddings-300": {
+            "chunked": 0,
+            "path": "embeddings/random-baseline/random-embeddings-300.txt"
+        },
+        "random-embeddings-50": {
+            "chunked": 0,
+            "path": "embeddings/random-baseline/random-embeddings-50.txt"
+        },
+        "random-embeddings-768": {
+            "chunked": 0,
+            "path": "embeddings/random-baseline/random-embeddings-768.txt"
+        },
+        "random-embeddings-850": {
+            "chunked": 0,
+            "path": "embeddings/random-baseline/random-embeddings-850.txt"
+        },
+        "word2vec": {
+            "chunk_number": 4,
+            "chunked": 1,
+            "chunked_file": "embeddings/word2vec/word2vec",
+            "ending": ".txt",
+            "path": "embeddings/word2vec/word2vec.txt"
+        },
+        "wordnet2vec": {
+            "chunked": 0,
+            "path": "embeddings/wordnet2vec/wnet2vec_brain.txt"
+        }
     }
 }
