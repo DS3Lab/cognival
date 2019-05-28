@@ -97,7 +97,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -478,7 +520,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -859,7 +943,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -1253,7 +1379,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -1640,7 +1808,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -2030,7 +2240,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -2414,7 +2666,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -2799,7 +3093,49 @@
                     ],
                     "validation_split": 0.2
                 },
+                "fasttext-crawl-subword": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
                 "fasttext-wiki-news": {
+                    "activations": [
+                        "relu"
+                    ],
+                    "batch_size": [
+                        128
+                    ],
+                    "cv_split": 3,
+                    "epochs": [
+                        100
+                    ],
+                    "layers": [
+                        [
+                            50
+                        ],
+                        [
+                            150
+                        ]
+                    ],
+                    "validation_split": 0.2
+                },
+                "fasttext-wiki-news-subword": {
                     "activations": [
                         "relu"
                     ],
@@ -3091,9 +3427,9 @@
         }
     },
     "folds": 5,
-    "outputDir": "random-baseline",
+    "outputDir": "fasttext-subword",
     "seed": 123,
-    "version": 560.0,
+    "version": 656.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
@@ -3114,12 +3450,26 @@
             "ending": ".txt",
             "path": "embeddings/fasttext/crawl-300d-2M.vec"
         },
+        "fasttext-crawl-subword": {
+            "chunk_number": 4,
+            "chunked": 1,
+            "chunked_file": "embeddings/fasttext-subword/crawl-subword",
+            "ending": ".txt",
+            "path": "embeddings/fasttext/crawl-300d-2M-subword.vec"
+        },
         "fasttext-wiki-news": {
             "chunk_number": 4,
             "chunked": 1,
             "chunked_file": "embeddings/fasttext/wiki-news",
             "ending": ".txt",
             "path": "embeddings/fasttext/wiki-news-300d-1M.vec"
+        },
+        "fasttext-wiki-news-subword": {
+            "chunk_number": 4,
+            "chunked": 1,
+            "chunked_file": "embeddings/fasttext-subword/wiki-news-subword",
+            "ending": ".txt",
+            "path": "embeddings/fasttext/wiki-news-300d-1M-subword.vec"
         },
         "glove-100": {
             "chunked": 0,

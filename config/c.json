@@ -82,7 +82,7 @@
             ]
       }
     },
-  "wordEmbeddings": ["bert-base","bert-large"]
+  "wordEmbeddings": ["fasttext-crawl-subword","fasttext-wiki-news-subword"]
 }
 
 
