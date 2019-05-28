@@ -5121,7 +5121,7 @@
     "folds": 5,
     "outputDir": "eeg",
     "seed": 123,
-    "version": 1000.0,
+    "version": 752.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
