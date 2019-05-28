@@ -58,8 +58,7 @@ def main(controllerConfig):
 
     print("\nMODELS CREATION, FITTING, PREDICTION...\n ")
 
-    # proc = os.cpu_count()
-    proc = 20
+    proc = min(os.cpu_count(),config["cpu_count"])
     pool = Pool(processes=proc)
     async_results = [pool.apply_async(script.run,args=(config,
                                            options[i]["wordEmbedding"],
@@ -111,7 +110,6 @@ def main(controllerConfig):
 
 
 if __name__=="__main__":
-    #main("config/controllerConfig.json")
     main("config/c.json")
 
 

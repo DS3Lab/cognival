@@ -18,7 +18,7 @@
                 "nRegres_to"
               ]
       },
-      "zuco": {
+      "zuco-gaze": {
         "features": [
                  "nFixations",
                   "FFD",
@@ -28,7 +28,7 @@
             ]
 
       },
-      "ucl": {
+      "ucl-gaze": {
         "features": [
                 "RTfirstfix",
                  "RTfirstpass",
@@ -80,7 +80,30 @@
                 "mfd",
                 "gpt"
             ]
+      },
+      "n400": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "naturalspeech": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "ucl-eeg": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "zuco-eeg": {
+        "features": [
+          "ALL_DIM"
+        ]
       }
     },
-  "wordEmbeddings": ["word2vec","elmo","fasttext-crawl","glove-50","glove-100","bert-base","bert-large","glove-200","glove-300","wordnet2vec","fasttext-wiki-news"]
+  "wordEmbeddings": ["word2vec","fasttext-crawl","fasttext-crawl-subword","fasttext-wiki-news", "fasttext-wiki-news-subword",
+    "elmo","bert-base","bert-large","glove-50","glove-100","glove-200","glove-300",
+    "random-embeddings-100","random-embeddings-1024","random-embeddings-200","random-embeddings-300",
+    "random-embeddings-50","random-embeddings-768","random-embeddings-850","wordnet2vec"]
 }

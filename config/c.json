@@ -1,14 +1,29 @@
 {
     "configFile": "config/setupConfig.json",
     "cognitiveData": {
-      "fMRI": {
+      "n400": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "naturalspeech": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "ucl-eeg": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "zuco-eeg": {
         "features": [
           "ALL_DIM"
         ]
       }
     },
-  "wordEmbeddings": ["glove-50"]
-
+  "wordEmbeddings": ["word2vec","fasttext-crawl","fasttext-crawl-subword","fasttext-wiki-news", "fasttext-wiki-news-subword",
+    "elmo","bert-base","bert-large","glove-50","glove-100","glove-200","glove-300",
+    "random-embeddings-100","random-embeddings-1024","random-embeddings-200","random-embeddings-300",
+    "random-embeddings-50","random-embeddings-768","random-embeddings-850","wordnet2vec"]
 }
-
-

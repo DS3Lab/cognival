@@ -53,7 +53,7 @@ def run(config, wordEmbedding, cognitiveData, feature):
         if config['cogDataConfig'][cognitiveData]['type'] == "multivariate_output":
             logging['folds'][i]['MSE_PREDICTION_ALL_DIM:'] = list(mserrors[i])
             logging['folds'][i]['MSE_PREDICTION:'] = np.mean(mserrors[i])
-        else:
+        elif config['cogDataConfig'][cognitiveData]['type'] == "single_output":
             logging['folds'][i]['MSE_PREDICTION:'] = mserrors[i]
 
         logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
@@ -67,7 +67,7 @@ def run(config, wordEmbedding, cognitiveData, feature):
         mse = np.mean(mserrors, axis=0)
         logging['AVERAGE_MSE_ALL_DIM'] = list(mse)
         logging['AVERAGE_MSE']= np.mean(mse)
-    else:
+    elif config['cogDataConfig'][cognitiveData]['type'] == "single_output":
         mse = np.array(mserrors, dtype='float').mean()
         logging['AVERAGE_MSE'] = mse
 
