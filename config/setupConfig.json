@@ -1546,14 +1546,9 @@
         "fMRI": {
             "dataset": "cognitive-data/fMRI/scaled_6_brennan_targets_42.txt",
             "features": [
-                "v0",
-                "v1",
-                "v2",
-                "v3",
-                "v4",
-                "v5"
+                "ALL_DIM"
             ],
-            "type": "single_output",
+            "type": "multivariate_output",
             "wordEmbSpecifics": {
                 "bert-base": {
                     "activations": [
@@ -3479,7 +3474,7 @@
     "folds": 5,
     "outputDir": "random-baseline",
     "seed": 123,
-    "version": 576.0,
+    "version": 592.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,

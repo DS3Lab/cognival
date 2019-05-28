@@ -10,23 +10,8 @@ from handlers.fileHandler import *
 def handler(config, wordEmbedding, cognitiveData, feature):
 
     words_test, X_train, y_train, X_test, y_test = dataHandler(config,wordEmbedding,cognitiveData,feature)
-    print(len(words_test))
-    print(words_test[0].shape)
-    print(X_train[0].shape)
-    print(y_train[0].shape)
-    print(X_test[0].shape)
-    print(y_test[0].shape)
     word_error, grids_result, mserrors = modelHandler(config["cogDataConfig"][cognitiveData]["wordEmbSpecifics"][wordEmbedding],
                                          words_test, X_train, y_train, X_test, y_test)
-
-    print("\nAFTER MODEL HANDLER")
-    print("word_error shape ")
-    print(word_error.shape)
-    print("MSERRORS")
-    print(mserrors)
-    print(type(mserrors))
-
-
 
     return word_error, grids_result, mserrors
 
@@ -51,8 +36,6 @@ def run(config, wordEmbedding, cognitiveData, feature):
 
     word_error, grids_result, mserrors = handler(config, wordEmbedding, cognitiveData, feature)
 
-    print("AFTER HANDLER")
-
     history = {'loss':[],'val_loss':[]}
     loss_list =[]
     val_loss_list =[]
@@ -67,33 +50,24 @@ def run(config, wordEmbedding, cognitiveData, feature):
         # BEST PARAMS APPENDING
         for key in grids_result[i].best_params_:
             logging['folds'][i][key.upper()] = grids_result[i].best_params_[key]
-        if config['cogDataConfig'][cognitiveData]['type'] == "multiple_output":
-            print("multivariate result")
-            # logging['folds'][i]['MSE_PREDICTION:'] = list(mserrors[i])
-            # logging['folds'][i]['MSE_PREDICTION_AV_ALL_DIM:'] = np.mean(mserrors[i])
-            # #TODO CHECK IF THIS WORKS
-            # logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
-            # logging['folds'][i]['VALIDATION_LOSS: '] = grids_result[i].best_estimator_.model.history.history['val_loss']
+        if config['cogDataConfig'][cognitiveData]['type'] == "multivariate_output":
+            logging['folds'][i]['MSE_PREDICTION_ALL_DIM:'] = list(mserrors[i])
+            logging['folds'][i]['MSE_PREDICTION:'] = np.mean(mserrors[i])
         else:
-            print("univariate output")
             logging['folds'][i]['MSE_PREDICTION:'] = mserrors[i]
-            print("type of mse_prediction")
-            print(type(logging['folds'][i]['MSE_PREDICTION:']))
-            logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
-            print(type(logging['folds'][i]['LOSS: ']))
-            logging['folds'][i]['VALIDATION_LOSS: '] = grids_result[i].best_estimator_.model.history.history['val_loss']
-            print(type(logging['folds'][i]['VALIDATION_LOSS: ']))
-        #TODO: CHECK WHAT HAPPENS HERE
+
+        logging['folds'][i]['LOSS: '] = grids_result[i].best_estimator_.model.history.history['loss']
+        logging['folds'][i]['VALIDATION_LOSS: '] = grids_result[i].best_estimator_.model.history.history['val_loss']
+
         loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['loss'],dtype='float'))
         val_loss_list.append(np.array(grids_result[i].best_estimator_.model.history.history['val_loss'], dtype='float'))
 
-    if config['cogDataConfig'][cognitiveData]['type'] == "multiple_output":
+    if config['cogDataConfig'][cognitiveData]['type'] == "multivariate_output":
         mserrors = np.array(mserrors, dtype='float')
         mse = np.mean(mserrors, axis=0)
-        logging['AVERAGE_MSE'] = list(mse)
-        logging['AVERAGE_MSE_AV_ALL_DIM']= np.mean(mse)
+        logging['AVERAGE_MSE_ALL_DIM'] = list(mse)
+        logging['AVERAGE_MSE']= np.mean(mse)
     else:
-        print("univariate output")
         mse = np.array(mserrors, dtype='float').mean()
         logging['AVERAGE_MSE'] = mse
 
@@ -102,10 +76,6 @@ def run(config, wordEmbedding, cognitiveData, feature):
     #   Prepare results for plot
     ##############################################################################
 
-    #TODO: CHECK PLOTS
-    #TODO: CHECK AVERAGE HERE
-    #TODO: go over elem in list and average result to create plot
-    #TODO: see dimensionality of vectors
     history['loss'] = np.mean([loss_list[i] for i in range (len(loss_list))],axis=0)
     history['val_loss'] = np.mean([val_loss_list[i] for i in range(len(val_loss_list))], axis=0)
 
@@ -158,6 +128,8 @@ def main():
             feature = input("ERROR Please enter correct feature for specified cognitive dataset:\n")
             if feature == "x":
                 exit(0)
+    else:
+        feature = "ALL_DIM"
 
     startTime = datetime.now()
 

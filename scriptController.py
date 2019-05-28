@@ -38,6 +38,7 @@ def main(controllerConfig):
                 option["wordEmbedding"]=wordEmbedding
                 options.append(option)
 
+    print(options)
     loggings = []
     word_errors = []
     histories = []

@@ -108,7 +108,7 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
         X = df_join.drop(feature, axis=1)
         X = np.array(X, dtype='float')
     else:
-        features = config['cogDataConfig'][cognitiveData]['features']
+        features = df_cD.columns[1:]
         y = df_join[features]
         y = np.array(y, dtype='float')
 

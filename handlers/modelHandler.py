@@ -22,10 +22,7 @@ def create_model(layers, activation, input_dim, output_dim):
             model.add(Dense(nodes,input_dim=input_dim, activation=activation))
         else:
             model.add(Dense(nodes, activation=activation))
-    #TODO: check last layer for multidimensional output
-    print("output dime = "+str(output_dim))
     model.add(Dense(output_dim, activation='linear'))
-
     #model.summary()
     model.compile(loss='mse',optimizer='adam')
 
@@ -45,32 +42,25 @@ def modelCV(model_constr,config, X_train,y_train):
     return grid, grid_result
 
 def modelPredict(grid, words, X_test, y_test):
-    #TODO: check predict and results
     y_pred = grid.predict(X_test)
-    print("modelPredict")
-    print("y_test shape:"+str(y_test.shape))
-    print("y_shape :"+str(y_pred.shape))
     if y_test.shape[1] ==1:
-        print("univariate model ")
         y_pred = y_pred.reshape(-1,1)
-        print("y_shape :" + str(y_pred.shape))
     error = y_test - y_pred
-    print("error")
-    print(error)
     word_error = np.hstack([words,error])
-    print(word_error)
-    print("word error shape "+str(word_error.shape))
-    if word_error.shape[1] ==1:
+    if y_test.shape[1] ==1:
         mse = np.mean(np.square(error))
     else:
-        mse = np.mean(error,axis=0)
+        mse = np.mean(np.square(error),axis=0)
     return mse, word_error
 
 def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
     grids =[]
     grids_result = []
     mserrors = []
-    word_error = np.array(['word','error'],dtype='str')
+    if y_test[0].shape[1] == 1:
+        word_error = np.array(['word','error'],dtype='str')
+    else:
+        word_error = np.array(['word'] + ['e' + str(i) for i in range(1,y_test[0].shape[1]+1)], dtype='str')
     for i in range(len(X_train)):
         grid, grid_result = modelCV(create_model,config,X_train[i],y_train[i])
         grids.append(grid)
@@ -78,6 +68,5 @@ def modelHandler(config,words_test, X_train, y_train, X_test, y_test):
         mse, w_e = modelPredict(grid,words_test[i],X_test[i],y_test[i])
         mserrors.append(mse)
         word_error = np.vstack([word_error,w_e])
-    #TODO: CHECK OUTPUT and results
     return word_error, grids_result, mserrors
 
