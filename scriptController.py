@@ -38,7 +38,6 @@ def main(controllerConfig):
                 option["wordEmbedding"]=wordEmbedding
                 options.append(option)
 
-    print(options)
     loggings = []
     word_errors = []
     histories = []
@@ -59,6 +58,7 @@ def main(controllerConfig):
     print("\nMODELS CREATION, FITTING, PREDICTION...\n ")
 
     proc = min(os.cpu_count(),config["cpu_count"])
+    print("RUNNING ON :"+str(proc)+" PROCESSORS\n")
     pool = Pool(processes=proc)
     async_results = [pool.apply_async(script.run,args=(config,
                                            options[i]["wordEmbedding"],
