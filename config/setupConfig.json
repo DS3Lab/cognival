@@ -16540,9 +16540,9 @@
     }
     },
     "folds": 5,
-    "outputDir": "eeg",
+    "outputDir": "fmri",
     "seed": 123,
-    "version": 752.0,
+    "version": 832.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
