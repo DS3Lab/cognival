@@ -1,22 +1,137 @@
 {
     "configFile": "config/setupConfig.json",
     "cognitiveData": {
-      "n400": {
+      "brennan-0": {
         "features": [
           "ALL_DIM"
         ]
       },
-      "naturalspeech": {
+      "brennan-1": {
         "features": [
           "ALL_DIM"
         ]
       },
-      "ucl-eeg": {
+      "brennan-2": {
         "features": [
           "ALL_DIM"
         ]
       },
-      "zuco-eeg": {
+      "brennan-3": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-4": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-5": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-6": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-7": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-8": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-9": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-10": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-11": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-12": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-13": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-14": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-15": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-16": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-17": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-18": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-19": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-20": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-21": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-22": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-23": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-24": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-25": {
+        "features": [
+          "ALL_DIM"
+        ]
+      },
+      "brennan-26": {
         "features": [
           "ALL_DIM"
         ]
