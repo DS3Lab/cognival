@@ -64034,7 +64034,7 @@
     },
     "cpu_count": 20,
     "folds": 5,
-    "outputDir": "eeg-glove50_bert-service",
+    "outputDir": "gaze-glove50_bert-service",
     "seed": 123,
     "version": 0.0,
     "wordEmbConfig": {
