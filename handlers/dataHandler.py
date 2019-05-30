@@ -79,7 +79,7 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
 
     # READ Datasets into dataframes
     df_cD = pd.read_csv(config['PATH'] + config['cogDataConfig'][cognitiveData]['dataset'], sep=" ")
-    print(df_cD.shpe)
+    print(df_cD.shape)
     # In case it's a single output cogData we just need the single feature
     if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
         df_cD = df_cD[['word',feature]]
