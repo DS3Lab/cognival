@@ -64032,11 +64032,11 @@
             }
         }
     },
-    "cpu_count": 30,
+    "cpu_count": 20,
     "folds": 5,
     "outputDir": "wehbe",
     "seed": 123,
-    "version": 1466.0,
+    "version": 1642.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
