@@ -64036,7 +64036,7 @@
     "folds": 5,
     "outputDir": "brennan",
     "seed": 123,
-    "version": 1224.0,
+    "version": 1312.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
