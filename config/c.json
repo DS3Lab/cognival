@@ -1,54 +1,39 @@
 {
-    "configFile": "config/setupConfig.json",
     "cognitiveData": {
-      "mitchell-100-0": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-1": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-2": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-3": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-4": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-5": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-6": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-7": {
-        "features": [
-          "ALL_DIM"
-        ]
-      },
-      "mitchell-100-8": {
-        "features": [
-          "ALL_DIM"
-        ]
-      }
+        "pereira-100-0": {
+            "features": [
+                "ALL_DIM"
+            ]
+        },
+        "pereira-100-1": {
+            "features": [
+                "ALL_DIM"
+            ]
+        }
     },
-  "wordEmbeddings": ["word2vec","fasttext-crawl","fasttext-crawl-subword","fasttext-wiki-news", "fasttext-wiki-news-subword",
-    "elmo","bert-base","bert-large","bert-service-base","bert-service-large","glove-50","glove-100","glove-200","glove-300",
-    "random-embeddings-100","random-embeddings-1024","random-embeddings-200","random-embeddings-300",
-    "random-embeddings-50","random-embeddings-768","random-embeddings-850","wordnet2vec"]
+    "configFile": "config/setupConfig.json",
+    "wordEmbeddings": [
+        "word2vec",
+        "fasttext-crawl",
+        "fasttext-crawl-subword",
+        "fasttext-wiki-news",
+        "fasttext-wiki-news-subword",
+        "elmo",
+        "bert-base",
+        "bert-large",
+        "bert-service-base",
+        "bert-service-large",
+        "glove-50",
+        "glove-100",
+        "glove-200",
+        "glove-300",
+        "random-embeddings-100",
+        "random-embeddings-1024",
+        "random-embeddings-200",
+        "random-embeddings-300",
+        "random-embeddings-50",
+        "random-embeddings-768",
+        "random-embeddings-850",
+        "wordnet2vec"
+    ]
 }
