@@ -57150,7 +57150,7 @@
     "folds": 5,
     "outputDir": "fmri",
     "seed": 123,
-    "version": 832.0,
+    "version": 972.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
