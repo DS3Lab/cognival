@@ -137,6 +137,8 @@ def split_folds(words, X, y, folds, seed):
 
 
     kf = KFold(n_splits=folds, shuffle=False, random_state=None)
+    print(X)
+    print(X.shape)
     kf.get_n_splits(X)
 
     X_train = []
