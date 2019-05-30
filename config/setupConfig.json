@@ -64034,7 +64034,7 @@
     },
     "cpu_count": 20,
     "folds": 5,
-    "outputDir": "fmri",
+    "outputDir": "brennan",
     "seed": 123,
     "version": 1114.0,
     "wordEmbConfig": {
