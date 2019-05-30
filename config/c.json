@@ -1,21 +1,21 @@
 {
     "cognitiveData": {
-        "wehbe-100-4": {
+        "n400": {
             "features": [
                 "ALL_DIM"
             ]
         }, 
-        "wehbe-100-5": {
+        "naturalspeech": {
             "features": [
                 "ALL_DIM"
             ]
         }, 
-        "wehbe-100-6": {
+        "ucl-eeg": {
             "features": [
                 "ALL_DIM"
             ]
         }, 
-        "wehbe-100-7": {
+        "zuco-eeg": {
             "features": [
                 "ALL_DIM"
             ]
@@ -23,27 +23,8 @@
     }, 
     "configFile": "config/setupConfig.json", 
     "wordEmbeddings": [
-        "word2vec", 
-        "fasttext-crawl", 
-        "fasttext-crawl-subword", 
-        "fasttext-wiki-news", 
-        "fasttext-wiki-news-subword", 
-        "elmo", 
-        "bert-base", 
-        "bert-large", 
-        "bert-service-base", 
-        "bert-service-large", 
-        "glove-50", 
-        "glove-100", 
-        "glove-200", 
-        "glove-300", 
-        "random-embeddings-100", 
-        "random-embeddings-1024", 
-        "random-embeddings-200", 
-        "random-embeddings-300", 
-        "random-embeddings-50", 
-        "random-embeddings-768", 
-        "random-embeddings-850", 
-        "wordnet2vec"
+        "bert-service-base",
+        "bert-service-large",
+        "glove-50"
     ]
 }

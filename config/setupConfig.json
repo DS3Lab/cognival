@@ -64034,9 +64034,9 @@
     },
     "cpu_count": 20,
     "folds": 5,
-    "outputDir": "wehbe",
+    "outputDir": "eeg-glove50_bert-service",
     "seed": 123,
-    "version": 1730.0,
+    "version": 0.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
