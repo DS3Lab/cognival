@@ -64032,9 +64032,9 @@
             }
         }
     },
-    "cpu_count": 20,
+    "cpu_count": 30,
     "folds": 5,
-    "outputDir": "pereira",
+    "outputDir": "wehbe",
     "seed": 123,
     "version": 1466.0,
     "wordEmbConfig": {
