@@ -1,43 +1,5 @@
 {
     "cognitiveData": {
-        "all": {
-            "features": [
-                "ffd",
-                "fpd",
-                "tfd",
-                "nfix",
-                "mfd",
-                "gpt"
-            ]
-        }, 
-        "cfilt-sarcasm": {
-            "features": [
-                "Fixation_Duration"
-            ]
-        },
-        "cfilt-scanpath": {
-            "features": [
-                "Fixation_Duration"
-            ]
-        },
-        "dundee": {
-            "features": [
-                "First_fix_dur",
-                "First_pass_dur",
-                "Mean_fix_dur",
-                "Fix_prob",
-                "Re-read_prob",
-                "Tot_fix_dur",
-                "Tot_regres_from_dur",
-                "Tot_regres_to_dur",
-                "nFix",
-                "nLong_regres_from",
-                "nLong_regres_to",
-                "nRefix",
-                "nRegres_from",
-                "nRegres_to"
-            ]
-        },
         "geco": {
             "features": [
                 "WORD_FIXATION_COUNT",
