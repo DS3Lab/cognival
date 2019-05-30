@@ -64034,9 +64034,9 @@
     },
     "cpu_count": 20,
     "folds": 5,
-    "outputDir": "brennan",
+    "outputDir": "mitchell",
     "seed": 123,
-    "version": 1400.0,
+    "version": 1466.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
