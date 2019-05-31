@@ -160,6 +160,26 @@ def split_folds(words, X, y, folds, seed):
 
 
 def main():
+    import json
+
+    with open('../config/setupConfig.json','r') as fr:
+        config = json.load(fr)
+
+    we = 'elmo'
+    feat = 'ALL_DIM'
+    cds = []
+
+    dim = [100, 500, 1000]
+    file = 'mitchell-'
+    for i in range(0, 9):
+        for j in dim:
+            cds.append(file+str(j)+'-'+str(i))
+
+    for cd in cds:
+        dataHandler(config,we,cd,feat)
+        print("SUCCESS" + cd)
+
+
     pass
 
 if __name__=="__main__":
