@@ -12,5 +12,8 @@ fvenv
 .DS_Store
 __pycache__
 
+#Other code/config
+config/gaze.json
+
 #Results
 output
