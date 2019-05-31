@@ -15242,6 +15242,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -15424,6 +15466,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -15665,6 +15716,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -15847,6 +15940,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -16088,6 +16190,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -16270,6 +16414,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -16511,6 +16664,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -16693,6 +16888,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -16934,6 +17138,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -17116,6 +17362,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -17357,6 +17612,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -17539,6 +17836,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -17780,6 +18086,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -17962,6 +18310,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -18203,6 +18560,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -18385,6 +18784,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -18626,6 +19034,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -18808,6 +19258,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -19049,6 +19508,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -19231,6 +19732,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -19472,6 +19982,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -19654,6 +20206,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -19895,6 +20456,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -20077,6 +20680,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -20318,6 +20930,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -20500,6 +21154,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -20741,6 +21404,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -20923,6 +21628,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -21164,6 +21878,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -21346,6 +22102,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -21587,6 +22352,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -21769,6 +22576,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -22010,6 +22826,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -22192,6 +23050,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -22433,6 +23300,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -22615,6 +23524,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -22856,6 +23774,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -23038,6 +23998,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -23279,6 +24248,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -23461,6 +24472,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -23702,6 +24722,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -23884,6 +24946,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -24125,6 +25196,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -24307,6 +25420,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -24548,6 +25670,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -24730,6 +25894,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -24971,6 +26144,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -25153,6 +26368,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -25394,6 +26618,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -25576,6 +26842,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -25817,6 +27092,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -25999,6 +27316,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -26240,6 +27566,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -26422,6 +27790,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -27611,6 +28988,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -27793,6 +29212,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -28034,6 +29462,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -28216,6 +29686,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -28457,6 +29936,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -28639,6 +30160,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -28880,6 +30410,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -29062,6 +30634,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -29303,6 +30884,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -29485,6 +31108,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -29726,6 +31358,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -29908,6 +31582,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -30149,6 +31832,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -30331,6 +32056,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -30572,6 +32306,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -30754,6 +32530,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -30995,6 +32780,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -31177,6 +33004,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -31418,6 +33254,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -31600,6 +33478,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -31841,6 +33728,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -32023,6 +33952,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -32264,6 +34202,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -32446,6 +34426,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -32687,6 +34676,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -32869,6 +34900,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -33110,6 +35150,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -33292,6 +35374,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -33533,6 +35624,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -33715,6 +35848,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -33956,6 +36098,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -34138,6 +36322,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -34379,6 +36572,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -34561,6 +36796,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -34802,6 +37046,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -34984,6 +37270,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -35225,6 +37520,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -35407,6 +37744,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -35648,6 +37994,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -35830,6 +38218,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -36071,6 +38468,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -36253,6 +38692,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -36494,6 +38942,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -36676,6 +39166,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -36917,6 +39416,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -37099,6 +39640,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -37340,6 +39890,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -37522,6 +40114,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -37763,6 +40364,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -37945,6 +40588,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -38186,6 +40838,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -38368,6 +41062,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -38609,6 +41312,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -38791,6 +41536,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -39032,6 +41786,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -39214,6 +42010,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -39455,6 +42260,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -39637,6 +42484,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -39878,6 +42734,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -40060,6 +42958,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -40301,6 +43208,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -40483,6 +43432,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -40724,6 +43682,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -40906,6 +43906,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -41147,6 +44156,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -41329,6 +44380,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -41570,6 +44630,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -41752,6 +44854,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -41993,6 +45104,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -42175,6 +45328,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -42416,6 +45578,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -42598,6 +45802,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -42839,6 +46052,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -43021,6 +46276,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -43262,6 +46526,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -43444,6 +46750,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -43685,6 +47000,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -43867,6 +47224,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -44108,6 +47474,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -44290,6 +47698,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -44531,6 +47948,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -44713,6 +48172,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -44954,6 +48422,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -45136,6 +48646,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -45377,6 +48896,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -45559,6 +49120,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -45800,6 +49370,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -45982,6 +49594,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -46223,6 +49844,48 @@
                     ], 
                     "validation_split": 0.2
                 }, 
+                "bert-service-base": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            400
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
+                "bert-service-large": {
+                    "activations": [
+                        "relu"
+                    ], 
+                    "batch_size": [
+                        128
+                    ], 
+                    "cv_split": 3, 
+                    "epochs": [
+                        100
+                    ], 
+                    "layers": [
+                        [
+                            600
+                        ], 
+                        [
+                            200
+                        ]
+                    ], 
+                    "validation_split": 0.2
+                }, 
                 "elmo": {
                     "activations": [
                         "relu"
@@ -46405,6 +50068,15 @@
                     "layers": [
                         [
                             26
+                        ], 
+                        [
+                            30
+                        ], 
+                        [
+                            20
+                        ], 
+                        [
+                            5
                         ]
                     ], 
                     "validation_split": 0.2
@@ -60362,9 +64034,9 @@
     }, 
     "cpu_count": 20, 
     "folds": 5, 
-    "outputDir": "mitchell-500",
+    "outputDir": "mitchell-500", 
     "seed": 123, 
-    "version": 2324.0,
+    "version": 2324.0, 
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0, 
