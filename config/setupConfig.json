@@ -64034,9 +64034,9 @@
     }, 
     "cpu_count": 20, 
     "folds": 5, 
-    "outputDir": "pereira-100",
+    "outputDir": "pereira-500",
     "seed": 123, 
-    "version": 2632.0,
+    "version": 2720.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0, 
