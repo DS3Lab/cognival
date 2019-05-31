@@ -64032,11 +64032,11 @@
             }
         }
     }, 
-    "cpu_count": 20, 
+    "cpu_count": 40,
     "folds": 5, 
-    "outputDir": "pereira-500",
+    "outputDir": "pereira-1000",
     "seed": 123, 
-    "version": 2940.0,
+    "version": 3050.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0, 
