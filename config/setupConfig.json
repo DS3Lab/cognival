@@ -64036,7 +64036,7 @@
     "folds": 5, 
     "outputDir": "pereira-500",
     "seed": 123, 
-    "version": 2720.0,
+    "version": 2830.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0, 
