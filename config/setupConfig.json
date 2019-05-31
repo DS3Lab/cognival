@@ -64036,7 +64036,7 @@
     "folds": 5,
     "outputDir": "wehbe-500",
     "seed": 123,
-    "version": 1950.0,
+    "version": 1994.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0,
