@@ -1,16 +1,26 @@
 {
     "cognitiveData": {
-        "mitchell-500-6": {
+        "pereira-100-0": {
             "features": [
                 "ALL_DIM"
             ]
         }, 
-        "mitchell-500-7": {
+        "pereira-100-1": {
             "features": [
                 "ALL_DIM"
             ]
         }, 
-        "mitchell-500-8": {
+        "pereira-100-2": {
+            "features": [
+                "ALL_DIM"
+            ]
+        }, 
+        "pereira-100-3": {
+            "features": [
+                "ALL_DIM"
+            ]
+        }, 
+        "pereira-100-4": {
             "features": [
                 "ALL_DIM"
             ]
