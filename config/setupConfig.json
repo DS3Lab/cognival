@@ -64034,7 +64034,7 @@
     },
     "cpu_count": 20,
     "folds": 5,
-    "outputDir": "wehbe-500",
+    "outputDir": "mitchell-100",
     "seed": 123,
     "version": 1994.0,
     "wordEmbConfig": {
