@@ -79,18 +79,11 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
 
     # READ Datasets into dataframes
     df_cD = pd.read_csv(config['PATH'] + config['cogDataConfig'][cognitiveData]['dataset'], sep=" ")
-    print("read cD")
-    print(df_cD.shape)
-    print(df_cD)
-    print(df_cD[0])
-
 
     # In case it's a single output cogData we just need the single feature
     if config['cogDataConfig'][cognitiveData]['type'] == "single_output":
         df_cD = df_cD[['word',feature]]
     df_cD.dropna(inplace=True)
-    print("cD after drop")
-    print(df_cD.shape)
 
     if (config['wordEmbConfig'][wordEmbedding]["chunked"]):
         df_join = multiJoin(config,df_cD,wordEmbedding)
@@ -100,11 +93,7 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
         # Left (outer) Join to get wordembedding vectors for all words in cognitive dataset
         df_join = pd.merge(df_cD, df_wE, how='left', on=['word'])
 
-    print("join")
-    print(df_join.shape)
     df_join.dropna(inplace=True)
-    print("after drop!")
-    print(df_join.shape)
 
     words = df_join['word']
     words = np.array(words, dtype='str').reshape(-1,1)
@@ -125,11 +114,6 @@ def dataHandler(config, wordEmbedding, cognitiveData, feature):
         X = df_join.drop(features, axis=1)
         X = np.array(X, dtype='float')
 
-    print(X)
-    print(X.shape)
-    print("y")
-    print(y)
-    print(y.shape)
     return split_folds(words ,X,y, config["folds"], config["seed"] )
 
 def split_folds(words, X, y, folds, seed):
@@ -174,24 +158,24 @@ def split_folds(words, X, y, folds, seed):
 
 
 def main():
-    import json
-
-    with open('../config/setupConfig.json','r') as fr:
-        config = json.load(fr)
-
-    we = 'elmo'
-    feat = 'ALL_DIM'
-    cds = []
-
-    dim = [100, 500, 1000]
-    file = 'mitchell-'
-    for i in range(0, 9):
-        for j in dim:
-            cds.append(file+str(j)+'-'+str(i))
-
-    for cd in cds:
-        dataHandler(config,we,cd,feat)
-        print("SUCCESS" + cd)
+    # import json
+    #
+    # with open('../config/setupConfig.json','r') as fr:
+    #     config = json.load(fr)
+    #
+    # we = 'elmo'
+    # feat = 'ALL_DIM'
+    # cds = []
+    #
+    # dim = [100, 500, 1000]
+    # file = 'mitchell-'
+    # for i in range(0, 9):
+    #     for j in dim:
+    #         cds.append(file+str(j)+'-'+str(i))
+    #
+    # for cd in cds:
+    #     dataHandler(config,we,cd,feat)
+    #     print("SUCCESS" + cd)
 
 
     pass

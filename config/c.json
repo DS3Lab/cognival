@@ -1,52 +1,49 @@
 {
     "cognitiveData": {
-        "geco": {
+        "wehbe-100-0": {
             "features": [
-                "WORD_FIXATION_COUNT",
-                "WORD_GAZE_DURATION",
-                "WORD_FIRST_FIXATION_DURATION",
-                "WORD_LAST_FIXATION_DURATION",
-                "WORD_GO_PAST_TIME",
-                "WORD_TOTAL_READING_TIME",
-                "WORD_SKIP"
+                "ALL_DIM"
             ]
-        },
-      "provo": {
+        }, 
+        "wehbe-100-1": {
             "features": [
-                "IA_FIRST_FIXATION_DURATION",
-                "IA_FIRST_RUN_DWELL_TIME",
-                "IA_FIRST_RUN_FIXATION_COUNT",
-                "IA_DWELL_TIME",
-                "IA_FIXATION_COUNT",
-                "IA_SKIP",
-                "IA_REGRESSION_IN_COUNT",
-                "IA_REGRESSION_OUT_COUNT",
-                "IA_REGRESSION_OUT_FULL_COUNT",
-                "IA_REGRESSION_PATH_DURATION"
+                "ALL_DIM"
             ]
-        },
-        "ucl-gaze": {
+        }, 
+        "wehbe-100-2": {
             "features": [
-                "RTfirstfix",
-                "RTfirstpass",
-                "RTgopast",
-                "RTrightbound"
+                "ALL_DIM"
             ]
-        },
-        "zuco-gaze": {
+        }, 
+        "wehbe-100-3": {
             "features": [
-                "nFixations",
-                "FFD",
-                "GD",
-                "GPT",
-                "TRT"
+                "ALL_DIM"
             ]
         }
     }, 
     "configFile": "config/setupConfig.json", 
     "wordEmbeddings": [
-        "bert-service-base",
-        "bert-service-large",
-        "glove-50"
+        "word2vec", 
+        "fasttext-crawl", 
+        "fasttext-crawl-subword", 
+        "fasttext-wiki-news", 
+        "fasttext-wiki-news-subword", 
+        "elmo", 
+        "bert-base", 
+        "bert-large", 
+        "bert-service-base", 
+        "bert-service-large", 
+        "glove-50", 
+        "glove-100", 
+        "glove-200", 
+        "glove-300", 
+        "random-embeddings-100", 
+        "random-embeddings-1024", 
+        "random-embeddings-200", 
+        "random-embeddings-300", 
+        "random-embeddings-50", 
+        "random-embeddings-768", 
+        "random-embeddings-850", 
+        "wordnet2vec"
     ]
 }
