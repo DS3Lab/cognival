@@ -64036,7 +64036,7 @@
     "folds": 5, 
     "outputDir": "mitchell-1000",
     "seed": 123, 
-    "version": 3490.0,
+    "version": 3534.0,
     "wordEmbConfig": {
         "bert-base": {
             "chunked": 0, 
