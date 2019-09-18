@@ -86,11 +86,11 @@ Eye-tracking example:
 ## Significance testing
 
 To run the statistical significance tests on the regression results as described in the paper, place your result files in `significance-testing/results/`.
-We use the implementation of the Wilcoxon test for NLP provided by Dror et al. (2018).
+We use the implementation of the Wilcoxon test for NLP provided by [Dror et al. (2018)](https://github.com/rtmdrr/testSignificanceNLP).
 
 Then you can set the specific configuration in `significance-testing/config.py` and run these scripts in the following order:
 1. `statisticalTesting.py`  
 This will create and test all test results for the chosen modalities in `significance-testing/reports/`.
 2. `aggregated-eeg-results.py` or fMRI or eye-tracking (scripts differ slightly)  
-This will output how many of your hypotheses are accepted under the Bonferroni correction (see paper for detailed description)
+This will output how many of your hypotheses are accepted under the Bonferroni correction (see paper for detailed description).
 
