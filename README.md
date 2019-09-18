@@ -4,19 +4,22 @@
 This repository contains the code for all experiments in the following paper:  
 Nora Hollenstein, Antonio de la Torre, Ce Zhang & Nicolas Langer. CogniVal: A Framework for Cognitive Word Embedding Evaluation. _CoNLL_ (2019).
 
+
+## Regression models
+
 The following set of scripts generates and fits a neural network model to predict cognitive data such as fMRI, eye-tracking 
 and EEG from word embedding inputs.
 
 This process is divided into 4 different handlers to facilitate code reading, debugging and modularity:
 
-- The dataHandler receives the input data used to fit, predict and validate the model. It takes care of parsing, joining and dividing it into training and
-testing sets. 
+- The ``dataHandler.py`` receives the input data used to fit, predict and validate the model. It takes care of parsing, joining and dividing it into training and
+testing sets.
 
-- The fileHandler organizes the different configurations, and handles the reading and writing into them. 
+- The ``fileHandler.py`` organizes the different configurations, and handles the reading and writing into them. 
 
-- The modelHandler is the core of the project, where the models are generated, fitted and prediction is done.
+- The ``modelHandler.py`` is the core of the project, where the models are generated, fitted and prediction is done.
 
-- Finally the plotHandler comes into play to generate visually pleasing results.
+- Finally, the ``plotHandler.py`` comes into play to generate visually understandable results.
 
 
 There are two main ways to run the scripts:
@@ -62,7 +65,8 @@ To run the statistical significance tests as described in the paper, place your 
 We use the implementation of the Wilcoxon test for NLP provided by Dror et al. (2018).
 
 Then you can set the specific configuration in `significance-testing/config.py` and run these scripts in the following order:
-1. `statisticalTesting_eeg.py`  
-This will create and test all test results for EEG in `significance-testing/reports/`.
-2.
+1. `statisticalTesting.py`  
+This will create and test all test results for the chosen modalities in `significance-testing/reports/`.
+2. `aggregated-eeg-results.py` or fMRI or eye-tracking (scripts differ slightly)  
+This will output how many of your hypotheses are accepted under the Bonferroni correction (see paper for detailed description)
 

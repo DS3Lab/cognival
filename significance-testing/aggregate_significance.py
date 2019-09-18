@@ -2,9 +2,10 @@ import json
 
 
 def aggregate_signi_fmri():
-    embeddings = ['glove-50', 'glove-100', 'glove-200', 'glove-300', 'word2vec', 'fasttext-crawl_', 'fasttext-wiki-news_',
-                      'fasttext-crawl-subword', 'fasttext-wiki-news-subword', 'bert-service-base', 'wordnet2vec',
-                      'bert-service-large', 'elmo']
+    embeddings = ['glove-50', 'glove-100', 'glove-200', 'glove-300', 'word2vec', 'fasttext-crawl_',
+                  'fasttext-wiki-news_',
+                  'fasttext-crawl-subword', 'fasttext-wiki-news-subword', 'bert-service-base', 'wordnet2vec',
+                  'bert-service-large', 'elmo']
 
     significance = {}
 
@@ -24,18 +25,18 @@ def aggregate_signi_fmri():
                     if data[p] < corrected_alpha:
                         significant += 1
 
-
             print(hypotheses)
             print(emb, significant, '/', hypotheses)
-            significance[emb] = (str(significant)+'/'+str(hypotheses))
+            significance[emb] = (str(significant) + '/' + str(hypotheses))
 
     return significance
 
 
 def aggregate_signi_eeg():
-    embeddings = ['glove-50', 'glove-100', 'glove-200', 'glove-300', 'word2vec', 'fasttext-crawl_', 'fasttext-wiki-news_',
-                      'fasttext-crawl-subword', 'fasttext-wiki-news-subword', 'bert-service-base', 'wordnet2vec',
-                      'bert-service-large', 'elmo']
+    embeddings = ['glove-50', 'glove-100', 'glove-200', 'glove-300', 'word2vec', 'fasttext-crawl_',
+                  'fasttext-wiki-news_',
+                  'fasttext-crawl-subword', 'fasttext-wiki-news-subword', 'bert-service-base', 'wordnet2vec',
+                  'bert-service-large', 'elmo']
 
     significance = {}
 
@@ -53,16 +54,16 @@ def aggregate_signi_eeg():
                     if data[p] < corrected_alpha:
                         significant += 1
 
-            #print(emb, significant, '/', hypotheses)
-            significance[emb] = (str(significant)+'/'+str(hypotheses))
+            # print(emb, significant, '/', hypotheses)
+            significance[emb] = (str(significant) + '/' + str(hypotheses))
 
     return significance
 
 
 def aggregate_signi_gaze():
     embeddings = ['glove-50', 'glove-100', 'glove-200', 'glove-300', 'word2vec',
-                      'fasttext-crawl-subword', 'fasttext-wiki-news-subword', 'bert-service-base', 'wordnet2vec',
-                      'bert-service-large', 'elmo']
+                  'fasttext-crawl-subword', 'fasttext-wiki-news-subword', 'bert-service-base', 'wordnet2vec',
+                  'bert-service-large', 'elmo']
 
     significance = {}
 
@@ -80,7 +81,7 @@ def aggregate_signi_gaze():
                     if data[p] < corrected_alpha:
                         significant += 1
 
-            #print(emb, significant, '/', hypotheses)
-            significance[emb] = (str(significant)+'/'+str(hypotheses))
+            # print(emb, significant, '/', hypotheses)
+            significance[emb] = (str(significant) + '/' + str(hypotheses))
 
     return significance

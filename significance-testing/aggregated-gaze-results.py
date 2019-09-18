@@ -79,28 +79,17 @@ def extract_results_gaze_all():
 def main():
     cognitive_dataset = 'ucl'
     print("Evaluating combination:", cognitive_dataset)
-    #results = extract_results()
     results = extract_results_gaze(cognitive_dataset)
 
     embeddings = ['glove-50', 'glove-100', 'glove-200', 'glove-300',  'word2vec', 'fasttext-crawl-subword', 'fasttext-wiki-news-subword', 'bert-service-base', 'wordnet2vec', 'bert-service-large',  'elmo']
     baselines = ['random-embeddings-50', 'random-embeddings-100', 'random-embeddings-200', 'random-embeddings-300', 'random-embeddings-300', 'random-embeddings-300', 'random-embeddings-300', 'random-embeddings-768', 'random-embeddings-850', 'random-embeddings-1024', 'random-embeddings-1024']
 
-    fig, ax = plt.subplots(1,len(embeddings), sharey=True)
-
     significance = aggregate_significance.aggregate_signi_gaze()
 
     for idx, (emb, base) in enumerate(zip(embeddings, baselines)):
-        plt.xticks(rotation=90)
         avg_base = np.mean(results[base])
         avg_emb = np.mean(results[emb])
         print(emb, avg_base, avg_emb, significance[emb])
-        #ax[idx].bar([0, 1], [avg_base, avg_emb], align='center', tick_label=['baseline', emb], color=['b', 'g'])
-        #ax[idx].set_xticklabels(['baseline', 'x'], rotation='vertical')
-
-        #for tick in ax[idx].get_xticklabels():
-        #    tick.set_rotation(90)
-
-    #plt.show()
 
 
 if __name__ == '__main__':
