@@ -1,4 +1,5 @@
 import json
+import config
 
 
 def aggregate_signi_fmri():
@@ -9,7 +10,7 @@ def aggregate_signi_fmri():
 
     significance = {}
 
-    with open('reports/fmri/Wilcoxon.json') as json_file:
+    with open(config.report_dir + 'fmri/' + config.test + '.json') as json_file:
         data = json.load(json_file)
 
         corrected_alpha = data['bonferroni_alpha']
@@ -40,7 +41,7 @@ def aggregate_signi_eeg():
 
     significance = {}
 
-    with open('reports/eeg/Wilcoxon.json') as json_file:
+    with open(config.report_dir + 'eeg/' + config.test + '.json') as json_file:
         data = json.load(json_file)
 
         corrected_alpha = data['bonferroni_alpha']
@@ -67,7 +68,7 @@ def aggregate_signi_gaze():
 
     significance = {}
 
-    with open('reports/gaze/Wilcoxon.json') as json_file:
+    with open(config.report_dir + 'gaze/' + config.test + '.json') as json_file:
         data = json.load(json_file)
 
         corrected_alpha = data['bonferroni_alpha']

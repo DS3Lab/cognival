@@ -2,7 +2,7 @@
 ### A framework for cognitive word embedding evaluation
 
 This repository contains the code for all experiments in the following paper:  
-Nora Hollenstein, Antonio de la Torre, Ce Zhang & Nicolas Langer. CogniVal: A Framework for Cognitive Word Embedding Evaluation. _CoNLL_ (2019).
+Nora Hollenstein, Antonio de la Torre, Ce Zhang & Nicolas Langer. "CogniVal: A Framework for Cognitive Word Embedding Evaluation". _CoNLL_ (2019).
 
 
 ## Regression models
@@ -37,7 +37,7 @@ In order for the script to run properly the necessary information has to be prev
 file. This information consists of the names of the datafiles, the path to where they are stored, the number of hidden layers and nodes for the neural network
 etc.
 
-Example_1:
+Example:
 
 We want to run: "dundee" with the feature "First_fix_dur" and the word embedding "glove-50".
 
@@ -53,10 +53,10 @@ or cognitive datasets can be added in a similar fashion.
 In case of big word embeddings like word2vec, the datafiles are chunked into several pieces to avoid a MemoryError. This has 
 to be performed separately using the chunker method inside of dataHandler.
 
-2. The second way of running the script is to pass a ``controller.json`` to the ``scriptController.py``.
+2. The second way of running the code is to pass a ``controller.json`` to the ``scriptController.py``.
 
 This will in turn have the same effect as ``script.py``, however multiple combinations and models can be run in parallel. An example of
-a ``controllerConfig.json`` is found inside ``config/``
+a ``controllerConfig.json`` is found inside ``config/``.
 
 
 ## Significance testing
