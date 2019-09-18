@@ -58,6 +58,30 @@ to be performed separately using the chunker method inside of dataHandler.
 This will in turn have the same effect as ``script.py``, however multiple combinations and models can be run in parallel. An example of
 a ``controllerConfig.json`` is found inside ``config/``.
 
+### Input data format
+
+The input format for the embeddings is raw text, for example:
+
+`island 1.4738 0.097269 -0.87687 0.95299 -0.17249 0.10427 -1.1632 ...`
+
+The input format for the cognitive data source is also raw text, and all feature values are scale between 0 and 1.
+
+EEG example:
+
+``word e1 e2 e3 e4 e5 ...``  
+``his 0.5394774791900334 0.4356708610374691 0.523294558226597 0.5059544824545096 0.466957449316214 ...``
+
+fMRI example:
+
+``word v0 v1 v2 v3 ...``  
+``beginning 0.3585450775710978 0.43270347838578155 0.7947947579149615 ...``
+
+Eye-tracking example:
+
+``word WORD_FIXATION_COUNT WORD_GAZE_DURATION WORD_FIRST_FIXATION_DURATION ...``  
+``the 0.1168531943034873 0.11272377054039184 0.25456297601240524 ...`` 
+
+
 
 ## Significance testing
 
