@@ -85,7 +85,7 @@ Eye-tracking example:
 
 ## Significance testing
 
-To run the statistical significance tests as described in the paper, place your result files in `significance-testing/results/`.
+To run the statistical significance tests on the regression results as described in the paper, place your result files in `significance-testing/results/`.
 We use the implementation of the Wilcoxon test for NLP provided by Dror et al. (2018).
 
 Then you can set the specific configuration in `significance-testing/config.py` and run these scripts in the following order:
