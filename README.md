@@ -62,6 +62,7 @@ To run the statistical significance tests as described in the paper, place your 
 We use the implementation of the Wilcoxon test for NLP provided by Dror et al. (2018).
 
 Then you can set the specific configuration in `significance-testing/config.py` and run these scripts in the following order:
-1. `statisticalTesting_egg.py`
+1. `statisticalTesting_eeg.py`  
+This will create and test all test results for EEG in `significance-testing/reports/`.
 2.
 
