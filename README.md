@@ -24,7 +24,7 @@ testing sets.
 
 There are two main ways to run the scripts:
 
-1. By using script.py arguments can be direclty passed to run the model.
+1. If using ``script.py`` arguments can be direclty passed to run the model.
  In case no arguments are passed, a command line interface will start and ask for the necessary inputs. These are:
 - word embedding
 - cognitive data
@@ -43,20 +43,20 @@ We want to run: "dundee" with the feature "First_fix_dur" and the word embedding
 
 Command to run:
 
-python script.py path/to/setupConfig.json -c dundee  -f First_fix_dur  -w glove-50
+``python script.py path/to/setupConfig.json -c dundee  -f First_fix_dur  -w glove-50``
 
-An example of the setupConfig.json with the necessary information to run this case is stored in config/example_1.json.
+An example of the ``setupConfig.json`` with the necessary information to run this case is stored in ``config/example_1.json``.
 
-In example_1.json we have the necessary information to run dundee with any of its features and two different word embeddings: glove-50 and word2vec. Further word embeddings 
+In ``example_1.json`` we have the necessary information to run dundee with any of its features and two different word embeddings: glove-50 and word2vec. Further word embeddings 
 or cognitive datasets can be added in a similar fashion. 
 
 In case of big word embeddings like word2vec, the datafiles are chunked into several pieces to avoid a MemoryError. This has 
 to be performed separately using the chunker method inside of dataHandler.
 
-2. The second way of running the script is to pass a controller.json to the scriptController.py.
+2. The second way of running the script is to pass a ``controller.json`` to the ``scriptController.py``.
 
-This will in turn have the same effect as script.py, however multiple combinations and models can be run in parallel. An example of
-a controllerConfig.json is found inside config/
+This will in turn have the same effect as ``script.py``, however multiple combinations and models can be run in parallel. An example of
+a ``controllerConfig.json`` is found inside ``config/``
 
 
 ## Significance testing
