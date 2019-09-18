@@ -1,5 +1,8 @@
-# cognitive-embedding-evaluation
-Cognitive word embedding evaluation
+# CogniVal
+### A framework for cognitive word embedding evaluation
+
+This repository contains the code for all experiments in the following paper:  
+Nora Hollenstein, Antonio de la Torre, Ce Zhang & Nicolas Langer. CogniVal: A Framework for Cognitive Word Embedding Evaluation. _CoNLL_ (2019).
 
 The following set of scripts generates and fits a neural network model to predict cognitive data such as fMRI, eye-tracking 
 and EEG from word embedding inputs.
@@ -52,4 +55,13 @@ to be performed separately using the chunker method inside of dataHandler.
 This will in turn have the same effect as script.py, however multiple combinations and models can be run in parallel. An example of
 a controllerConfig.json is found inside config/
 
+
+## Significance testing
+
+To run the statistical significance tests as described in the paper, place your result files in `significance-testing/results/`.
+We use the implementation of the Wilcoxon test for NLP provided by Dror et al. (2018).
+
+Then you can set the specific configuration in `significance-testing/config.py` and run these scripts in the following order:
+1. `statisticalTesting_egg.py`
+2.
 

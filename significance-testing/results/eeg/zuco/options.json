@@ -1,0 +1,8 @@
+{
+    "3.0": {
+        "AVERAGE_MSE": 0.0061305759274197765,
+        "cognitiveData": "zuco-eeg",
+        "feature": "ALL_DIM",
+        "wordEmbedding": "bert-service-base"
+    }
+}
