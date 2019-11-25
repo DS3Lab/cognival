@@ -81,7 +81,7 @@ Eye-tracking example:
 ``word WORD_FIXATION_COUNT WORD_GAZE_DURATION WORD_FIRST_FIXATION_DURATION ...``  
 ``the 0.1168531943034873 0.11272377054039184 0.25456297601240524 ...`` 
 
-
+All cognitive data sources are freely available for you to download and preprocess. However, if you prefer the fully preprocessed vectors as described in the publication, you can download them [here](https://drive.google.com/open?id=1pWwIiCdB2snIkgJbD1knPQ6akTPW_kx0).
 
 ## Significance testing
 
