@@ -83,6 +83,8 @@ Eye-tracking example:
 
 All cognitive data sources are freely available for you to download and preprocess. However, if you prefer the fully preprocessed vectors as described in the publication, you can download them [here](https://drive.google.com/open?id=1pWwIiCdB2snIkgJbD1knPQ6akTPW_kx0).
 
+To reproduce our results, we also provide the random embeddings used for the baseline [here](https://drive.google.com/open?id=1sZzNKJB3mr5e_ftGzPJoJAeD796r03XE).
+
 ## Significance testing
 
 To run the statistical significance tests on the regression results as described in the paper, place your result files in `significance-testing/results/`.
