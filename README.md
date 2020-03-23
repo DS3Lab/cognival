@@ -62,6 +62,7 @@ a ``controllerConfig.json`` is found inside ``config/``.
 
 The input format for the embeddings is raw text, for example:
 
+`word x1 x2 x3 x4 x5 x6 x7 ...`  
 `island 1.4738 0.097269 -0.87687 0.95299 -0.17249 0.10427 -1.1632 ...`
 
 The input format for the cognitive data source is also raw text, and all feature values are scale between 0 and 1.
