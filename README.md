@@ -4,6 +4,12 @@
 This repository contains the code for all experiments in the following paper:  
 Nora Hollenstein, Antonio de la Torre, Ce Zhang & Nicolas Langer. "CogniVal: A Framework for Cognitive Word Embedding Evaluation". _CoNLL_ (2019).
 
+**Important note**  
+This repository contains the code that was used for the original CoNLL publication. This version of the code is not maintained anymore. CogniVal has been further developed into a command line interface, which can be accessed here:  
+https://github.com/DS3Lab/cognival-cli
+
+During the development to this new tool, some [issues](https://github.com/DS3Lab/cognival/blob/master/code_issues.txt) were found in the original code. Hence, we strongly recommend to use the new tool instead.
+
 
 ## Regression models
 
