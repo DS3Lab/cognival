@@ -1,2 +1,7 @@
 Issues that were found in the original version of the code:
 
+- Bug the vocabulary file. This affected the generation of the random embeddings as well as the vocabulary used for Bert and Elmo embeddings. See details here: https://github.com/DS3Lab/cognival/tree/master/sideCode/random-baseline
+
+- The random baseline is not robust since we only compare one run.
+
+- Depending on the folder structure used for the results, this can affect the count of hypotheses in the significance testing.
